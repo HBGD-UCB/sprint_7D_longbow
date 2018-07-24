@@ -1,0 +1,74 @@
+[jeremy.coyle@54.145.173.242] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/ff83c3ca-8fcf-4b44-801f-830b82782029
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp5gpkdkuy/script.Rmd -> /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/script.Rmd
+Put code at /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/script.Rmd
+[jeremy.coyle@54.145.173.242] put: /app/runner.R -> /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/runner.R
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp5gpkdkuy/inputs.json -> /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/inputs.json
+Put inputs at /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/ff83c3ca-8fcf-4b44-801f-830b82782029.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=F%2FqDsYpnaNx7wS24i9ZieUO0vYk%3D&Expires=1534999453
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/runner.R /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/script.Rmd /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/inputs.json /tmp/ff83c3ca-8fcf-4b44-801f-830b82782029
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp5gpkdkuy/x.py -> /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/x.py
+Put code at /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/x.py
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp5gpkdkuy/wrapper.sh -> /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/wrapper.sh
+Put code at /tmp/d8bb8af0-cef5-4464-b1ed-a5a67ea45733/wrapper.sh
+[jeremy.coyle@54.145.173.242] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2021/append_log/; screen -d -m python x.py; sleep 1
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+Quitting from lines 82-126 (REPORT.Rmd) 
+Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
+  Some items of .SDcols are not column names (or are NA)
+Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
+
+Execution halted
+ff83c3ca-8fcf-4b44-801f-830b82782029/
+ff83c3ca-8fcf-4b44-801f-830b82782029/REPORT.Rmd
+ff83c3ca-8fcf-4b44-801f-830b82782029/inputs.json
+{"status": "success"}

@@ -1,0 +1,42 @@
+variablename,variablelabel,category,units,variabletype
+birthlen,Birth length,Child characteristics,Centimeters,risk factor
+birthwt,Birthweight,Child characteristics,Kilograms,risk factor
+brthmon,Calendar month of birth,Child characteristics,,risk factor
+enstunt,Stunted at enrollment,Child characteristics,,risk factor
+ever_stunted,Cumulative incidence of stunting from birth to 24 months,,,outcome
+hdlvry,Child delivered at home,Child characteristics,,risk factor
+sex,Child's sex,Child characteristics,,risk factor
+vagbrth,Vaginal delivery,Child characteristics,,risk factor
+month,Calendar month of measurement,Child characteristics,,risk factor
+hfoodsec,USAID Household Food Insecurity Access Scale (HFIAS) category,Household characteristics,,risk factor
+hhwealth_quart,Asset based wealth index,Household characteristics,,risk factor
+nchldlt5,Number of children in the household under 5 years,Household characteristics,,risk factor
+nhh,Number of people in the household,Household characteristics,,risk factor
+nrooms,Number of rooms in household,Household characteristics,,risk factor
+gagebrth,Gestational age at birth in days,Child characteristics,Days,risk factor
+mage,Maternal age,Maternal characteristics,,risk factor
+meducyrs,Mother's education,Maternal characteristics,Years,risk factor
+mhtcm,Maternal height,Maternal characteristics,Centimeters,risk factor
+mbmi,Maternal BMI,Maternal characteristics,,risk factor
+mwtkg,Maternal weight,Maternal characteristics,Kilograms,risk factor
+parity,Maternal parity,Maternal characteristics,,risk factor
+single,Mother is unmarried,Maternal characteristics,,risk factor
+fage,Father age,Paternal characteristics,,risk factor
+feducyrs,Father's education,Paternal characteristics,Years,risk factor
+fhtcm,Father height,Paternal characteristics,Centimeters,risk factor
+sstunted,Point prevalence of severe stunting,,,outcome
+stunted,Point prevalence of stunting,,,outcome
+s03rec24,Proportion of children who were stunted between birth and 3 months who recovered by 24 months,,,
+enwast,Enrolled wasted,Child characteristics,,risk factor
+anywast06,Any wasting in first 6 months,Child characteristics,,risk factor
+pers_wast,Persistent wasting in first 6 months,Child characteristics,,risk factor
+trth2o,Treats water,Household characteristics,,risk factor
+cleanck,Clean cook,Household characteristics,,risk factor
+impfloor,Improved floor,Household characteristics,,risk factor
+impsan,Improved sanitation,Household characteristics,,risk factor
+safeh20,Safe water,Household characteristics,,risk factor
+perdiar6,Percent diarrhea in first 6 months,Child characteristics,,risk factor
+perdiar24,Percent diarrhea in first 24 months,Child characteristics,,risk factor
+predexfd6,Percent exclusive breastfeeding,Child characteristics,,risk factor
+y_rate_haz,HAZ growth velocity,,,outcome
+y_rate_lencm,Length growth velocity,,,outcome
