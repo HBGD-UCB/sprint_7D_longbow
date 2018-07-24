@@ -1,0 +1,80 @@
+[jeremy.coyle@54.145.173.242] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/2c0dd9a7-4998-44df-bb1e-a6fad151ea9f
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/c2012aae-bd71-4e28-918b-921a876b2bec
+[jeremy.coyle@54.145.173.242] put: /tmp/tmpjbvx4604/script.Rmd -> /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/script.Rmd
+Put code at /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/script.Rmd
+[jeremy.coyle@54.145.173.242] put: /app/runner.R -> /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/runner.R
+[jeremy.coyle@54.145.173.242] put: /tmp/tmpjbvx4604/inputs.json -> /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/inputs.json
+Put inputs at /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/2c0dd9a7-4998-44df-bb1e-a6fad151ea9f.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=1Xrw%2BstgjwiGmYboQ8DyEi%2Fzyog%3D&Expires=1534994372
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/runner.R /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/script.Rmd /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/inputs.json /tmp/2c0dd9a7-4998-44df-bb1e-a6fad151ea9f
+[jeremy.coyle@54.145.173.242] put: /tmp/tmpjbvx4604/x.py -> /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/x.py
+Put code at /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/x.py
+[jeremy.coyle@54.145.173.242] put: /tmp/tmpjbvx4604/wrapper.sh -> /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/wrapper.sh
+Put code at /tmp/c2012aae-bd71-4e28-918b-921a876b2bec/wrapper.sh
+[jeremy.coyle@54.145.173.242] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/1920/append_log/; screen -d -m python x.py; sleep 1
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+label: preprocessing
+Quitting from lines 82-126 (REPORT.Rmd) 
+Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
+  Some items of .SDcols are not column names (or are NA)
+Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
+
+Execution halted
+2c0dd9a7-4998-44df-bb1e-a6fad151ea9f/
+2c0dd9a7-4998-44df-bb1e-a6fad151ea9f/REPORT.Rmd
+2c0dd9a7-4998-44df-bb1e-a6fad151ea9f/inputs.json
+{"status": "success"}

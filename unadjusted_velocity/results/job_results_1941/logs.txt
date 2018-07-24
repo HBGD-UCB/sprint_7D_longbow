@@ -1,0 +1,218 @@
+[jeremy.coyle@54.145.173.242] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/725306a3-ad8d-4d71-8d6a-03eaa0aa11c6
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/30781877-adce-4fc6-8794-c80d0a6b940c
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp4smc2dm6/script.Rmd -> /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/script.Rmd
+Put code at /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/script.Rmd
+[jeremy.coyle@54.145.173.242] put: /app/runner.R -> /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/runner.R
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp4smc2dm6/inputs.json -> /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/inputs.json
+Put inputs at /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/725306a3-ad8d-4d71-8d6a-03eaa0aa11c6.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=5WSh4v08wy2Wg10GUWB4WDvTqyE%3D&Expires=1534994436
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/runner.R /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/script.Rmd /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/inputs.json /tmp/725306a3-ad8d-4d71-8d6a-03eaa0aa11c6
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp4smc2dm6/x.py -> /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/x.py
+Put code at /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/x.py
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp4smc2dm6/wrapper.sh -> /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/wrapper.sh
+Put code at /tmp/30781877-adce-4fc6-8794-c80d0a6b940c/wrapper.sh
+[jeremy.coyle@54.145.173.242] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/1941/append_log/; screen -d -m python x.py; sleep 1
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+fagey_rate_lencmidc("diffcat", "studyid", "country")
+TRUEFALSEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	diffcat: 0-3 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	diffcat: 0-3 months, studyid: ki0047075b-MAL-ED, country: NEPAL
+tmle for:	diffcat: 0-3 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	diffcat: 0-3 months, studyid: ki1119695-PROBIT, country: BELARUS
+tmle for:	diffcat: 0-3 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	diffcat: 12-24 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	diffcat: 12-24 months, studyid: ki0047075b-MAL-ED, country: NEPAL
+tmle for:	diffcat: 12-24 months, studyid: ki1119695-PROBIT, country: BELARUS
+tmle for:	diffcat: 12-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	diffcat: 12-24 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	diffcat: 12-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	diffcat: 12-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	diffcat: 12-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	diffcat: 3-6 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	diffcat: 3-6 months, studyid: ki0047075b-MAL-ED, country: NEPAL
+tmle for:	diffcat: 3-6 months, studyid: ki0047075b-MAL-ED, country: PERU
+tmle for:	diffcat: 3-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	diffcat: 3-6 months, studyid: ki1119695-PROBIT, country: BELARUS
+tmle for:	diffcat: 3-6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	diffcat: 6-12 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	diffcat: 6-12 months, studyid: ki0047075b-MAL-ED, country: NEPAL
+tmle for:	diffcat: 6-12 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	diffcat: 6-12 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
+tmle for:	diffcat: 6-12 months, studyid: ki1119695-PROBIT, country: BELARUS
+tmle for:	diffcat: 6-12 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	diffcat: 6-12 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	diffcat: 6-12 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	diffcat: 6-12 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	diffcat: 6-12 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+  |                                                                         |.......................................                          |  59%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  62%
+label: save_results
+  |                                                                         |...........................................                      |  66%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: plot_tsm (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: plot_rr (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: plot_ate (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |.......................................................          |  84%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: plot_paf (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: plot_par (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................................  |  97%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: results_tables (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+{"status": "success"}

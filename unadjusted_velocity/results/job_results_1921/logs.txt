@@ -1,0 +1,66 @@
+[jeremy.coyle@54.145.173.242] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/c3034d0a-4aa1-4f5e-93f8-5c0419554875
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af
+[jeremy.coyle@54.145.173.242] put: /tmp/tmpf2nibkkw/script.Rmd -> /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/script.Rmd
+Put code at /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/script.Rmd
+[jeremy.coyle@54.145.173.242] put: /app/runner.R -> /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/runner.R
+[jeremy.coyle@54.145.173.242] put: /tmp/tmpf2nibkkw/inputs.json -> /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/inputs.json
+Put inputs at /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/c3034d0a-4aa1-4f5e-93f8-5c0419554875.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=CEO%2BAFAIix6BR%2BqoKydXWABSECg%3D&Expires=1534994487
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/runner.R /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/script.Rmd /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/inputs.json /tmp/c3034d0a-4aa1-4f5e-93f8-5c0419554875
+[jeremy.coyle@54.145.173.242] put: /tmp/tmpf2nibkkw/x.py -> /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/x.py
+Put code at /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/x.py
+[jeremy.coyle@54.145.173.242] put: /tmp/tmpf2nibkkw/wrapper.sh -> /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/wrapper.sh
+Put code at /tmp/9aea613f-1d0c-4666-a75f-7af26e7f31af/wrapper.sh
+[jeremy.coyle@54.145.173.242] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/1921/append_log/; screen -d -m python x.py; sleep 1
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+{"status": "success"}

@@ -1,0 +1,76 @@
+[jeremy.coyle@54.145.173.242] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/ddb46acc-d36d-406c-af08-c3545308b33f
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp5rio810k/script.Rmd -> /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/script.Rmd
+Put code at /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/script.Rmd
+[jeremy.coyle@54.145.173.242] put: /app/runner.R -> /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/runner.R
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp5rio810k/inputs.json -> /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/inputs.json
+Put inputs at /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/ddb46acc-d36d-406c-af08-c3545308b33f.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=wKz6qBSn5SvAq5KPyeLU1SMK09s%3D&Expires=1534994542
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/runner.R /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/script.Rmd /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/inputs.json /tmp/ddb46acc-d36d-406c-af08-c3545308b33f
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp5rio810k/x.py -> /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/x.py
+Put code at /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/x.py
+[jeremy.coyle@54.145.173.242] put: /tmp/tmp5rio810k/wrapper.sh -> /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/wrapper.sh
+Put code at /tmp/5470a73d-8b01-4b86-9585-d6280e63e0d0/wrapper.sh
+[jeremy.coyle@54.145.173.242] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/1959/append_log/; screen -d -m python x.py; sleep 1
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+{"status": "success"}
