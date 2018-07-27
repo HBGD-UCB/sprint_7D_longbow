@@ -2,7 +2,7 @@ library(longbowtools)
 library(jsonlite)
 inputs <- "velocity_inputs_template.json"
 default_params <- fromJSON(inputs)
-V <- c("diffcat","studyid","country")
+V <- c("agecat","studyid","country")
 
 A <- c("sex", "gagebrth", "birthwt", "birthlen", "enstunt", "vagbrth", 
        "hdlvry", "mage", "mhtcm", "mwtkg", "mbmi", "single", "fage", 
@@ -10,10 +10,11 @@ A <- c("sex", "gagebrth", "birthwt", "birthlen", "enstunt", "vagbrth",
        "brthmon", "parity", "meducyrs", "feducyrs", "hfoodsec","enwast", 
        "anywast06", "pers_wast","trth2o", "cleanck", "impfloor",  "impsan", 
        "safeh20", "perdiar6", "perdiar24", "predexfd6")
-Y <- c("y_rate_haz", "y_rate_lencm")
 id <- c("id")
 
-analyses <- expand.grid(A=A,Y=Y, stringsAsFactors = FALSE, KEEP.OUT.ATTRS = FALSE)
+outcome_files <- fread("outcome_files.csv")
+
+analyses <- expand.grid(A=A,Y=outcome_files$Y, stringsAsFactors = FALSE, KEEP.OUT.ATTRS = FALSE)
 analyses$id <- list(id)
 analyses$strata <- list(V)
 
@@ -23,6 +24,7 @@ for(i in 1:nrow(analyses)){
   analysis_params <- default_params
   analysis_nodes <- as.list(analysis)
   analysis_params$nodes <- analysis_nodes
+  analysis_params$data$repository_path <- outcome_files$file[match(analysis_nodes$Y,outcome_files$Y)]
   
   inputs_filename <- sprintf("inputs/unadjusted_velocity_analysis_%03d.json",i)
   writeLines(toJSON(analysis_params),inputs_filename)

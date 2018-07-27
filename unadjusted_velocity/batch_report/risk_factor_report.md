@@ -52,9 +52,6 @@ editor_options:
 ![](risk_factor_report_files/figure-html/plot_pooled-9.png)<!-- -->
 
   
-  
-  
-### Household characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-10.png)<!-- -->
 
   
@@ -70,12 +67,12 @@ editor_options:
 ![](risk_factor_report_files/figure-html/plot_pooled-14.png)<!-- -->
 
   
-  
-  
-### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-15.png)<!-- -->
 
   
+  
+  
+### Household characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-16.png)<!-- -->
 
   
@@ -94,9 +91,6 @@ editor_options:
 ![](risk_factor_report_files/figure-html/plot_pooled-21.png)<!-- -->
 
   
-  
-  
-### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-22.png)<!-- -->
 
   
@@ -106,15 +100,12 @@ editor_options:
 ![](risk_factor_report_files/figure-html/plot_pooled-24.png)<!-- -->
 
   
-  
-  
-  
-## Length growth velocity  
-  
-### Child characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-25.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-26.png)<!-- -->
 
   
@@ -136,67 +127,22 @@ editor_options:
 ![](risk_factor_report_files/figure-html/plot_pooled-32.png)<!-- -->
 
   
+  
+  
+### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-33.png)<!-- -->
 
   
-  
-  
-### Household characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-34.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/plot_pooled-35.png)<!-- -->
 
   
-![](risk_factor_report_files/figure-html/plot_pooled-36.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-37.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-38.png)<!-- -->
-
-  
-  
-  
-### Maternal characteristics  
-![](risk_factor_report_files/figure-html/plot_pooled-39.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-40.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-41.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-42.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-43.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-44.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-45.png)<!-- -->
-
-  
-  
-  
-### Paternal characteristics  
-![](risk_factor_report_files/figure-html/plot_pooled-46.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-47.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-48.png)<!-- -->
-
-  
   
   
 
-# Appendix 1 - Average treatmetn effect stratified by cohort
+# Appendix 1 - Average treatment effect stratified by cohort
   
 ## HAZ growth velocity  
   
@@ -228,9 +174,6 @@ editor_options:
 ![](risk_factor_report_files/figure-html/ate_forest-9.png)<!-- -->
 
   
-  
-  
-### Household characteristics  
 ![](risk_factor_report_files/figure-html/ate_forest-10.png)<!-- -->
 
   
@@ -246,12 +189,12 @@ editor_options:
 ![](risk_factor_report_files/figure-html/ate_forest-14.png)<!-- -->
 
   
-  
-  
-### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/ate_forest-15.png)<!-- -->
 
   
+  
+  
+### Household characteristics  
 ![](risk_factor_report_files/figure-html/ate_forest-16.png)<!-- -->
 
   
@@ -270,9 +213,6 @@ editor_options:
 ![](risk_factor_report_files/figure-html/ate_forest-21.png)<!-- -->
 
   
-  
-  
-### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/ate_forest-22.png)<!-- -->
 
   
@@ -282,15 +222,12 @@ editor_options:
 ![](risk_factor_report_files/figure-html/ate_forest-24.png)<!-- -->
 
   
-  
-  
-  
-## Length growth velocity  
-  
-### Child characteristics  
 ![](risk_factor_report_files/figure-html/ate_forest-25.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/ate_forest-26.png)<!-- -->
 
   
@@ -312,61 +249,16 @@ editor_options:
 ![](risk_factor_report_files/figure-html/ate_forest-32.png)<!-- -->
 
   
+  
+  
+### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/ate_forest-33.png)<!-- -->
 
   
-  
-  
-### Household characteristics  
 ![](risk_factor_report_files/figure-html/ate_forest-34.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/ate_forest-35.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-36.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-37.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-38.png)<!-- -->
-
-  
-  
-  
-### Maternal characteristics  
-![](risk_factor_report_files/figure-html/ate_forest-39.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-40.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-41.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-42.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-43.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-44.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-45.png)<!-- -->
-
-  
-  
-  
-### Paternal characteristics  
-![](risk_factor_report_files/figure-html/ate_forest-46.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-47.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/ate_forest-48.png)<!-- -->
 
   
   

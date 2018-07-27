@@ -1,0 +1,206 @@
+[jeremy.coyle@54.242.185.159] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/f0e797fb-f3c0-42c2-89ef-dcca82daeb8b
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc
+[jeremy.coyle@54.242.185.159] put: /tmp/tmphnlip7h2/script.Rmd -> /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/script.Rmd
+Put code at /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/script.Rmd
+[jeremy.coyle@54.242.185.159] put: /app/runner.R -> /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/runner.R
+[jeremy.coyle@54.242.185.159] put: /tmp/tmphnlip7h2/inputs.json -> /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/inputs.json
+Put inputs at /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/f0e797fb-f3c0-42c2-89ef-dcca82daeb8b.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=cy%2BOxxFmKy6xr1uieWWHnde13ds%3D&Expires=1535250343
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/runner.R /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/script.Rmd /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/inputs.json /tmp/f0e797fb-f3c0-42c2-89ef-dcca82daeb8b
+[jeremy.coyle@54.242.185.159] put: /tmp/tmphnlip7h2/x.py -> /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/x.py
+Put code at /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/x.py
+[jeremy.coyle@54.242.185.159] put: /tmp/tmphnlip7h2/wrapper.sh -> /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/wrapper.sh
+Put code at /tmp/c03e5ed7-1d51-41ae-8b83-20460f471dbc/wrapper.sh
+[jeremy.coyle@54.242.185.159] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2413/append_log/; screen -d -m python x.py; sleep 1
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+perdiar6y_rate_hazidc("agecat", "studyid", "country")
+TRUEFALSEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: PERU
+tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 0-3 months, studyid: ki1000109-ResPak, country: PAKISTAN
+tmle for:	agecat: 0-3 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
+tmle for:	agecat: 0-3 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	agecat: 0-3 months, studyid: ki1114097-CMIN, country: BRAZIL
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 0-3 months, studyid: ki1114097-CMIN, country: GUINEA-BISSAU
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 0-3 months, studyid: ki1114097-CMIN, country: PERU
+tmle for:	agecat: 0-3 months, studyid: ki1114097-CONTENT, country: PERU
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-24 months, studyid: ki1114097-CMIN, country: GUINEA-BISSAU
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki1000109-ResPak, country: PAKISTAN
+tmle for:	agecat: 3-6 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: plot_par (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................................  |  97%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: results_tables (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/R/x86_64-redhat-linux-gnu-library/3.5/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpDvIX1c/rmarkdown-str1cf673b5ec565.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: /tmp/f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT.html
+[1] "/tmp/f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT.html"
+Warning message:
+Removed 10 rows containing missing values (geom_errorbar). 
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT.Rmd
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/inputs.json
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/obs_counts.rdata
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/results.rdata
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT_files/
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT_files/figure-html/
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT_files/figure-html/plot_tsm-1.png
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT_files/figure-html/plot_ate-1.png
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT.html
+f0e797fb-f3c0-42c2-89ef-dcca82daeb8b/REPORT.md
+{"status": "success"}

@@ -3,11 +3,11 @@ title: "Risk Factors of Stunting"
 author: "Jade Benjamin-Chung, Andrew N. Mertens, Esther Chung, Jeremy Coyle, Oleg Sofrygin, Nima Hejazi, Ivana Malenica, Alan E. Hubbard, Mark J. van der Laan, John M. Colford, Jr., Benjamin F. Arnold"
 date: "2018-06-14"
 output:
-  pdf_document:
-    toc: true
   html_document:
     keep_md: yes
     self_contained: yes
+    toc: true
+  pdf_document:
     toc: true
 editor_options:
   chunk_output_type: console
@@ -55,12 +55,12 @@ outcome_meta <- variable_meta[,list(outcome_variable=variablename,
 
 results <- merge(results, intervention_meta, by="intervention_variable")
 results <- merge(results, outcome_meta, by="outcome_variable")
-results[is.na(diffcat),diffcat:=""]
+results[is.na(agecat),agecat:=""]
 
-diffcat_levels <- c("0-3 months", 
+agecat_levels <- c("0-3 months", 
 "3-6 months", "6-12 months", "12-24 months")
 
-results[,diffcat:=factor(diffcat, levels=diffcat_levels)]
+results[,agecat:=factor(agecat, levels=agecat_levels)]
 
 ```
 
@@ -74,7 +74,7 @@ ate_results <- results[type=="ATE"]
 one_result <- ate_results[intervention_variable==intervention_variable[100]&
                             intervention_level==intervention_level[100]&
                             outcome_variable==outcome_variable[100]&
-                            diffcat==diffcat[100]]
+                            agecat==agecat[100]]
 
 pool_ate <- function(one_result){
   # get pooled estimate
@@ -109,7 +109,7 @@ pool_ate <- function(one_result){
 }
 
 pooled_ates <- ate_results[,pool_ate(.SD), 
-                          by=list(diffcat,outcome_variable, intervention_category, 
+                          by=list(agecat,outcome_variable, intervention_category, 
                                   intervention_variable, intervention_level)]
 
 pooled_ates[,sig:=0<ci_lower|ci_upper<0]
@@ -177,7 +177,7 @@ ate_pooled_plot <- function(data, strata_level){
     geom_point(aes(alpha=sig_alpha), size=2,position=dodge)+
     geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2,position=dodge)+
     geom_hline(aes(yintercept=0),linetype="dashed")+theme_bw()+xlab("")+
-    ylab("Average Treatment Effect")+facet_grid(~diffcat)+
+    ylab("Average Treatment Effect")+facet_grid(~agecat)+
     scale_alpha_continuous(guide=FALSE,limits=c(0,1))+
     theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
     ggtitle(title)
@@ -191,7 +191,7 @@ strata_vars <- c("outcome_label","intervention_category","intervention_label")
 hierarchical_plot_output(pooled_ates, strata_vars, ate_pooled_plot, 2)
 ```
 
-# Appendix 1 - Average treatmetn effect stratified by cohort
+# Appendix 1 - Average treatment effect stratified by cohort
 ```{r ate_forest, results="asis", fig.height=9,fig.width=7, warning=FALSE}
 
 ate_with_pooled <- rbind(ate_results, pooled_ates, fill=TRUE)
@@ -208,7 +208,7 @@ ate_forest_plot <- function(data, strata_level){
       geom_point(aes(alpha=sig_alpha, color=color), size=2)+
       geom_errorbar(aes(alpha=sig_alpha*0.7, color=color),width=0,size=2)+
       geom_hline(aes(yintercept=0), linetype="dashed")+
-      coord_flip()+facet_grid(diffcat~intervention_level,scales="free_y")+theme_bw()+
+      coord_flip()+facet_grid(agecat~intervention_level,scales="free_y")+theme_bw()+
       scale_alpha_continuous(guide=FALSE,limits=c(0,1))+ylab("Average Treatment Effect")+xlab("Strata")+
       scale_color_manual(values=c("black","red"),guide=FALSE)+
       theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
