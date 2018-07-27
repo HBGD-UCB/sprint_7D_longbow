@@ -1,5 +1,5 @@
 ---
-title: "Risk Factors of Stunting"
+title: "Unadjusted Effects of Risk Factors on Binary Stunting Outcomes"
 author: "Jade Benjamin-Chung, Andrew N. Mertens, Esther Chung, Jeremy Coyle, Oleg Sofrygin, Nima Hejazi, Ivana Malenica, Alan E. Hubbard, Mark J. van der Laan, John M. Colford, Jr., Benjamin F. Arnold"
 date: "2018-06-14"
 output:
@@ -100,12 +100,12 @@ editor_options:
 ![](risk_factor_report_files/figure-html/plot_pooled-24.png)<!-- -->
 
   
-  
-  
-### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-25.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-26.png)<!-- -->
 
   
@@ -124,16 +124,19 @@ editor_options:
 ![](risk_factor_report_files/figure-html/plot_pooled-31.png)<!-- -->
 
   
-  
-  
-### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-32.png)<!-- -->
 
   
+  
+  
+### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-33.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/plot_pooled-34.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-35.png)<!-- -->
 
   
   
@@ -219,12 +222,12 @@ editor_options:
 ![](risk_factor_report_files/figure-html/rr_forest-24.png)<!-- -->
 
   
-  
-  
-### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-25.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-26.png)<!-- -->
 
   
@@ -243,16 +246,19 @@ editor_options:
 ![](risk_factor_report_files/figure-html/rr_forest-31.png)<!-- -->
 
   
-  
-  
-### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-32.png)<!-- -->
 
   
+  
+  
+### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-33.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/rr_forest-34.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-35.png)<!-- -->
 
   
   
@@ -339,12 +345,12 @@ editor_options:
 ![](risk_factor_report_files/figure-html/par_forest-24.png)<!-- -->
 
   
-  
-  
-### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-25.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-26.png)<!-- -->
 
   
@@ -363,16 +369,19 @@ editor_options:
 ![](risk_factor_report_files/figure-html/par_forest-31.png)<!-- -->
 
   
-  
-  
-### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-32.png)<!-- -->
 
   
+  
+  
+### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-33.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-34.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-35.png)<!-- -->
 
   
   
@@ -459,12 +468,12 @@ editor_options:
 ![](risk_factor_report_files/figure-html/paf_forest-24.png)<!-- -->
 
   
-  
-  
-### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-25.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-26.png)<!-- -->
 
   
@@ -483,16 +492,19 @@ editor_options:
 ![](risk_factor_report_files/figure-html/paf_forest-31.png)<!-- -->
 
   
-  
-  
-### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-32.png)<!-- -->
 
   
+  
+  
+### Paternal characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-33.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-34.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-35.png)<!-- -->
 
   
   

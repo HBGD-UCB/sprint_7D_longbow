@@ -1,0 +1,321 @@
+[jeremy.coyle@54.242.185.159] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/5033a98e-96de-4cd5-a6c9-990706491365
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108
+[jeremy.coyle@54.242.185.159] put: /tmp/tmp04gxulzz/script.Rmd -> /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/script.Rmd
+Put code at /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/script.Rmd
+[jeremy.coyle@54.242.185.159] put: /app/runner.R -> /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/runner.R
+[jeremy.coyle@54.242.185.159] put: /tmp/tmp04gxulzz/inputs.json -> /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/inputs.json
+Put inputs at /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/5033a98e-96de-4cd5-a6c9-990706491365.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=I4XpOTJxO8E9A1EE%2FfV4Vq08Yc4%3D&Expires=1535246733
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/runner.R /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/script.Rmd /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/inputs.json /tmp/5033a98e-96de-4cd5-a6c9-990706491365
+[jeremy.coyle@54.242.185.159] put: /tmp/tmp04gxulzz/x.py -> /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/x.py
+Put code at /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/x.py
+[jeremy.coyle@54.242.185.159] put: /tmp/tmp04gxulzz/wrapper.sh -> /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/wrapper.sh
+Put code at /tmp/bcdc5fb5-ba32-4540-ac66-2d6f00ae4108/wrapper.sh
+[jeremy.coyle@54.242.185.159] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2256/append_log/; screen -d -m python x.py; sleep 1
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+trever_stuntedidc("hhwealth_quart", "agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-6 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 0-6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q1, agecat: 6-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-6 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-6 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 0-6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q2, agecat: 6-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-6 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 0-6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q3, agecat: 6-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-6 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-6 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 0-6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	hhwealth_quart: Wealth Q4, agecat: 6-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+  |                                                                         |.......................................                          |  59%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  62%
+label: save_results
+  |                                                                         |...........................................                      |  66%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: plot_tsm (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: plot_rr (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: plot_ate (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |.......................................................          |  84%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: plot_paf (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: plot_par (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................................  |  97%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: results_tables (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/5033a98e-96de-4cd5-a6c9-990706491365/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/R/x86_64-redhat-linux-gnu-library/3.5/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpnbWrUf/rmarkdown-str484368c5f26e.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: /tmp/5033a98e-96de-4cd5-a6c9-990706491365/REPORT.html
+[1] "/tmp/5033a98e-96de-4cd5-a6c9-990706491365/REPORT.html"
+Warning message:
+Removed 114 rows containing missing values (geom_errorbar). 
+5033a98e-96de-4cd5-a6c9-990706491365/
+5033a98e-96de-4cd5-a6c9-990706491365/REPORT.Rmd
+5033a98e-96de-4cd5-a6c9-990706491365/inputs.json
+5033a98e-96de-4cd5-a6c9-990706491365/obs_counts.rdata
+5033a98e-96de-4cd5-a6c9-990706491365/results.rdata
+5033a98e-96de-4cd5-a6c9-990706491365/REPORT_files/
+5033a98e-96de-4cd5-a6c9-990706491365/REPORT_files/figure-html/
+5033a98e-96de-4cd5-a6c9-990706491365/REPORT_files/figure-html/plot_tsm-1.png
+5033a98e-96de-4cd5-a6c9-990706491365/REPORT_files/figure-html/plot_rr-1.png
+5033a98e-96de-4cd5-a6c9-990706491365/REPORT_files/figure-html/plot_paf-1.png
+{"status": "success"}

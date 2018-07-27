@@ -1,231 +1,0 @@
-[jeremy.coyle@54.145.173.242] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/8996a54c-dec5-4b8f-9302-ed7c50438623
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/35d53544-ebdc-4e88-9046-aff520b0737a
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpfynro1ky/script.Rmd -> /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/script.Rmd
-Put code at /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/script.Rmd
-[jeremy.coyle@54.145.173.242] put: /app/runner.R -> /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/runner.R
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpfynro1ky/inputs.json -> /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/inputs.json
-Put inputs at /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/8996a54c-dec5-4b8f-9302-ed7c50438623.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=ClrNQ4tZibdx12urKQg9Tn2scDk%3D&Expires=1534953736
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/runner.R /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/script.Rmd /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/inputs.json /tmp/8996a54c-dec5-4b8f-9302-ed7c50438623
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpfynro1ky/x.py -> /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/x.py
-Put code at /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/x.py
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpfynro1ky/wrapper.sh -> /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/wrapper.sh
-Put code at /tmp/35d53544-ebdc-4e88-9046-aff520b0737a/wrapper.sh
-[jeremy.coyle@54.145.173.242] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/1665/append_log/; screen -d -m python x.py; sleep 1
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('tlverse/longbowtools')
-  converting help for package ‘skimr’
-    kable                                   html  
-    pander                                  html  
-    print                                   html  
-    reexports                               html  
-Rd warning: /tmp/RtmptLpHcC/devtoolsf79c4f70dcd9/jeremyrcoyle-skimr-a1c792d/man/reexports.Rd:29: file link ‘%>%’ in package ‘magrittr’ does not exist and so has been treated as a topic
-Rd warning: /tmp/RtmptLpHcC/devtoolsf79c4f70dcd9/jeremyrcoyle-skimr-a1c792d/man/reexports.Rd:31: file link ‘contains’ in package ‘tidyselect’ does not exist and so has been treated as a topic
-Rd warning: /tmp/RtmptLpHcC/devtoolsf79c4f70dcd9/jeremyrcoyle-skimr-a1c792d/man/reexports.Rd:31: file link ‘ends_with’ in package ‘tidyselect’ does not exist and so has been treated as a topic
-Rd warning: /tmp/RtmptLpHcC/devtoolsf79c4f70dcd9/jeremyrcoyle-skimr-a1c792d/man/reexports.Rd:31: file link ‘everything’ in package ‘tidyselect’ does not exist and so has been treated as a topic
-Rd warning: /tmp/RtmptLpHcC/devtoolsf79c4f70dcd9/jeremyrcoyle-skimr-a1c792d/man/reexports.Rd:31: file link ‘matches’ in package ‘tidyselect’ does not exist and so has been treated as a topic
-Rd warning: /tmp/RtmptLpHcC/devtoolsf79c4f70dcd9/jeremyrcoyle-skimr-a1c792d/man/reexports.Rd:31: file link ‘num_range’ in package ‘tidyselect’ does not exist and so has been treated as a topic
-Rd warning: /tmp/RtmptLpHcC/devtoolsf79c4f70dcd9/jeremyrcoyle-skimr-a1c792d/man/reexports.Rd:31: file link ‘one_of’ in package ‘tidyselect’ does not exist and so has been treated as a topic
-Rd warning: /tmp/RtmptLpHcC/devtoolsf79c4f70dcd9/jeremyrcoyle-skimr-a1c792d/man/reexports.Rd:31: file link ‘starts_with’ in package ‘tidyselect’ does not exist and so has been treated as a topic
-    skim                                    html  
-    skim_format                             html  
-    skim_with                               html  
-    skimr-package                           html  
-    stats                                   html  
-    summary.skim_df                         html  
-    wide                                    html  
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   7%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |  10%
-  ordinary text without R code
-
-  |                                                                         |.........                                                        |  13%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-tr.xever_stuntedidc("single", "agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |...........                                                      |  17%
-  ordinary text without R code
-
-  |                                                                         |.............                                                    |  20%
-label: preprocessing
-  |                                                                         |...............                                                  |  23%
-   inline R code fragments
-
-  |                                                                         |.................                                                |  27%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |....................                                             |  30%
-  ordinary text without R code
-
-  |                                                                         |......................                                           |  33%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |........................                                         |  37%
-  ordinary text without R code
-
-  |                                                                         |..........................                                       |  40%
-label: data_summary
-  |                                                                         |............................                                     |  43%
-  ordinary text without R code
-
-  |                                                                         |..............................                                   |  47%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |................................                                 |  50%
-  ordinary text without R code
-
-  |                                                                         |...................................                              |  53%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |.....................................                            |  57%
-  ordinary text without R code
-
-  |                                                                         |.......................................                          |  60%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	single: 0, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	single: 0, agecat: 0-24 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA
-tmle for:	single: 0, agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	single: 0, agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	single: 0, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	single: 0, agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	single: 0, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	single: 0, agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	single: 0, agecat: 0-6 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA
-tmle for:	single: 0, agecat: 0-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	single: 0, agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	single: 0, agecat: 0-6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	single: 0, agecat: 0-6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	single: 0, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	single: 0, agecat: 6-24 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA
-tmle for:	single: 0, agecat: 6-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	single: 0, agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	single: 0, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	single: 0, agecat: 6-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	single: 0, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	single: 1, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	single: 1, agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	single: 1, agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	single: 1, agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	single: 1, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	single: 1, agecat: 0-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	single: 1, agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	single: 1, agecat: 0-6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	single: 1, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	single: 1, agecat: 6-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	single: 1, agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	single: 1, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	single: 1, agecat: 6-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	single: 1, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-  |                                                                         |.........................................                        |  63%
-  ordinary text without R code
-
-  |                                                                         |...........................................                      |  67%
-label: save_results
-  |                                                                         |..............................................                   |  70%
-  ordinary text without R code
-
-  |                                                                         |................................................                 |  73%
-label: plot_tsm
-  |                                                                         |..................................................               |  77%
-  ordinary text without R code
-
-  |                                                                         |....................................................             |  80%
-label: plot_rr
-  |                                                                         |......................................................           |  83%
-  ordinary text without R code
-
-  |                                                                         |........................................................         |  87%
-label: plot_paf
-  |                                                                         |..........................................................       |  90%
-  ordinary text without R code
-
-  |                                                                         |.............................................................    |  93%
-label: plot_par
-  |                                                                         |...............................................................  |  97%
-  ordinary text without R code
-
-  |                                                                         |.................................................................| 100%
-label: results_tables (with options) 
-List of 1
- $ results: chr "asis"
-
-
-output file: REPORT.knit.md
-
-/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/R/x86_64-redhat-linux-gnu-library/3.5/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpV3S4E5/rmarkdown-strfc2447b6bc4a.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
-
-Output created: /tmp/8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT.html
-[1] "/tmp/8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT.html"
-8996a54c-dec5-4b8f-9302-ed7c50438623/
-8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT.Rmd
-8996a54c-dec5-4b8f-9302-ed7c50438623/inputs.json
-8996a54c-dec5-4b8f-9302-ed7c50438623/obs_counts.rdata
-8996a54c-dec5-4b8f-9302-ed7c50438623/results.rdata
-8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT_files/
-8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT_files/figure-html/
-8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT_files/figure-html/plot_tsm-1.png
-8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT_files/figure-html/plot_rr-1.png
-8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT_files/figure-html/plot_paf-1.png
-8996a54c-dec5-4b8f-9302-ed7c50438623/REPORT_files/figure-html/plot_par-1.png
-{"status": "success"}

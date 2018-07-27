@@ -11,7 +11,7 @@ rmd_filename <- system.file("templates/longbow_RiskFactors.Rmd", package="longbo
 inputs <- "velocity_inputs_template.json"
 
 #run test/provisioning job
-run_on_longbow(rmd_filename, inputs, provision = TRUE)
+run_on_longbow(rmd_filename, inputs, provision = FALSE)
 
 # send the batch to longbow (with provisioning disabled)
 job_ids <- submit_batch(rmd_filename, inputs_folder="inputs", results_folder="results", provision = FALSE)

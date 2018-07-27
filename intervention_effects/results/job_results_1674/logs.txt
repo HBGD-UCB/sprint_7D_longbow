@@ -1,271 +1,0 @@
-[jeremy.coyle@54.145.173.242] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/c85c95c2-e367-4dcc-8b66-670b41549939
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpz_v3sfol/script.Rmd -> /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/script.Rmd
-Put code at /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/script.Rmd
-[jeremy.coyle@54.145.173.242] put: /app/runner.R -> /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/runner.R
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpz_v3sfol/inputs.json -> /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/inputs.json
-Put inputs at /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/c85c95c2-e367-4dcc-8b66-670b41549939.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=JfSeAUorpLWk4h8pdhkcVAOUcYM%3D&Expires=1534953677
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/runner.R /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/script.Rmd /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/inputs.json /tmp/c85c95c2-e367-4dcc-8b66-670b41549939
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpz_v3sfol/x.py -> /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/x.py
-Put code at /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/x.py
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpz_v3sfol/wrapper.sh -> /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/wrapper.sh
-Put code at /tmp/5c86feda-84bb-4f5f-abbb-5e915b817065/wrapper.sh
-[jeremy.coyle@54.145.173.242] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/1674/append_log/; screen -d -m python x.py; sleep 1
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('tlverse/longbowtools')
-  converting help for package ‘longbowtools’
-    cluster_credentials                     html  
-    configure_cluster                       html  
-    configure_dataset                       html  
-    get_job_logs                            html  
-    longbow_token                           html  
-    params_from_rmd                         html  
-    publish_template                        html  
-    run_analysis                            html  
-    script_helpers                          html  
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   7%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |  10%
-  ordinary text without R code
-
-  |                                                                         |.........                                                        |  13%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-tr.xever_stuntedidc("parity", "agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |...........                                                      |  17%
-  ordinary text without R code
-
-  |                                                                         |.............                                                    |  20%
-label: preprocessing
-  |                                                                         |...............                                                  |  23%
-   inline R code fragments
-
-  |                                                                         |.................                                                |  27%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |....................                                             |  30%
-  ordinary text without R code
-
-  |                                                                         |......................                                           |  33%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |........................                                         |  37%
-  ordinary text without R code
-
-  |                                                                         |..........................                                       |  40%
-label: data_summary
-  |                                                                         |............................                                     |  43%
-  ordinary text without R code
-
-  |                                                                         |..............................                                   |  47%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |................................                                 |  50%
-  ordinary text without R code
-
-  |                                                                         |...................................                              |  53%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |.....................................                            |  57%
-  ordinary text without R code
-
-  |                                                                         |.......................................                          |  60%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	parity: 1, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	parity: 1, agecat: 0-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	parity: 1, agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 1, agecat: 0-6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	parity: 1, agecat: 0-6 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 1, agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 1, agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 1, agecat: 0-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	parity: 1, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	parity: 1, agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	parity: 2, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	parity: 2, agecat: 0-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	parity: 2, agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 2, agecat: 0-6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	parity: 2, agecat: 0-6 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 2, agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 2, agecat: 0-6 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	parity: 2, agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 2, agecat: 0-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	parity: 2, agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	parity: 2, agecat: 6-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 2, agecat: 6-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 2, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 2, agecat: 6-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	parity: 2, agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 2, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	parity: 2, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	parity: 2, agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	parity: 3+, agecat: 0-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	parity: 3+, agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 3+, agecat: 0-6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	parity: 3+, agecat: 0-6 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 3+, agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 3+, agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 3+, agecat: 0-6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	parity: 3+, agecat: 0-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	parity: 3+, agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-  |                                                                         |.........................................                        |  63%
-  ordinary text without R code
-
-  |                                                                         |...........................................                      |  67%
-label: save_results
-  |                                                                         |..............................................                   |  70%
-  ordinary text without R code
-
-  |                                                                         |................................................                 |  73%
-label: plot_tsm
-  |                                                                         |..................................................               |  77%
-  ordinary text without R code
-
-  |                                                                         |....................................................             |  80%
-label: plot_rr
-  |                                                                         |......................................................           |  83%
-  ordinary text without R code
-
-  |                                                                         |........................................................         |  87%
-label: plot_paf
-  |                                                                         |..........................................................       |  90%
-  ordinary text without R code
-
-  |                                                                         |.............................................................    |  93%
-label: plot_par
-  |                                                                         |...............................................................  |  97%
-  ordinary text without R code
-
-  |                                                                         |.................................................................| 100%
-label: results_tables (with options) 
-List of 1
- $ results: chr "asis"
-
-
-output file: REPORT.knit.md
-
-/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/c85c95c2-e367-4dcc-8b66-670b41549939/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/R/x86_64-redhat-linux-gnu-library/3.5/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpjSSKlV/rmarkdown-strec8b5f14aa41.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
-
-Output created: /tmp/c85c95c2-e367-4dcc-8b66-670b41549939/REPORT.html
-[1] "/tmp/c85c95c2-e367-4dcc-8b66-670b41549939/REPORT.html"
-c85c95c2-e367-4dcc-8b66-670b41549939/
-c85c95c2-e367-4dcc-8b66-670b41549939/REPORT.Rmd
-c85c95c2-e367-4dcc-8b66-670b41549939/inputs.json
-c85c95c2-e367-4dcc-8b66-670b41549939/obs_counts.rdata
-c85c95c2-e367-4dcc-8b66-670b41549939/results.rdata
-c85c95c2-e367-4dcc-8b66-670b41549939/REPORT_files/
-c85c95c2-e367-4dcc-8b66-670b41549939/REPORT_files/figure-html/
-c85c95c2-e367-4dcc-8b66-670b41549939/REPORT_files/figure-html/plot_tsm-1.png
-c85c95c2-e367-4dcc-8b66-670b41549939/REPORT_files/figure-html/plot_rr-1.png
-{"status": "success"}
