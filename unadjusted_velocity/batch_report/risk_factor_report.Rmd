@@ -3,11 +3,11 @@ title: "Risk Factors of Stunting"
 author: "Jade Benjamin-Chung, Andrew N. Mertens, Esther Chung, Jeremy Coyle, Oleg Sofrygin, Nima Hejazi, Ivana Malenica, Alan E. Hubbard, Mark J. van der Laan, John M. Colford, Jr., Benjamin F. Arnold"
 date: "2018-06-14"
 output:
+  pdf_document:
+    toc: true
   html_document:
     keep_md: yes
     self_contained: yes
-    toc: true
-  pdf_document:
     toc: true
 editor_options:
   chunk_output_type: console

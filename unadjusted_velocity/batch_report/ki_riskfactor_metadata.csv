@@ -39,4 +39,4 @@ perdiar6,Percent diarrhea in first 6 months,Child characteristics,,risk factor
 perdiar24,Percent diarrhea in first 24 months,Child characteristics,,risk factor
 predexfd6,Percent exclusive breastfeeding,Child characteristics,,risk factor
 y_rate_haz,HAZ growth velocity,,,outcome
-y_rate_lencm,Length growth velocity,,,outcome
+y_rate_len,Length growth velocity,,,outcome
