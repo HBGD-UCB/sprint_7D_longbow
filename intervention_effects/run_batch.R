@@ -26,4 +26,4 @@ get_batch_results(job_ids, results_folder="results")
 results <- load_batch_results("results.rdata")
 obs_counts <- load_batch_results("obs_counts.rdata")
 # save concatenated results
-save(results, file="cuminc_intervention_results.rdata")
+save(results, file="intervention_results.rdata")
