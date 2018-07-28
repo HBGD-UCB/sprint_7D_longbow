@@ -1,99 +1,0 @@
-[jeremy.coyle@54.145.173.242] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/15e172ed-7d10-4e02-bb9b-2c212732ea39
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.145.173.242] run: mkdir -p /tmp/f023b991-33f8-4908-badb-502ffff3b330
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpdyyzb0qo/script.Rmd -> /tmp/f023b991-33f8-4908-badb-502ffff3b330/script.Rmd
-Put code at /tmp/f023b991-33f8-4908-badb-502ffff3b330/script.Rmd
-[jeremy.coyle@54.145.173.242] put: /app/runner.R -> /tmp/f023b991-33f8-4908-badb-502ffff3b330/runner.R
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpdyyzb0qo/inputs.json -> /tmp/f023b991-33f8-4908-badb-502ffff3b330/inputs.json
-Put inputs at /tmp/f023b991-33f8-4908-badb-502ffff3b330/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/15e172ed-7d10-4e02-bb9b-2c212732ea39.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=BmjpuTiU%2Br00gbWYm8MMtg51Ykg%3D&Expires=1534999460
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/f023b991-33f8-4908-badb-502ffff3b330/runner.R /tmp/f023b991-33f8-4908-badb-502ffff3b330/script.Rmd /tmp/f023b991-33f8-4908-badb-502ffff3b330/inputs.json /tmp/15e172ed-7d10-4e02-bb9b-2c212732ea39
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpdyyzb0qo/x.py -> /tmp/f023b991-33f8-4908-badb-502ffff3b330/x.py
-Put code at /tmp/f023b991-33f8-4908-badb-502ffff3b330/x.py
-[jeremy.coyle@54.145.173.242] put: /tmp/tmpdyyzb0qo/wrapper.sh -> /tmp/f023b991-33f8-4908-badb-502ffff3b330/wrapper.sh
-Put code at /tmp/f023b991-33f8-4908-badb-502ffff3b330/wrapper.sh
-[jeremy.coyle@54.145.173.242] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2005/append_log/; screen -d -m python x.py; sleep 1
-Making sure longbowtools package is available for runner
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-birthlenever_stuntedidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-Quitting from lines 82-126 (REPORT.Rmd) 
-Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
-  Some items of .SDcols are not column names (or are NA)
-Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
-
-Execution halted
-15e172ed-7d10-4e02-bb9b-2c212732ea39/
-15e172ed-7d10-4e02-bb9b-2c212732ea39/REPORT.Rmd
-15e172ed-7d10-4e02-bb9b-2c212732ea39/inputs.json
-{"status": "success"}

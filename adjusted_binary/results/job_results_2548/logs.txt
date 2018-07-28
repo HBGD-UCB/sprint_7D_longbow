@@ -1,0 +1,284 @@
+[jeremy.coyle@18.212.124.240] Executing task 'upload_to_ghap'
+[jeremy.coyle@18.212.124.240] run: mkdir -p /tmp/a59d1bb4-4936-459e-aaf1-252916a935f0
+Not going to clone git repo since it already exists
+[jeremy.coyle@18.212.124.240] run: mkdir -p /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e
+[jeremy.coyle@18.212.124.240] put: /tmp/tmppd_101tm/script.Rmd -> /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/script.Rmd
+Put code at /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/script.Rmd
+[jeremy.coyle@18.212.124.240] put: /app/runner.R -> /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/runner.R
+[jeremy.coyle@18.212.124.240] put: /tmp/tmppd_101tm/inputs.json -> /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/inputs.json
+Put inputs at /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/a59d1bb4-4936-459e-aaf1-252916a935f0.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=huXvdfs3w4TQwmcv22N7e6mz2KM%3D&Expires=1535381997
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/runner.R /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/script.Rmd /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/inputs.json /tmp/a59d1bb4-4936-459e-aaf1-252916a935f0
+[jeremy.coyle@18.212.124.240] put: /tmp/tmppd_101tm/x.py -> /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/x.py
+Put code at /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/x.py
+[jeremy.coyle@18.212.124.240] put: /tmp/tmppd_101tm/wrapper.sh -> /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/wrapper.sh
+Put code at /tmp/2bc333c1-6ef8-4e22-89b0-f8396b949d0e/wrapper.sh
+[jeremy.coyle@18.212.124.240] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2548/append_log/; screen -d -m python x.py; sleep 1
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+meducyrsc("arm", "W_mage", "W_fage", "feducyrs", "hhwealth_quart", "W_mhtcm", "W_mwtkg", "W_mbmi", "W_fhtcm", "W_gagebrth", "W_birthwt", "W_birthlen", "single", "W_nrooms", "W_nhh", "W_nchldlt5", "trth2o", "cleanck", "impfloor", "impsan", "safeh20")ever_stuntedidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: 0-24 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	agecat: 0-24 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
+tmle for:	agecat: 0-24 months, studyid: ki0047075b-MAL-ED, country: INDIA
+tmle for:	agecat: 0-24 months, studyid: ki0047075b-MAL-ED, country: NEPAL
+tmle for:	agecat: 0-24 months, studyid: ki0047075b-MAL-ED, country: PERU
+tmle for:	agecat: 0-24 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+tmle for:	agecat: 0-24 months, studyid: ki1000108-CMC-V-BCS-2002, country: INDIA
+tmle for:	agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	agecat: 0-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
+tmle for:	agecat: 0-24 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
+tmle for:	agecat: 0-24 months, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: 0-24 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA
+tmle for:	agecat: 0-24 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
+tmle for:	agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
+tmle for:	agecat: 0-24 months, studyid: ki1135781-COHORTS, country: INDIA
+tmle for:	agecat: 0-24 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 0-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	agecat: 0-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	agecat: 0-6 months, studyid: ki0047075b-MAL-ED, country: PERU
+tmle for:	agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	agecat: 0-6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
+tmle for:	agecat: 0-6 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
+tmle for:	agecat: 0-6 months, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: 0-6 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA
+tmle for:	agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
+tmle for:	agecat: 0-6 months, studyid: ki1135781-COHORTS, country: INDIA
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 1.70962e-17
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 7.85363e-18
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 9.34034e-18
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 5.70345e-18
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 5.55077e-17
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 9.91056e-20
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 2.13089e-17
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 1.36447e-17
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 5.65017e-18
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 1.21746e-18
+
+speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
+  system is computationally singular: reciprocal condition number = 6.52429e-18
+
+tmle for:	agecat: 0-6 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 0-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	agecat: 0-6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	agecat: 6-24 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	agecat: 6-24 months, studyid: ki0047075b-MAL-ED, country: INDIA
+tmle for:	agecat: 6-24 months, studyid: ki0047075b-MAL-ED, country: PERU
+tmle for:	agecat: 6-24 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+tmle for:	agecat: 6-24 months, studyid: ki1000108-CMC-V-BCS-2002, country: INDIA
+tmle for:	agecat: 6-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
+tmle for:	agecat: 6-24 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
+tmle for:	agecat: 6-24 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
+tmle for:	agecat: 6-24 months, studyid: ki1135781-COHORTS, country: INDIA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 6-24 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+  |                                                                         |.......................................                          |  59%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  62%
+label: save_results
+  |                                                                         |...........................................                      |  66%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: plot_tsm (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: plot_rr (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: plot_ate (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |.......................................................          |  84%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: plot_paf (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: plot_par (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................................  |  97%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: results_tables (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/R/x86_64-redhat-linux-gnu-library/3.5/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpBWvPvS/rmarkdown-str1c4edffc3958.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: /tmp/a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT.html
+[1] "/tmp/a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT.html"
+Warning message:
+Removed 41 rows containing missing values (geom_errorbar). 
+a59d1bb4-4936-459e-aaf1-252916a935f0/
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT.Rmd
+a59d1bb4-4936-459e-aaf1-252916a935f0/inputs.json
+a59d1bb4-4936-459e-aaf1-252916a935f0/obs_counts.rdata
+a59d1bb4-4936-459e-aaf1-252916a935f0/results.rdata
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT_files/
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT_files/figure-html/
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT_files/figure-html/plot_tsm-1.png
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT_files/figure-html/plot_rr-1.png
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT_files/figure-html/plot_paf-1.png
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT_files/figure-html/plot_par-1.png
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT.html
+a59d1bb4-4936-459e-aaf1-252916a935f0/REPORT.md
+{"status": "success"}

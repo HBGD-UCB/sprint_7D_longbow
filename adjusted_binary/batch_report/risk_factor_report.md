@@ -1,5 +1,5 @@
 ---
-title: "Risk Factors of Stunting"
+title: "Adjusted Risk Factors of Stunting"
 author: "Jade Benjamin-Chung, Andrew N. Mertens, Esther Chung, Jeremy Coyle, Oleg Sofrygin, Nima Hejazi, Ivana Malenica, Alan E. Hubbard, Mark J. van der Laan, John M. Colford, Jr., Benjamin F. Arnold"
 date: "2018-06-14"
 output:
