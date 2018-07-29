@@ -20,7 +20,7 @@ library(ggplot2)
 knitr::opts_chunk$set(echo = FALSE)
 
 # load data
-load("../unadjusted_binary_results.rdata")
+load("../adjusted_binary_results.rdata")
 results <- setDT(results)
 
 # drop ki study numbers
