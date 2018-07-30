@@ -57,12 +57,16 @@ results <- merge(results, intervention_meta, by="intervention_variable")
 results <- merge(results, outcome_meta, by="outcome_variable")
 results[is.na(agecat),agecat:=""]
 
+
 agecat_levels <- c("Birth", "3 months", "6 months", 
                    "9 months", "12 months", "18 months", 
-                   "24 months","")
+                   "24 months","0-24 months","0-6 months",
+                   "6-24 months","")
 
 agecat_levels_reduced <- c("Birth", "6 months", 
-                           "12 months", "24 months","")
+                           "12 months", "24 months",
+                           "0-24 months","0-6 months",
+                           "6-24 months","")
 
 results <- results[agecat%in%agecat_levels_reduced]
 results[,agecat:=factor(agecat, levels=agecat_levels_reduced)]

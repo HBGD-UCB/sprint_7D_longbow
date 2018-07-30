@@ -22,7 +22,7 @@ editor_options:
 
 
   
-## Point prevalence of stunting  
+## Cumulative incidence of stunting from birth to 24 months  
   
 ### Child characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-1.png)<!-- -->
@@ -141,10 +141,130 @@ editor_options:
   
   
   
+  
+## Point prevalence of stunting  
+  
+### Child characteristics  
+![](risk_factor_report_files/figure-html/plot_pooled-36.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-37.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-38.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-39.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-40.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-41.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-42.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-43.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-44.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-45.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-46.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-47.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-48.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-49.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-50.png)<!-- -->
+
+  
+  
+  
+### Household characteristics  
+![](risk_factor_report_files/figure-html/plot_pooled-51.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-52.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-53.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-54.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-55.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-56.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-57.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-58.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-59.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-60.png)<!-- -->
+
+  
+  
+  
+### Maternal characteristics  
+![](risk_factor_report_files/figure-html/plot_pooled-61.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-62.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-63.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-64.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-65.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-66.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-67.png)<!-- -->
+
+  
+  
+  
+### Paternal characteristics  
+![](risk_factor_report_files/figure-html/plot_pooled-68.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-69.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/plot_pooled-70.png)<!-- -->
+
+  
+  
+  
 
 # Appendix 1 - Relative risk stratified by cohort
   
-## Point prevalence of stunting  
+## Cumulative incidence of stunting from birth to 24 months  
   
 ### Child characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-1.png)<!-- -->
@@ -263,11 +383,131 @@ editor_options:
   
   
   
+  
+## Point prevalence of stunting  
+  
+### Child characteristics  
+![](risk_factor_report_files/figure-html/rr_forest-36.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-37.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-38.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-39.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-40.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-41.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-42.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-43.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-44.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-45.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-46.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-47.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-48.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-49.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-50.png)<!-- -->
+
+  
+  
+  
+### Household characteristics  
+![](risk_factor_report_files/figure-html/rr_forest-51.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-52.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-53.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-54.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-55.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-56.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-57.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-58.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-59.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-60.png)<!-- -->
+
+  
+  
+  
+### Maternal characteristics  
+![](risk_factor_report_files/figure-html/rr_forest-61.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-62.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-63.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-64.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-65.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-66.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-67.png)<!-- -->
+
+  
+  
+  
+### Paternal characteristics  
+![](risk_factor_report_files/figure-html/rr_forest-68.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-69.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/rr_forest-70.png)<!-- -->
+
+  
+  
+  
 
 # Appendix 2 - Population Attributable Risk stratified by cohort
 
   
-## Point prevalence of stunting  
+## Cumulative incidence of stunting from birth to 24 months  
   
 ### Child characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-1.png)<!-- -->
@@ -386,11 +626,131 @@ editor_options:
   
   
   
+  
+## Point prevalence of stunting  
+  
+### Child characteristics  
+![](risk_factor_report_files/figure-html/par_forest-36.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-37.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-38.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-39.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-40.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-41.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-42.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-43.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-44.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-45.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-46.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-47.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-48.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-49.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-50.png)<!-- -->
+
+  
+  
+  
+### Household characteristics  
+![](risk_factor_report_files/figure-html/par_forest-51.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-52.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-53.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-54.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-55.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-56.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-57.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-58.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-59.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-60.png)<!-- -->
+
+  
+  
+  
+### Maternal characteristics  
+![](risk_factor_report_files/figure-html/par_forest-61.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-62.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-63.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-64.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-65.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-66.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-67.png)<!-- -->
+
+  
+  
+  
+### Paternal characteristics  
+![](risk_factor_report_files/figure-html/par_forest-68.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-69.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/par_forest-70.png)<!-- -->
+
+  
+  
+  
 
 # Appendix 3 - Population Attributable Fraction stratified by cohort
 
   
-## Point prevalence of stunting  
+## Cumulative incidence of stunting from birth to 24 months  
   
 ### Child characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-1.png)<!-- -->
@@ -505,6 +865,126 @@ editor_options:
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-35.png)<!-- -->
+
+  
+  
+  
+  
+## Point prevalence of stunting  
+  
+### Child characteristics  
+![](risk_factor_report_files/figure-html/paf_forest-36.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-37.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-38.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-39.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-40.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-41.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-42.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-43.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-44.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-45.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-46.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-47.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-48.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-49.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-50.png)<!-- -->
+
+  
+  
+  
+### Household characteristics  
+![](risk_factor_report_files/figure-html/paf_forest-51.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-52.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-53.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-54.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-55.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-56.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-57.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-58.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-59.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-60.png)<!-- -->
+
+  
+  
+  
+### Maternal characteristics  
+![](risk_factor_report_files/figure-html/paf_forest-61.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-62.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-63.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-64.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-65.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-66.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-67.png)<!-- -->
+
+  
+  
+  
+### Paternal characteristics  
+![](risk_factor_report_files/figure-html/paf_forest-68.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-69.png)<!-- -->
+
+  
+![](risk_factor_report_files/figure-html/paf_forest-70.png)<!-- -->
 
   
   
