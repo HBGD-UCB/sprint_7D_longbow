@@ -1,0 +1,99 @@
+[jeremy.coyle@52.90.241.70] Executing task 'upload_to_ghap'
+[jeremy.coyle@52.90.241.70] run: mkdir -p /tmp/ed4778fb-71f0-447e-8bde-1114900527d5
+Not going to clone git repo since it already exists
+[jeremy.coyle@52.90.241.70] run: mkdir -p /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7
+[jeremy.coyle@52.90.241.70] put: /tmp/tmpuruov_ll/script.Rmd -> /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/script.Rmd
+Put code at /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/script.Rmd
+[jeremy.coyle@52.90.241.70] put: /app/runner.R -> /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/runner.R
+[jeremy.coyle@52.90.241.70] put: /tmp/tmpuruov_ll/inputs.json -> /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/inputs.json
+Put inputs at /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/ed4778fb-71f0-447e-8bde-1114900527d5.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=yQj73wFyL72Kv4IIPItG4bjEkRo%3D&Expires=1538621954
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/runner.R /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/script.Rmd /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/inputs.json /tmp/ed4778fb-71f0-447e-8bde-1114900527d5
+[jeremy.coyle@52.90.241.70] put: /tmp/tmpuruov_ll/x.py -> /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/x.py
+Put code at /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/x.py
+[jeremy.coyle@52.90.241.70] put: /tmp/tmpuruov_ll/wrapper.sh -> /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/wrapper.sh
+Put code at /tmp/78df694b-be8f-4b20-a0d4-71ae13eb72e7/wrapper.sh
+[jeremy.coyle@52.90.241.70] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/3220/append_log/; screen -d -m python x.py; sleep 1
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+safeh20c("arm", "sex", "W_mage", "W_fage", "meducyrs", "feducyrs", "hhwealth_quart", "hfoodsec", "W_mhtcm", "W_mwtkg", "W_mbmi", "W_fhtcm", "single", "W_nrooms", "W_nhh", "W_nchldlt5", "W_parity", "trth2o", "cleanck", "impfloor", "impsan")s03rec24idc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+{"status": "success"}

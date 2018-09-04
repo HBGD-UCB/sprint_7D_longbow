@@ -10,6 +10,7 @@ for(i in 1:nrow(analyses)){
   analysis <- analyses[i,]
   analysis_params <- default_params
   analysis_nodes <- as.list(analysis[c("W","A","Y","strata","id")])
+  analysis_nodes$W <- gsub("W_bmi", "W_mbmi", analysis_nodes$W[[1]])
   analysis_params$nodes <- analysis_nodes
   analysis_params$data$repository_path <- analysis$file
   inputs_filename <- sprintf("inputs/adjusted_binary_analysis_%03d.json",i)
