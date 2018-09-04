@@ -8,7 +8,8 @@ configure_cluster("~/cluster_credentials.json")
 
 rmd_filename <- system.file("templates/longbow_RiskFactors.Rmd", package="longbowRiskFactors")
 
-inputs <- "inputs_template.json"
+# inputs <- "inputs_template.json"
+inputs <- "inputs/unadjusted_binary_analysis_001.json"
 
 #run test/provisioning job
 run_on_longbow(rmd_filename, inputs, provision = TRUE)
