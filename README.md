@@ -24,9 +24,10 @@ ssh GHAP_username@IP_address
 * NOTE: If you've stopped/started a new node, you'll need to update the IP address of the node in this JSON file every time you use it. 
 
 7. If the data has been updated on GHAP, pull the changes from Github:
-cd ~/datasets/UCB-SuperLearner/
-git pull
+* cd ~/datasets/UCB-SuperLearner/
+* git pull
 
 8. Run run_batch.R script 
+* Change the path in setwd() if needed.
 
 9. Add and commit output to Github
