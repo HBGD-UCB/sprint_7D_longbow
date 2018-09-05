@@ -19,7 +19,8 @@ job_ids <- submit_batch(rmd_filename, inputs_folder="inputs", results_folder="re
 # wait for the job to finish and track progress
 wait_for_batch(job_ids)
 job_statuses <- get_job_statuses(job_ids)
-job_ids[job_statuses=="viewable"]
+job_ids[job_statuses=="running"]
+
 # download the longbow outputs
 get_batch_results(job_ids, results_folder="results")
 length(dir("results"))
