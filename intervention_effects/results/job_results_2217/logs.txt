@@ -1,210 +1,0 @@
-[jeremy.coyle@54.242.185.159] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/3a3a3529-6832-4e1f-97de-b3e009ca12e8
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef
-[jeremy.coyle@54.242.185.159] put: /tmp/tmp4x3j74pn/script.Rmd -> /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/script.Rmd
-Put code at /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/script.Rmd
-[jeremy.coyle@54.242.185.159] put: /app/runner.R -> /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/runner.R
-[jeremy.coyle@54.242.185.159] put: /tmp/tmp4x3j74pn/inputs.json -> /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/inputs.json
-Put inputs at /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/3a3a3529-6832-4e1f-97de-b3e009ca12e8.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=Na5DX7PGrm3U6w6Mj9KFBccxCdU%3D&Expires=1535246866
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/runner.R /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/script.Rmd /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/inputs.json /tmp/3a3a3529-6832-4e1f-97de-b3e009ca12e8
-[jeremy.coyle@54.242.185.159] put: /tmp/tmp4x3j74pn/x.py -> /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/x.py
-Put code at /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/x.py
-[jeremy.coyle@54.242.185.159] put: /tmp/tmp4x3j74pn/wrapper.sh -> /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/wrapper.sh
-Put code at /tmp/4bb1128e-9296-4dc1-b18c-e0b11d4c42ef/wrapper.sh
-[jeremy.coyle@54.242.185.159] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2217/append_log/; screen -d -m python x.py; sleep 1
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-trstuntedidc("nrooms", "agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..................                                               |  28%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  38%
-label: data_summary
-  |                                                                         |..........................                                       |  41%
-  ordinary text without R code
-
-  |                                                                         |............................                                     |  44%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..............................                                   |  47%
-  ordinary text without R code
-
-  |                                                                         |................................                                 |  50%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |...................................                              |  53%
-  ordinary text without R code
-
-  |                                                                         |.....................................                            |  56%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	nrooms: 1, agecat: 24 months, studyid: ki1000304-ZnMort, country: INDIA
-tmle for:	nrooms: 1, agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	nrooms: 1, agecat: 24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	nrooms: 1, agecat: 24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 1, agecat: 6 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
-tmle for:	nrooms: 1, agecat: 6 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
-tmle for:	nrooms: 1, agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA
-tmle for:	nrooms: 1, agecat: 6 months, studyid: ki1000304-ZnMort, country: INDIA
-tmle for:	nrooms: 1, agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	nrooms: 1, agecat: 6 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	nrooms: 1, agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	nrooms: 1, agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 1, agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	nrooms: 1, agecat: Birth, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 2, agecat: 24 months, studyid: ki1000304-ZnMort, country: INDIA
-tmle for:	nrooms: 2, agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	nrooms: 2, agecat: 24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 2, agecat: 6 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
-tmle for:	nrooms: 2, agecat: 6 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
-tmle for:	nrooms: 2, agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA
-tmle for:	nrooms: 2, agecat: 6 months, studyid: ki1000304-ZnMort, country: INDIA
-tmle for:	nrooms: 2, agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	nrooms: 2, agecat: 6 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	nrooms: 2, agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	nrooms: 2, agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 2, agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	nrooms: 2, agecat: Birth, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 3, agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	nrooms: 3, agecat: 24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 3, agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA
-tmle for:	nrooms: 3, agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	nrooms: 3, agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	nrooms: 3, agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 3, agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	nrooms: 4+, agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	nrooms: 4+, agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA
-tmle for:	nrooms: 4+, agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	nrooms: 4+, agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	nrooms: 4+, agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	nrooms: 4+, agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-  |                                                                         |.......................................                          |  59%
-  ordinary text without R code
-
-  |                                                                         |.........................................                        |  62%
-label: save_results
-  |                                                                         |...........................................                      |  66%
-  ordinary text without R code
-
-  |                                                                         |.............................................                    |  69%
-label: plot_tsm (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................                  |  72%
-  ordinary text without R code
-
-  |                                                                         |.................................................                |  75%
-label: plot_rr (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...................................................              |  78%
-  ordinary text without R code
-
-  |                                                                         |.....................................................            |  81%
-label: plot_ate (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |.......................................................          |  84%
-  ordinary text without R code
-
-  |                                                                         |.........................................................        |  88%
-label: plot_paf (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-{"status": "success"}

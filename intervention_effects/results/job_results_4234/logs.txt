@@ -1,0 +1,260 @@
+[jeremy.coyle@52.90.143.0] Executing task 'upload_to_ghap'
+[jeremy.coyle@52.90.143.0] run: mkdir -p /tmp/2bea6a56-97bd-424e-b80b-0097f1be6c23
+Not going to clone git repo since it already exists
+[jeremy.coyle@52.90.143.0] run: mkdir -p /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3
+[jeremy.coyle@52.90.143.0] put: /tmp/tmpy2s9k9j1/script.Rmd -> /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/script.Rmd
+Put code at /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/script.Rmd
+[jeremy.coyle@52.90.143.0] put: /app/runner.R -> /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/runner.R
+[jeremy.coyle@52.90.143.0] put: /tmp/tmpy2s9k9j1/inputs.json -> /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/inputs.json
+Put inputs at /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/2bea6a56-97bd-424e-b80b-0097f1be6c23.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=k3gCoA3EmywxRAj993sPSBmuTEM%3D&Expires=1538838655
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/runner.R /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/script.Rmd /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/inputs.json /tmp/2bea6a56-97bd-424e-b80b-0097f1be6c23
+[jeremy.coyle@52.90.143.0] put: /tmp/tmpy2s9k9j1/x.py -> /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/x.py
+Put code at /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/x.py
+[jeremy.coyle@52.90.143.0] put: /tmp/tmpy2s9k9j1/wrapper.sh -> /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/wrapper.sh
+Put code at /tmp/d6c71679-7201-45b3-b1a0-2480af8c5dc3/wrapper.sh
+[jeremy.coyle@52.90.143.0] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4234/append_log/; screen -d -m python x.py; sleep 1
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+trlist()sstuntedidc("agecat", "studyid", "country", "intXmbmi")
+FALSETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: Birth, studyid: ki1000304b-SAS-CompFeed, country: INDIA, intXmbmi: Normal weight_Birth
+tmle for:	agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmbmi: Normal weight_Birth
+tmle for:	agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmbmi: Underweight_Birth
+tmle for:	agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmbmi: Overweight or Obese_Birth
+tmle for:	agecat: 6 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmbmi: Normal weight_6 months
+tmle for:	agecat: 6 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmbmi: Underweight_6 months
+tmle for:	agecat: 6 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN, intXmbmi: Overweight or Obese_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA, intXmbmi: Normal weight_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA, intXmbmi: Underweight_6 months
+tmle for:	agecat: 6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF, intXmbmi: Normal weight_6 months
+tmle for:	agecat: 6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF, intXmbmi: Overweight or Obese_6 months
+tmle for:	agecat: 6 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO, intXmbmi: Normal weight_6 months
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 6 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmbmi: Normal weight_6 months
+tmle for:	agecat: 6 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmbmi: Underweight_6 months
+tmle for:	agecat: 6 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmbmi: Overweight or Obese_6 months
+tmle for:	agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmbmi: Normal weight_6 months
+tmle for:	agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmbmi: Underweight_6 months
+tmle for:	agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmbmi: Overweight or Obese_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmbmi: Normal weight_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmbmi: Underweight_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmbmi: Overweight or Obese_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmbmi: Normal weight_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmbmi: Underweight_6 months
+tmle for:	agecat: 24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmbmi: Normal weight_24 months
+tmle for:	agecat: 24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmbmi: Underweight_24 months
+tmle for:	agecat: 24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmbmi: Overweight or Obese_24 months
+tmle for:	agecat: 24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO, intXmbmi: Normal weight_24 months
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO, intXmbmi: Underweight_24 months
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO, intXmbmi: Overweight or Obese_24 months
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 24 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmbmi: Normal weight_24 months
+tmle for:	agecat: 24 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmbmi: Overweight or Obese_24 months
+tmle for:	agecat: 24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmbmi: Normal weight_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmbmi: Normal weight_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmbmi: Underweight_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmbmi: Overweight or Obese_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmbmi: Normal weight_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmbmi: Underweight_24 months
+  |                                                                         |.......................................                          |  59%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  62%
+label: save_results
+  |                                                                         |...........................................                      |  66%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: plot_tsm (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: plot_rr (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: plot_ate (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |.......................................................          |  84%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: plot_paf (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: plot_par (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................................  |  97%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: results_tables (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/R/x86_64-redhat-linux-gnu-library/3.5/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpHhlHtf/rmarkdown-str1102b7ba7a92d.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: /tmp/2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT.html
+[1] "/tmp/2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT.html"
+Warning message:
+Removed 33 rows containing missing values (geom_errorbar). 
+2bea6a56-97bd-424e-b80b-0097f1be6c23/
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT.Rmd
+2bea6a56-97bd-424e-b80b-0097f1be6c23/inputs.json
+2bea6a56-97bd-424e-b80b-0097f1be6c23/obs_counts.rdata
+2bea6a56-97bd-424e-b80b-0097f1be6c23/results.rdata
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT_files/
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT_files/figure-html/
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT_files/figure-html/plot_tsm-1.png
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT_files/figure-html/plot_rr-1.png
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT_files/figure-html/plot_paf-1.png
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT_files/figure-html/plot_par-1.png
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT.html
+2bea6a56-97bd-424e-b80b-0097f1be6c23/REPORT.md
+{"status": "success"}

@@ -1,0 +1,302 @@
+[jeremy.coyle@52.90.143.0] Executing task 'upload_to_ghap'
+[jeremy.coyle@52.90.143.0] run: mkdir -p /tmp/6417b179-b3af-4896-8839-b24296b41a49
+Not going to clone git repo since it already exists
+[jeremy.coyle@52.90.143.0] run: mkdir -p /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd
+[jeremy.coyle@52.90.143.0] put: /tmp/tmppeyesydl/script.Rmd -> /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/script.Rmd
+Put code at /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/script.Rmd
+[jeremy.coyle@52.90.143.0] put: /app/runner.R -> /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/runner.R
+[jeremy.coyle@52.90.143.0] put: /tmp/tmppeyesydl/inputs.json -> /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/inputs.json
+Put inputs at /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/6417b179-b3af-4896-8839-b24296b41a49.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=mdVRe%2BSQVjrGurd%2BJWbARFmOr30%3D&Expires=1538838972
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/runner.R /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/script.Rmd /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/inputs.json /tmp/6417b179-b3af-4896-8839-b24296b41a49
+[jeremy.coyle@52.90.143.0] put: /tmp/tmppeyesydl/x.py -> /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/x.py
+Put code at /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/x.py
+[jeremy.coyle@52.90.143.0] put: /tmp/tmppeyesydl/wrapper.sh -> /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/wrapper.sh
+Put code at /tmp/477d37d7-a38a-4056-a035-ad457c9c37fd/wrapper.sh
+[jeremy.coyle@52.90.143.0] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4235/append_log/; screen -d -m python x.py; sleep 1
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+trlist()sstuntedidc("agecat", "studyid", "country", "intXmeducyrs")
+FALSETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: Birth, studyid: ki1000304b-SAS-CompFeed, country: INDIA, intXmeducyrs: Low_Birth
+tmle for:	agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmeducyrs: Low_Birth
+tmle for:	agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmeducyrs: Medium_Birth
+tmle for:	agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmeducyrs: High_Birth
+tmle for:	agecat: Birth, studyid: ki1135781-COHORTS, country: GUATEMALA, intXmeducyrs: Low_Birth
+tmle for:	agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: Low_Birth
+tmle for:	agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: Medium_Birth
+tmle for:	agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: High_Birth
+tmle for:	agecat: Birth, studyid: kiGH5241-JiVitA-4, country: BANGLADESH, intXmeducyrs: Low_Birth
+tmle for:	agecat: 6 months, studyid: iLiNS_DYADM_LNS, country: MALAWI, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: iLiNS_DYADM_LNS, country: MALAWI, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: iLiNS_DYADM_LNS, country: MALAWI, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304-EU, country: INDIA, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304-EU, country: INDIA, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304-EU, country: INDIA, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304-ZnMort, country: INDIA, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO, intXmeducyrs: Low_6 months
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 6 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1135781-COHORTS, country: GUATEMALA, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1135781-COHORTS, country: GUATEMALA, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1135781-COHORTS, country: GUATEMALA, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: High_6 months
+tmle for:	agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH, intXmeducyrs: Low_6 months
+tmle for:	agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH, intXmeducyrs: Medium_6 months
+tmle for:	agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH, intXmeducyrs: High_6 months
+tmle for:	agecat: 24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH, intXmeducyrs: High_24 months
+tmle for:	agecat: 24 months, studyid: ki1000111-WASH-Kenya, country: KENYA, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1000111-WASH-Kenya, country: KENYA, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1000111-WASH-Kenya, country: KENYA, intXmeducyrs: High_24 months
+tmle for:	agecat: 24 months, studyid: ki1000304-EU, country: INDIA, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1000304-EU, country: INDIA, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1000304-EU, country: INDIA, intXmeducyrs: High_24 months
+tmle for:	agecat: 24 months, studyid: ki1000304-Vitamin-B12, country: INDIA, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1000304-Vitamin-B12, country: INDIA, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1000304-ZnMort, country: INDIA, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1000304-ZnMort, country: INDIA, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO, intXmeducyrs: Low_24 months
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO, intXmeducyrs: Medium_24 months
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 24 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1119695-PROBIT, country: BELARUS, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE, intXmeducyrs: High_24 months
+tmle for:	agecat: 24 months, studyid: ki1135781-COHORTS, country: GUATEMALA, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1135781-COHORTS, country: GUATEMALA, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1135781-COHORTS, country: GUATEMALA, intXmeducyrs: High_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI, intXmeducyrs: High_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI, intXmeducyrs: High_24 months
+tmle for:	agecat: 24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: Medium_24 months
+tmle for:	agecat: 24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH, intXmeducyrs: High_24 months
+tmle for:	agecat: 24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH, intXmeducyrs: Low_24 months
+tmle for:	agecat: 24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH, intXmeducyrs: High_24 months
+  |                                                                         |.......................................                          |  59%
+  ordinary text without R code
+label: save_results
+  |                                                                         |...........................................                      |  66%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: plot_tsm (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: plot_rr (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: plot_ate (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |.......................................................          |  84%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: plot_paf (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: plot_par (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................................  |  97%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: results_tables (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/6417b179-b3af-4896-8839-b24296b41a49/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/R/x86_64-redhat-linux-gnu-library/3.5/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpOXtadf/rmarkdown-str1550b541ad5a6.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: /tmp/6417b179-b3af-4896-8839-b24296b41a49/REPORT.html
+[1] "/tmp/6417b179-b3af-4896-8839-b24296b41a49/REPORT.html"
+Warning message:
+Removed 85 rows containing missing values (geom_errorbar). 
+6417b179-b3af-4896-8839-b24296b41a49/
+6417b179-b3af-4896-8839-b24296b41a49/REPORT.Rmd
+6417b179-b3af-4896-8839-b24296b41a49/inputs.json
+6417b179-b3af-4896-8839-b24296b41a49/obs_counts.rdata
+6417b179-b3af-4896-8839-b24296b41a49/results.rdata
+6417b179-b3af-4896-8839-b24296b41a49/REPORT_files/
+6417b179-b3af-4896-8839-b24296b41a49/REPORT_files/figure-html/
+6417b179-b3af-4896-8839-b24296b41a49/REPORT_files/figure-html/plot_tsm-1.png
+6417b179-b3af-4896-8839-b24296b41a49/REPORT_files/figure-html/plot_rr-1.png
+6417b179-b3af-4896-8839-b24296b41a49/REPORT_files/figure-html/plot_paf-1.png
+6417b179-b3af-4896-8839-b24296b41a49/REPORT_files/figure-html/plot_par-1.png
+6417b179-b3af-4896-8839-b24296b41a49/REPORT.html
+6417b179-b3af-4896-8839-b24296b41a49/REPORT.md
+{"status": "success"}

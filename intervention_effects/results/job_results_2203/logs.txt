@@ -1,258 +1,0 @@
-[jeremy.coyle@54.242.185.159] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/f2b4c9be-cb6f-407b-b315-a31550597307
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/e72635a8-f89c-4658-b504-a57342e57ec9
-[jeremy.coyle@54.242.185.159] put: /tmp/tmp66ccmluv/script.Rmd -> /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/script.Rmd
-Put code at /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/script.Rmd
-[jeremy.coyle@54.242.185.159] put: /app/runner.R -> /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/runner.R
-[jeremy.coyle@54.242.185.159] put: /tmp/tmp66ccmluv/inputs.json -> /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/inputs.json
-Put inputs at /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/f2b4c9be-cb6f-407b-b315-a31550597307.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=3Y6dt9HdTEjO8bGbxdlg7cdHprY%3D&Expires=1535246588
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/runner.R /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/script.Rmd /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/inputs.json /tmp/f2b4c9be-cb6f-407b-b315-a31550597307
-[jeremy.coyle@54.242.185.159] put: /tmp/tmp66ccmluv/x.py -> /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/x.py
-Put code at /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/x.py
-[jeremy.coyle@54.242.185.159] put: /tmp/tmp66ccmluv/wrapper.sh -> /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/wrapper.sh
-Put code at /tmp/e72635a8-f89c-4658-b504-a57342e57ec9/wrapper.sh
-[jeremy.coyle@54.242.185.159] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2203/append_log/; screen -d -m python x.py; sleep 1
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-trstuntedidc("sex", "agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..................                                               |  28%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  38%
-label: data_summary
-  |                                                                         |..........................                                       |  41%
-  ordinary text without R code
-
-  |                                                                         |............................                                     |  44%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..............................                                   |  47%
-  ordinary text without R code
-
-  |                                                                         |................................                                 |  50%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |...................................                              |  53%
-  ordinary text without R code
-
-  |                                                                         |.....................................                            |  56%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1000107-Serrinha-VitA, country: BRAZIL
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1000304-EU, country: INDIA
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1000304-ZnMort, country: INDIA
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	sex: Female, agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	sex: Female, agecat: 24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	sex: Female, agecat: 24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	sex: Female, agecat: 6 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1000304-EU, country: INDIA
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1000304-ZnMort, country: INDIA
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	sex: Female, agecat: 6 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	sex: Female, agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	sex: Female, agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	sex: Female, agecat: Birth, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	sex: Female, agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	sex: Female, agecat: Birth, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	sex: Female, agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	sex: Female, agecat: Birth, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1000107-Serrinha-VitA, country: BRAZIL
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1000111-WASH-Kenya, country: KENYA
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1000304-EU, country: INDIA
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1000304-Vitamin-B12, country: INDIA
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1000304-ZnMort, country: INDIA
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	sex: Male, agecat: 24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	sex: Male, agecat: 24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	sex: Male, agecat: 24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	sex: Male, agecat: 6 months, studyid: iLiNS_DYADM_LNS, country: MALAWI
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1000304-EU, country: INDIA
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1000304-VITAMIN-A, country: INDIA
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1000304-Vitamin-B12, country: INDIA
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1000304-ZnMort, country: INDIA
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	sex: Male, agecat: 6 months, studyid: ki1148112-iLiNS-DYAD-M, country: MALAWI
-tmle for:	sex: Male, agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	sex: Male, agecat: 6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	sex: Male, agecat: Birth, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	sex: Male, agecat: Birth, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	sex: Male, agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	sex: Male, agecat: Birth, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	sex: Male, agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	sex: Male, agecat: Birth, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-  |                                                                         |.......................................                          |  59%
-  ordinary text without R code
-
-  |                                                                         |.........................................                        |  62%
-label: save_results
-  |                                                                         |...........................................                      |  66%
-  ordinary text without R code
-
-  |                                                                         |.............................................                    |  69%
-label: plot_tsm (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................                  |  72%
-  ordinary text without R code
-
-  |                                                                         |.................................................                |  75%
-label: plot_rr (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...................................................              |  78%
-  ordinary text without R code
-
-  |                                                                         |.....................................................            |  81%
-label: plot_ate (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |.......................................................          |  84%
-  ordinary text without R code
-
-  |                                                                         |.........................................................        |  88%
-label: plot_paf (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...........................................................      |  91%
-Removed 74 rows containing missing values (geom_errorbar). 
-f2b4c9be-cb6f-407b-b315-a31550597307/
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT.Rmd
-f2b4c9be-cb6f-407b-b315-a31550597307/inputs.json
-f2b4c9be-cb6f-407b-b315-a31550597307/obs_counts.rdata
-f2b4c9be-cb6f-407b-b315-a31550597307/results.rdata
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT_files/
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT_files/figure-html/
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT_files/figure-html/plot_tsm-1.png
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT_files/figure-html/plot_rr-1.png
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT_files/figure-html/plot_paf-1.png
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT_files/figure-html/plot_par-1.png
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT.html
-f2b4c9be-cb6f-407b-b315-a31550597307/REPORT.md
-{"status": "success"}

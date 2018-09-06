@@ -1,208 +1,0 @@
-[jeremy.coyle@54.242.185.159] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/e3e88163-8322-4a13-944e-8cdb924e2f81
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpgnvcc6_3/script.Rmd -> /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/script.Rmd
-Put code at /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/script.Rmd
-[jeremy.coyle@54.242.185.159] put: /app/runner.R -> /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/runner.R
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpgnvcc6_3/inputs.json -> /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/inputs.json
-Put inputs at /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/e3e88163-8322-4a13-944e-8cdb924e2f81.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=3CJA6uNPjQxllAku9hMjwyYag1M%3D&Expires=1535246979
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/runner.R /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/script.Rmd /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/inputs.json /tmp/e3e88163-8322-4a13-944e-8cdb924e2f81
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpgnvcc6_3/x.py -> /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/x.py
-Put code at /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/x.py
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpgnvcc6_3/wrapper.sh -> /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/wrapper.sh
-Put code at /tmp/b0b97792-d069-411f-9cd0-cb880aaa8f59/wrapper.sh
-[jeremy.coyle@54.242.185.159] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2252/append_log/; screen -d -m python x.py; sleep 1
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-trever_stuntedidc("fhtcm", "agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..................                                               |  28%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  38%
-label: data_summary
-  |                                                                         |..........................                                       |  41%
-  ordinary text without R code
-
-  |                                                                         |............................                                     |  44%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..............................                                   |  47%
-  ordinary text without R code
-
-  |                                                                         |................................                                 |  50%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |...................................                              |  53%
-  ordinary text without R code
-
-  |                                                                         |.....................................                            |  56%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	fhtcm: <160, agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: <160, agecat: 0-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	fhtcm: <160, agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	fhtcm: <160, agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	fhtcm: <160, agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: <160, agecat: 0-6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	fhtcm: <160, agecat: 6-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: <160, agecat: 6-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	fhtcm: <160, agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	fhtcm: >=170, agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: >=170, agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	fhtcm: >=170, agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: >=170, agecat: 0-6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	fhtcm: >=170, agecat: 0-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	fhtcm: >=170, agecat: 6-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: >=170, agecat: 6-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	fhtcm: [160-170), agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: [160-170), agecat: 0-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	fhtcm: [160-170), agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	fhtcm: [160-170), agecat: 0-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	fhtcm: [160-170), agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: [160-170), agecat: 0-6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	fhtcm: [160-170), agecat: 0-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	fhtcm: [160-170), agecat: 6-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	fhtcm: [160-170), agecat: 6-24 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	fhtcm: [160-170), agecat: 6-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	fhtcm: [160-170), agecat: 6-24 months, studyid: ki1135781-COHORTS, country: GUATEMALA
-  |                                                                         |.......................................                          |  59%
-  ordinary text without R code
-
-  |                                                                         |.........................................                        |  62%
-label: save_results
-  |                                                                         |...........................................                      |  66%
-  ordinary text without R code
-
-  |                                                                         |.............................................                    |  69%
-label: plot_tsm (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................                  |  72%
-  ordinary text without R code
-
-  |                                                                         |.................................................                |  75%
-label: plot_rr (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...................................................              |  78%
-  ordinary text without R code
-
-  |                                                                         |.....................................................            |  81%
-label: plot_ate (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |.......................................................          |  84%
-  ordinary text without R code
-
-  |                                                                         |.........................................................        |  88%
-label: plot_paf (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...........................................................      |  91%
-  ordinary text without R code
-
-  |                                                                         |.............................................................    |  94%
-label: plot_par (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................................  |  97%
-  ordinary text without R code
-{"status": "success"}

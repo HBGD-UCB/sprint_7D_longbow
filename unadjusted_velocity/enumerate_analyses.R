@@ -1,6 +1,6 @@
 library(longbowtools)
 library(jsonlite)
-inputs <- "inputs_template.json"
+inputs <- "velocity_inputs_template.json"
 default_params <- fromJSON(inputs)
 load("unadjusted_velocity_analyses.rdata")
 analyses$file <- sprintf("Stunting rallies/%s",analyses$file)

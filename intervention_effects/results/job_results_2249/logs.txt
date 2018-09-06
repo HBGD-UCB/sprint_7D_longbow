@@ -1,289 +1,0 @@
-[jeremy.coyle@54.242.185.159] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/92efd72b-3349-4ea3-86d2-592d318635fc
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/0dc74ed3-a516-422a-b098-355cfda73001
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpzt36qlht/script.Rmd -> /tmp/0dc74ed3-a516-422a-b098-355cfda73001/script.Rmd
-Put code at /tmp/0dc74ed3-a516-422a-b098-355cfda73001/script.Rmd
-[jeremy.coyle@54.242.185.159] put: /app/runner.R -> /tmp/0dc74ed3-a516-422a-b098-355cfda73001/runner.R
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpzt36qlht/inputs.json -> /tmp/0dc74ed3-a516-422a-b098-355cfda73001/inputs.json
-Put inputs at /tmp/0dc74ed3-a516-422a-b098-355cfda73001/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/92efd72b-3349-4ea3-86d2-592d318635fc.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=LG5dt5b8ifwvj3BBd1rlSV3YSfg%3D&Expires=1535246958
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/0dc74ed3-a516-422a-b098-355cfda73001/runner.R /tmp/0dc74ed3-a516-422a-b098-355cfda73001/script.Rmd /tmp/0dc74ed3-a516-422a-b098-355cfda73001/inputs.json /tmp/92efd72b-3349-4ea3-86d2-592d318635fc
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpzt36qlht/x.py -> /tmp/0dc74ed3-a516-422a-b098-355cfda73001/x.py
-Put code at /tmp/0dc74ed3-a516-422a-b098-355cfda73001/x.py
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpzt36qlht/wrapper.sh -> /tmp/0dc74ed3-a516-422a-b098-355cfda73001/wrapper.sh
-Put code at /tmp/0dc74ed3-a516-422a-b098-355cfda73001/wrapper.sh
-[jeremy.coyle@54.242.185.159] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2249/append_log/; screen -d -m python x.py; sleep 1
-Making sure longbowtools package is available for runner
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-trever_stuntedidc("mbmi", "agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..................                                               |  28%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  38%
-label: data_summary
-  |                                                                         |..........................                                       |  41%
-  ordinary text without R code
-
-  |                                                                         |............................                                     |  44%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..............................                                   |  47%
-  ordinary text without R code
-
-  |                                                                         |................................                                 |  50%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |...................................                              |  53%
-  ordinary text without R code
-
-  |                                                                         |.....................................                            |  56%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: iLiNS-Zinc_ZvLNS, country: BURKINA FASO
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1112895-iLiNS-Zinc, country: BURKINA FASO
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	mbmi: <18.5, agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	mbmi: <18.5, agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	mbmi: <18.5, agecat: 0-6 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	mbmi: <18.5, agecat: 0-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: <18.5, agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: <18.5, agecat: 0-6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	mbmi: <18.5, agecat: 6-24 months, studyid: iLiNS-Zinc_ZvLNS, country: BURKINA FASO
-tmle for:	mbmi: <18.5, agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	mbmi: <18.5, agecat: 6-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	mbmi: <18.5, agecat: 6-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: <18.5, agecat: 6-24 months, studyid: ki1112895-iLiNS-Zinc, country: BURKINA FASO
-tmle for:	mbmi: <18.5, agecat: 6-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: <18.5, agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: <18.5, agecat: 6-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	mbmi: >=30, agecat: 0-24 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
-tmle for:	mbmi: >=30, agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	mbmi: >=30, agecat: 0-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: >=30, agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: >=30, agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: >=30, agecat: 0-6 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
-tmle for:	mbmi: >=30, agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: >=30, agecat: 0-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: >=30, agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: >=30, agecat: 6-24 months, studyid: ki1000125-AgaKhanUniv, country: PAKISTAN
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: >=30, agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	mbmi: >=30, agecat: 6-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: >=30, agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: iLiNS-Zinc_ZvLNS, country: BURKINA FASO
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1112895-iLiNS-Zinc, country: BURKINA FASO
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	mbmi: [18.5-25), agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	mbmi: [18.5-25), agecat: 0-6 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	mbmi: [18.5-25), agecat: 0-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	mbmi: [18.5-25), agecat: 0-6 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	mbmi: [18.5-25), agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	mbmi: [18.5-25), agecat: 0-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: [18.5-25), agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: [18.5-25), agecat: 0-6 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	mbmi: [18.5-25), agecat: 0-6 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: iLiNS-Zinc_ZvLNS, country: BURKINA FASO
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1112895-iLiNS-Zinc, country: BURKINA FASO
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	mbmi: [18.5-25), agecat: 6-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1017093b-PROVIDE, country: BANGLADESH
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1112895-iLiNS-Zinc, country: BURKINA FASO
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: [25-30), agecat: 0-24 months, studyid: ki1148112-iLiNS-DOSE, country: MALAWI
-tmle for:	mbmi: [25-30), agecat: 0-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	mbmi: [25-30), agecat: 0-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: [25-30), agecat: 0-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	mbmi: [25-30), agecat: 6-24 months, studyid: ki1000110-WASH-Bangladesh, country: BANGLADESH
-tmle for:	mbmi: [25-30), agecat: 6-24 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	mbmi: [25-30), agecat: 6-24 months, studyid: ki1112895-Burkina Faso Zn, country: BURKINA FASO
-outcome or treatment is constant. Skipping
-tmle for:	mbmi: [25-30), agecat: 6-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	mbmi: [25-30), agecat: 6-24 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-  |                                                                         |.......................................                          |  59%
-  ordinary text without R code
-
-  |                                                                         |.........................................                        |  62%
-label: save_results
-  |                                                                         |...........................................                      |  66%
-  ordinary text without R code
-
-  |                                                                         |.............................................                    |  69%
-label: plot_tsm (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................                  |  72%
-  ordinary text without R code
-
-  |                                                                         |.................................................                |  75%
-label: plot_rr (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...................................................              |  78%
-  ordinary text without R code
-
-  |                                                                         |.....................................................            |  81%
-label: plot_ate (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |.......................................................          |  84%
-  ordinary text without R code
-
-  |                                                                         |.........................................................        |  88%
-label: plot_paf (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...........................................................      |  91%
-  ordinary text without R code
-
-  |                                                                         |.............................................................    |  94%
-label: plot_par (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................................  |  97%
-  ordinary text without R code
-
-  |                                                                         |.................................................................| 100%
-label: results_tables (with options) 
-List of 1
- $ results: chr "asis"
-
-{"status": "success"}

@@ -1,95 +1,0 @@
-[jeremy.coyle@54.242.185.159] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/236acebb-be37-4762-a036-cbdf1b30a41b
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f
-[jeremy.coyle@54.242.185.159] put: /tmp/tmptqjht95n/script.Rmd -> /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/script.Rmd
-Put code at /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/script.Rmd
-[jeremy.coyle@54.242.185.159] put: /app/runner.R -> /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/runner.R
-[jeremy.coyle@54.242.185.159] put: /tmp/tmptqjht95n/inputs.json -> /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/inputs.json
-Put inputs at /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/236acebb-be37-4762-a036-cbdf1b30a41b.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=K46U11CeXEk0NtND5EZ781RQXtI%3D&Expires=1535246921
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/runner.R /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/script.Rmd /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/inputs.json /tmp/236acebb-be37-4762-a036-cbdf1b30a41b
-[jeremy.coyle@54.242.185.159] put: /tmp/tmptqjht95n/x.py -> /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/x.py
-Put code at /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/x.py
-[jeremy.coyle@54.242.185.159] put: /tmp/tmptqjht95n/wrapper.sh -> /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/wrapper.sh
-Put code at /tmp/9c97680d-ce51-475a-a065-1b8ed77a325f/wrapper.sh
-[jeremy.coyle@54.242.185.159] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2230/append_log/; screen -d -m python x.py; sleep 1
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-trstuntedidc("trth2o", "agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-236acebb-be37-4762-a036-cbdf1b30a41b/
-236acebb-be37-4762-a036-cbdf1b30a41b/REPORT.Rmd
-236acebb-be37-4762-a036-cbdf1b30a41b/inputs.json
-236acebb-be37-4762-a036-cbdf1b30a41b/obs_counts.rdata
-236acebb-be37-4762-a036-cbdf1b30a41b/REPORT.html
-236acebb-be37-4762-a036-cbdf1b30a41b/REPORT.md
-{"status": "success"}

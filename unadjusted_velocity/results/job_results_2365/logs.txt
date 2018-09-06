@@ -1,257 +1,0 @@
-[jeremy.coyle@54.242.185.159] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/6a4c23d4-261c-47f6-a883-41d2b4d68836
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.185.159] run: mkdir -p /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpxk43prj8/script.Rmd -> /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/script.Rmd
-Put code at /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/script.Rmd
-[jeremy.coyle@54.242.185.159] put: /app/runner.R -> /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/runner.R
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpxk43prj8/inputs.json -> /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/inputs.json
-Put inputs at /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/6a4c23d4-261c-47f6-a883-41d2b4d68836.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=YjK7%2B1EJN%2F7FxdK7%2FXswvIrIXVs%3D&Expires=1535250443
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/runner.R /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/script.Rmd /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/inputs.json /tmp/6a4c23d4-261c-47f6-a883-41d2b4d68836
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpxk43prj8/x.py -> /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/x.py
-Put code at /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/x.py
-[jeremy.coyle@54.242.185.159] put: /tmp/tmpxk43prj8/wrapper.sh -> /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/wrapper.sh
-Put code at /tmp/a7cbaa56-c133-448b-93f7-1141e6629c2b/wrapper.sh
-[jeremy.coyle@54.242.185.159] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/2365/append_log/; screen -d -m python x.py; sleep 1
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-brthmony_rate_lenidc("agecat", "studyid", "country")
-TRUEFALSEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..................                                               |  28%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  38%
-label: data_summary
-  |                                                                         |..........................                                       |  41%
-  ordinary text without R code
-
-  |                                                                         |............................                                     |  44%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..............................                                   |  47%
-  ordinary text without R code
-
-  |                                                                         |................................                                 |  50%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |...................................                              |  53%
-  ordinary text without R code
-
-  |                                                                         |.....................................                            |  56%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
-tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
-tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: INDIA
-tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: NEPAL
-tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: PERU
-tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
-tmle for:	agecat: 0-3 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	agecat: 0-3 months, studyid: ki1000108-IRC, country: INDIA
-tmle for:	agecat: 0-3 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	agecat: 0-3 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
-tmle for:	agecat: 0-3 months, studyid: ki1101329-Keneba, country: GAMBIA
-tmle for:	agecat: 0-3 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	agecat: 0-3 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	agecat: 0-3 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	agecat: 0-3 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
-tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
-tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: INDIA
-tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: NEPAL
-tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: PERU
-tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
-tmle for:	agecat: 12-24 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	agecat: 12-24 months, studyid: ki1000108-CMC-V-BCS-2002, country: INDIA
-tmle for:	agecat: 12-24 months, studyid: ki1000108-IRC, country: INDIA
-tmle for:	agecat: 12-24 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
-tmle for:	agecat: 12-24 months, studyid: ki1101329-Keneba, country: GAMBIA
-tmle for:	agecat: 12-24 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
-tmle for:	agecat: 12-24 months, studyid: ki1114097-CMIN, country: BANGLADESH
-tmle for:	agecat: 12-24 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	agecat: 12-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	agecat: 12-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	agecat: 12-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
-tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
-tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: INDIA
-tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: NEPAL
-tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: PERU
-tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
-tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	agecat: 3-6 months, studyid: ki1000108-CMC-V-BCS-2002, country: INDIA
-tmle for:	agecat: 3-6 months, studyid: ki1000108-IRC, country: INDIA
-tmle for:	agecat: 3-6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	agecat: 3-6 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
-tmle for:	agecat: 3-6 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	agecat: 3-6 months, studyid: ki1101329-Keneba, country: GAMBIA
-tmle for:	agecat: 3-6 months, studyid: ki1114097-CMIN, country: BANGLADESH
-tmle for:	agecat: 3-6 months, studyid: ki1114097-CMIN, country: PERU
-tmle for:	agecat: 3-6 months, studyid: ki1114097-CONTENT, country: PERU
-tmle for:	agecat: 3-6 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	agecat: 3-6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	agecat: 3-6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	agecat: 3-6 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	agecat: 6-12 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
-tmle for:	agecat: 6-12 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
-tmle for:	agecat: 6-12 months, studyid: ki0047075b-MAL-ED, country: INDIA
-tmle for:	agecat: 6-12 months, studyid: ki0047075b-MAL-ED, country: NEPAL
-tmle for:	agecat: 6-12 months, studyid: ki0047075b-MAL-ED, country: PERU
-tmle for:	agecat: 6-12 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
-tmle for:	agecat: 6-12 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	agecat: 6-12 months, studyid: ki1000108-CMC-V-BCS-2002, country: INDIA
-tmle for:	agecat: 6-12 months, studyid: ki1000108-IRC, country: INDIA
-tmle for:	agecat: 6-12 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	agecat: 6-12 months, studyid: ki1017093-NIH-Birth, country: BANGLADESH
-tmle for:	agecat: 6-12 months, studyid: ki1066203-TanzaniaChild2, country: TANZANIA, UNITED REPUBLIC OF
-tmle for:	agecat: 6-12 months, studyid: ki1101329-Keneba, country: GAMBIA
-tmle for:	agecat: 6-12 months, studyid: ki1112895-Guatemala BSC, country: GUATEMALA
-tmle for:	agecat: 6-12 months, studyid: ki1114097-CMIN, country: BANGLADESH
-tmle for:	agecat: 6-12 months, studyid: ki1114097-CMIN, country: GUINEA-BISSAU
-tmle for:	agecat: 6-12 months, studyid: ki1114097-CMIN, country: PERU
-tmle for:	agecat: 6-12 months, studyid: ki1114097-CONTENT, country: PERU
-tmle for:	agecat: 6-12 months, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	agecat: 6-12 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	agecat: 6-12 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	agecat: 6-12 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	agecat: 6-12 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-  |                                                                         |.......................................                          |  59%
-  ordinary text without R code
-
-  |                                                                         |.........................................                        |  62%
-label: save_results
-  |                                                                         |...........................................                      |  66%
-  ordinary text without R code
-
-  |                                                                         |.............................................                    |  69%
-label: plot_tsm (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................                  |  72%
-  ordinary text without R code
-
-  |                                                                         |.................................................                |  75%
-label: plot_rr (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...................................................              |  78%
-  ordinary text without R code
-
-  |                                                                         |.....................................................            |  81%
-label: plot_ate (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |.......................................................          |  84%
-  ordinary text without R code
-
-  |                                                                         |.........................................................        |  88%
-label: plot_paf (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...........................................................      |  91%
-  ordinary text without R code
-
-  |                                                                         |.............................................................    |  94%
-label: plot_par (with options) 
-List of 2
-{"status": "success"}

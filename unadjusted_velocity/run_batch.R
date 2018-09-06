@@ -8,14 +8,15 @@ configure_cluster("~/cluster_credentials.json")
 
 rmd_filename <- system.file("templates/longbow_RiskFactors.Rmd", package="longbowRiskFactors")
 
-inputs <- "velocity_inputs_template.json"
+# inputs <- "velocity_inputs_template.json"
+inputs <- "inputs/unadjusted_velocity_analysis_001.json"
 
 #run test/provisioning job
 run_on_longbow(rmd_filename, inputs, provision = FALSE)
 
 # send the batch to longbow (with provisioning disabled)
 job_ids <- submit_batch(rmd_filename, inputs_folder="inputs", results_folder="results", provision = FALSE)
-
+save(job_ids, file="unadjusted_velocity_job_ids.rdata")
 # wait for the job to finish and track progress
 wait_for_batch(job_ids)
 
