@@ -4,8 +4,8 @@ longbow workflow for KI sprint 7D
 Setting up Longbow to run analyses:
 1. Clone sprint 7D longbow and longbow risk factors repositories
 2. in R, run the following: 
-library(devtools)
-install(longbowRiskFactors)
+* library(devtools)
+* install(longbowRiskFactors)
 
 
 3. Ensure you have a GHAP node running. 
