@@ -1,7 +1,7 @@
 library(longbowtools)
 library(progress)
 library(longbowRiskFactors)
-setwd("~/Dropbox/gates/sprint_7D_longbow/adjusted_binary/")
+setwd("~/Desktop/sprint_7D_longbow/wasting_analyses/")
 
 configure_cluster("~/cluster_credentials.json")
 
@@ -30,4 +30,4 @@ results <- load_batch_results("results.rdata")
 obs_counts <- load_batch_results("obs_counts.rdata")
 
 # save concatenated results
-save(results, file="adjusted_binary_results.rdata")
+save(results, file="wasting_adjusted_binary_results.rdata")
