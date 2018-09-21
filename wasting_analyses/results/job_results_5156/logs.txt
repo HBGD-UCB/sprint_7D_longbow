@@ -1,0 +1,74 @@
+[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/9d4ae0cd-89a8-4142-ac67-0b73a0980efe
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpw_u70yk1/script.Rmd -> /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/script.Rmd
+Put code at /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/script.Rmd
+[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/runner.R
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpw_u70yk1/inputs.json -> /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/inputs.json
+Put inputs at /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/9d4ae0cd-89a8-4142-ac67-0b73a0980efe.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=NrqxpJMoQ1mVd%2BHcs7pa0Pq92jE%3D&Expires=1540095526
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/runner.R /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/script.Rmd /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/inputs.json /tmp/9d4ae0cd-89a8-4142-ac67-0b73a0980efe
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpw_u70yk1/x.py -> /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/x.py
+Put code at /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/x.py
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpw_u70yk1/wrapper.sh -> /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/wrapper.sh
+Put code at /tmp/d6f0341b-5e7f-4375-ba80-ec329d802593/wrapper.sh
+[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5156/append_log/; screen -d -m python x.py; sleep 1
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+{"status": "success"}

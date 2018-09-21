@@ -1,0 +1,85 @@
+[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/444b146b-9e57-4dde-905f-36477c1fb378
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f
+[jeremy.coyle@54.242.11.1] put: /tmp/tmp5vj5lr4r/script.Rmd -> /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/script.Rmd
+Put code at /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/script.Rmd
+[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/runner.R
+[jeremy.coyle@54.242.11.1] put: /tmp/tmp5vj5lr4r/inputs.json -> /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/inputs.json
+Put inputs at /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/444b146b-9e57-4dde-905f-36477c1fb378.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=uDKcLLQzghwzWZ9RYC%2BYENkfxuY%3D&Expires=1540100309
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/runner.R /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/script.Rmd /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/inputs.json /tmp/444b146b-9e57-4dde-905f-36477c1fb378
+[jeremy.coyle@54.242.11.1] put: /tmp/tmp5vj5lr4r/x.py -> /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/x.py
+Put code at /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/x.py
+[jeremy.coyle@54.242.11.1] put: /tmp/tmp5vj5lr4r/wrapper.sh -> /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/wrapper.sh
+Put code at /tmp/99f1a48b-b48f-4c7a-a9b6-2060fd11471f/wrapper.sh
+[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5146/append_log/; screen -d -m python x.py; sleep 1
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+hdlvrylist()pers_wastidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+{"status": "success"}

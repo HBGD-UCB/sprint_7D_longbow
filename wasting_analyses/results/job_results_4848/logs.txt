@@ -1,0 +1,105 @@
+[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/672536bd-7475-4ae2-9de2-ebda3dcf7b95
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5
+[jeremy.coyle@54.242.11.1] put: /tmp/tmp91zg2sct/script.Rmd -> /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/script.Rmd
+Put code at /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/script.Rmd
+[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/runner.R
+[jeremy.coyle@54.242.11.1] put: /tmp/tmp91zg2sct/inputs.json -> /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/inputs.json
+Put inputs at /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/672536bd-7475-4ae2-9de2-ebda3dcf7b95.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=JgYnd2ZMuBoI9%2FqYlPWU%2BeTkjNc%3D&Expires=1540093005
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/runner.R /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/script.Rmd /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/inputs.json /tmp/672536bd-7475-4ae2-9de2-ebda3dcf7b95
+[jeremy.coyle@54.242.11.1] put: /tmp/tmp91zg2sct/x.py -> /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/x.py
+Put code at /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/x.py
+[jeremy.coyle@54.242.11.1] put: /tmp/tmp91zg2sct/wrapper.sh -> /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/wrapper.sh
+Put code at /tmp/296d59d9-3ebd-4032-a124-9f31172e53d5/wrapper.sh
+[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4848/append_log/; screen -d -m python x.py; sleep 1
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+perdiar6c("arm", "sex", "W_mage", "W_fage", "meducyrs", "feducyrs", "hhwealth_quart", "hfoodsec", "W_mhtcm", "W_mwtkg", "W_mbmi", "W_fhtcm", "vagbrth", "hdlvry", "W_gagebrth", "W_birthwt", "W_birthlen", "single", "W_nrooms", "W_nhh", "W_nchldlt5", "month", "brthmon", "W_parity", "trth2o", "cleanck", "impfloor", "impsan", "safeh20")swastedidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+{"status": "success"}

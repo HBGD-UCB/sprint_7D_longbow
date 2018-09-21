@@ -1,0 +1,94 @@
+[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/00c3e8a7-45b0-461a-b6a7-576bb66bbb1a
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/99295847-6b75-481f-93c9-6e99832d2b18
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpe8pjvohy/script.Rmd -> /tmp/99295847-6b75-481f-93c9-6e99832d2b18/script.Rmd
+Put code at /tmp/99295847-6b75-481f-93c9-6e99832d2b18/script.Rmd
+[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/99295847-6b75-481f-93c9-6e99832d2b18/runner.R
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpe8pjvohy/inputs.json -> /tmp/99295847-6b75-481f-93c9-6e99832d2b18/inputs.json
+Put inputs at /tmp/99295847-6b75-481f-93c9-6e99832d2b18/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/00c3e8a7-45b0-461a-b6a7-576bb66bbb1a.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=I10UkQRc2rvQQg9cT79qSrJcSXI%3D&Expires=1540101188
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/99295847-6b75-481f-93c9-6e99832d2b18/runner.R /tmp/99295847-6b75-481f-93c9-6e99832d2b18/script.Rmd /tmp/99295847-6b75-481f-93c9-6e99832d2b18/inputs.json /tmp/00c3e8a7-45b0-461a-b6a7-576bb66bbb1a
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpe8pjvohy/x.py -> /tmp/99295847-6b75-481f-93c9-6e99832d2b18/x.py
+Put code at /tmp/99295847-6b75-481f-93c9-6e99832d2b18/x.py
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpe8pjvohy/wrapper.sh -> /tmp/99295847-6b75-481f-93c9-6e99832d2b18/wrapper.sh
+Put code at /tmp/99295847-6b75-481f-93c9-6e99832d2b18/wrapper.sh
+[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5167/append_log/; screen -d -m python x.py; sleep 1
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+trth2olist()pers_wastidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+Quitting from lines 83-127 (REPORT.Rmd) 
+Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
+  Some items of .SDcols are not column names (or are NA)
+Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
+
+Execution halted
+00c3e8a7-45b0-461a-b6a7-576bb66bbb1a/
+00c3e8a7-45b0-461a-b6a7-576bb66bbb1a/REPORT.Rmd
+00c3e8a7-45b0-461a-b6a7-576bb66bbb1a/inputs.json
+{"status": "success"}

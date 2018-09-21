@@ -1,0 +1,80 @@
+[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/eca8e0b2-b3ff-4b42-b532-e51dd8a5f419
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1
+[jeremy.coyle@54.242.11.1] put: /tmp/tmppjkukpu2/script.Rmd -> /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/script.Rmd
+Put code at /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/script.Rmd
+[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/runner.R
+[jeremy.coyle@54.242.11.1] put: /tmp/tmppjkukpu2/inputs.json -> /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/inputs.json
+Put inputs at /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/eca8e0b2-b3ff-4b42-b532-e51dd8a5f419.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=dwoMFyxQufba6AOfjxGK%2FBz4FW4%3D&Expires=1540101835
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/runner.R /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/script.Rmd /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/inputs.json /tmp/eca8e0b2-b3ff-4b42-b532-e51dd8a5f419
+[jeremy.coyle@54.242.11.1] put: /tmp/tmppjkukpu2/x.py -> /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/x.py
+Put code at /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/x.py
+[jeremy.coyle@54.242.11.1] put: /tmp/tmppjkukpu2/wrapper.sh -> /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/wrapper.sh
+Put code at /tmp/50489a3c-4da8-4145-a0aa-2d7fa86bcbc1/wrapper.sh
+[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4950/append_log/; screen -d -m python x.py; sleep 1
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+Loading required package: graphics
+fhtcmc("arm", "W_mage", "W_fage", "meducyrs", "feducyrs", "hhwealth_quart", "hfoodsec", "W_mhtcm", "W_mwtkg", "W_mbmi", "single", "W_nrooms", "trth2o", "cleanck", "impfloor", "impsan", "safeh20")pers_wastidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+Quitting from lines 83-127 (REPORT.Rmd) 
+Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
+  Some items of .SDcols are not column names (or are NA)
+Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
+
+Execution halted
+eca8e0b2-b3ff-4b42-b532-e51dd8a5f419/
+eca8e0b2-b3ff-4b42-b532-e51dd8a5f419/REPORT.Rmd
+eca8e0b2-b3ff-4b42-b532-e51dd8a5f419/inputs.json
+{"status": "success"}

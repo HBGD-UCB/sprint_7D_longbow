@@ -1,0 +1,73 @@
+[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/7bcee893-b479-4149-8048-35319258323d
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/2f01a1b1-0977-4257-9133-ad5264026c31
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpoxsshr75/script.Rmd -> /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/script.Rmd
+Put code at /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/script.Rmd
+[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/runner.R
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpoxsshr75/inputs.json -> /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/inputs.json
+Put inputs at /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/7bcee893-b479-4149-8048-35319258323d.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=TIr6Qy84o9A8tUgM5NfeZudji3s%3D&Expires=1540093142
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/runner.R /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/script.Rmd /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/inputs.json /tmp/7bcee893-b479-4149-8048-35319258323d
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpoxsshr75/x.py -> /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/x.py
+Put code at /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/x.py
+[jeremy.coyle@54.242.11.1] put: /tmp/tmpoxsshr75/wrapper.sh -> /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/wrapper.sh
+Put code at /tmp/2f01a1b1-0977-4257-9133-ad5264026c31/wrapper.sh
+[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5158/append_log/; screen -d -m python x.py; sleep 1
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+Quitting from lines 83-127 (REPORT.Rmd) 
+Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
+  Some items of .SDcols are not column names (or are NA)
+Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
+
+Execution halted
+7bcee893-b479-4149-8048-35319258323d/
+7bcee893-b479-4149-8048-35319258323d/REPORT.Rmd
+7bcee893-b479-4149-8048-35319258323d/inputs.json
+{"status": "success"}
