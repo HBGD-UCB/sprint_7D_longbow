@@ -1,0 +1,182 @@
+[jeremy.coyle@34.201.141.145] Executing task 'upload_to_ghap'
+[jeremy.coyle@34.201.141.145] run: mkdir -p /tmp/f1d65055-b125-4d84-adf7-cb1343c1ab9a
+Not going to clone git repo since it already exists
+[jeremy.coyle@34.201.141.145] run: mkdir -p /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096
+[jeremy.coyle@34.201.141.145] put: /tmp/tmp_bc6to_9/script.Rmd -> /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/script.Rmd
+Put code at /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/script.Rmd
+[jeremy.coyle@34.201.141.145] put: /app/runner.R -> /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/runner.R
+[jeremy.coyle@34.201.141.145] put: /tmp/tmp_bc6to_9/inputs.json -> /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/inputs.json
+Put inputs at /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/f1d65055-b125-4d84-adf7-cb1343c1ab9a.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=VkjEIPjNqrulTPzRyYf2Sd%2Bk5DQ%3D&Expires=1541101548
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/runner.R /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/script.Rmd /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/inputs.json /tmp/f1d65055-b125-4d84-adf7-cb1343c1ab9a
+[jeremy.coyle@34.201.141.145] put: /tmp/tmp_bc6to_9/x.py -> /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/x.py
+Put code at /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/x.py
+[jeremy.coyle@34.201.141.145] put: /tmp/tmp_bc6to_9/wrapper.sh -> /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/wrapper.sh
+Put code at /tmp/6c903bdf-28b2-48a3-b177-cc69766aa096/wrapper.sh
+[jeremy.coyle@34.201.141.145] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5638/append_log/; screen -d -m python x.py; sleep 1
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+lag_ever_stuntedc("arm", "sex", "W_mage", "W_fage", "meducyrs", "feducyrs", "hhwealth_quart", "hfoodsec", "vagbrth", "hdlvry", "single", "W_nrooms", "W_nhh", "W_nchldlt5", "month", "brthmon", "W_parity", "trth2o", "cleanck", "impfloor", "impsan", "safeh20")ever_stuntedidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: BRAZIL
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: INDIA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: PERU
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 3-6 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 6-9 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 6-9 months, studyid: ki0047075b-MAL-ED, country: INDIA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 6-9 months, studyid: ki0047075b-MAL-ED, country: PERU
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 6-9 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 6-9 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 9-12 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 9-12 months, studyid: ki0047075b-MAL-ED, country: INDIA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 9-12 months, studyid: ki0047075b-MAL-ED, country: PERU
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 9-12 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 9-12 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-15 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-15 months, studyid: ki0047075b-MAL-ED, country: INDIA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-15 months, studyid: ki0047075b-MAL-ED, country: NEPAL
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-15 months, studyid: ki0047075b-MAL-ED, country: PERU
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-15 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 12-15 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 15-18 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 15-18 months, studyid: ki0047075b-MAL-ED, country: INDIA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 15-18 months, studyid: ki0047075b-MAL-ED, country: NEPAL
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 15-18 months, studyid: ki0047075b-MAL-ED, country: PERU
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 15-18 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 15-18 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 18-21 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 18-21 months, studyid: ki0047075b-MAL-ED, country: NEPAL
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 18-21 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 18-21 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 21-24 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 21-24 months, studyid: ki0047075b-MAL-ED, country: INDIA
+outcome or treatment is constant. Skipping
+tmle for:	agecat: 21-24 months, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+outcome or treatment is constant. Skipping
+Quitting from lines 230-236 (REPORT.Rmd) 
+Error in setnames(matches, c("intervention", "baseline")) : 
+  Can't assign 2 names to a 0 column data.table
+Calls: run_internal ... format_results -> get_intervention_levels -> setnames
+
+Execution halted
+f1d65055-b125-4d84-adf7-cb1343c1ab9a/
+f1d65055-b125-4d84-adf7-cb1343c1ab9a/REPORT.Rmd
+f1d65055-b125-4d84-adf7-cb1343c1ab9a/inputs.json
+f1d65055-b125-4d84-adf7-cb1343c1ab9a/obs_counts.rdata
+{"status": "success"}
