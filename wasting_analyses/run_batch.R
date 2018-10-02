@@ -31,4 +31,4 @@ results <- load_batch_results("results.rdata")
 obs_counts <- load_batch_results("obs_counts.rdata")
 
 # save concatenated results
-save(results, file="wasting_adjusted_binary_results.rdata")
+save(results, file="wasting_results.rdata")

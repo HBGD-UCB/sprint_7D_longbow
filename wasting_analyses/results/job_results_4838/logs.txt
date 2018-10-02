@@ -1,259 +1,0 @@
-[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/dbc25836-f6b3-4666-af5c-1a16e50e0e60
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpxkr4gkl2/script.Rmd -> /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/script.Rmd
-Put code at /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/script.Rmd
-[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/runner.R
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpxkr4gkl2/inputs.json -> /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/inputs.json
-Put inputs at /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/dbc25836-f6b3-4666-af5c-1a16e50e0e60.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=XhpayRI4OMojl1pmOhFMJGyhJQo%3D&Expires=1540104578
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/runner.R /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/script.Rmd /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/inputs.json /tmp/dbc25836-f6b3-4666-af5c-1a16e50e0e60
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpxkr4gkl2/x.py -> /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/x.py
-Put code at /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/x.py
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpxkr4gkl2/wrapper.sh -> /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/wrapper.sh
-Put code at /tmp/ea8e17f2-c9b8-4cce-9f6a-56aae5f47621/wrapper.sh
-[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4838/append_log/; screen -d -m python x.py; sleep 1
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-feducyrsc("arm", "W_mage", "W_fage", "meducyrs", "hhwealth_quart", "W_mhtcm", "W_mwtkg", "W_mbmi", "W_fhtcm", "W_gagebrth", "W_birthwt", "W_birthlen", "single", "W_nrooms", "W_nhh", "W_nchldlt5", "trth2o", "cleanck", "impfloor", "impsan", "safeh20")swastedidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..................                                               |  28%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  38%
-label: data_summary
-  |                                                                         |..........................                                       |  41%
-  ordinary text without R code
-
-  |                                                                         |............................                                     |  44%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..............................                                   |  47%
-  ordinary text without R code
-
-  |                                                                         |................................                                 |  50%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |...................................                              |  53%
-  ordinary text without R code
-
-  |                                                                         |.....................................                            |  56%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	agecat: Birth, studyid: ki1119695-PROBIT, country: BELARUS
-tmle for:	agecat: Birth, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	agecat: Birth, studyid: ki1135781-COHORTS, country: GUATEMALA
-tmle for:	agecat: Birth, studyid: ki1135781-COHORTS, country: INDIA
-tmle for:	agecat: Birth, studyid: ki1135781-COHORTS, country: PHILIPPINES
-tmle for:	agecat: Birth, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.62657e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.29017e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.5201e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.64569e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.37498e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.43748e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.75672e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.52765e-16
-
-tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
-tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-FoodSuppl, country: INDIA
-tmle for:	agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
-tmle for:	agecat: 6 months, studyid: ki1135781-COHORTS, country: INDIA
-tmle for:	agecat: 6 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
-tmle for:	agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-tmle for:	agecat: 24 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
-tmle for:	agecat: 24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.13032e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.19098e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.143e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.1797e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.03566e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.261e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 2.12211e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.12786e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.13322e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 2.12294e-16
-
-tmle for:	agecat: 24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-  |                                                                         |.......................................                          |  59%
-  ordinary text without R code
-
-  |                                                                         |.........................................                        |  62%
-label: save_results
-  |                                                                         |...........................................                      |  66%
-  ordinary text without R code
-
-  |                                                                         |.............................................                    |  69%
-label: plot_tsm (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................                  |  72%
-  ordinary text without R code
-
-  |                                                                         |.................................................                |  75%
-label: plot_rr (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...................................................              |  78%
-  ordinary text without R code
-
-  |                                                                         |.....................................................            |  81%
-label: plot_ate (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |.......................................................          |  84%
-  ordinary text without R code
-
-  |                                                                         |.........................................................        |  88%
-label: plot_paf (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...........................................................      |  91%
-  ordinary text without R code
-
-  |                                                                         |.............................................................    |  94%
-label: plot_par (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................................  |  97%
-  ordinary text without R code
-
-  |                                                                         |.................................................................| 100%
-label: results_tables (with options) 
-List of 1
- $ results: chr "asis"
-
-
-output file: REPORT.knit.md
-
-{"status": "success"}

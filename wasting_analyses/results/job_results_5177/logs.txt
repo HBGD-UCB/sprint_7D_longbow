@@ -1,78 +1,0 @@
-[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/f2ab855f-eecf-41ee-8d81-8429d0df35ad
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f
-[jeremy.coyle@54.242.11.1] put: /tmp/tmp_b4pwehf/script.Rmd -> /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/script.Rmd
-Put code at /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/script.Rmd
-[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/runner.R
-[jeremy.coyle@54.242.11.1] put: /tmp/tmp_b4pwehf/inputs.json -> /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/inputs.json
-Put inputs at /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/f2ab855f-eecf-41ee-8d81-8429d0df35ad.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=uj7WyK%2B50DLge5Q%2FzILPurgjMy8%3D&Expires=1540100211
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/runner.R /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/script.Rmd /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/inputs.json /tmp/f2ab855f-eecf-41ee-8d81-8429d0df35ad
-[jeremy.coyle@54.242.11.1] put: /tmp/tmp_b4pwehf/x.py -> /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/x.py
-Put code at /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/x.py
-[jeremy.coyle@54.242.11.1] put: /tmp/tmp_b4pwehf/wrapper.sh -> /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/wrapper.sh
-Put code at /tmp/1474492c-f9da-4f80-99ad-28ea0638c68f/wrapper.sh
-[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5177/append_log/; screen -d -m python x.py; sleep 1
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-predfeed6list()pers_wastidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-{"status": "success"}

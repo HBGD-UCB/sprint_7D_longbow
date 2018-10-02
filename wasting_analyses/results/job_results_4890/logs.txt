@@ -1,295 +1,0 @@
-[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/404308ea-29ad-4c35-8856-509d3820fa64
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/84a09907-07d1-4583-9509-17856ac15c73
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpky5uwii2/script.Rmd -> /tmp/84a09907-07d1-4583-9509-17856ac15c73/script.Rmd
-Put code at /tmp/84a09907-07d1-4583-9509-17856ac15c73/script.Rmd
-[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/84a09907-07d1-4583-9509-17856ac15c73/runner.R
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpky5uwii2/inputs.json -> /tmp/84a09907-07d1-4583-9509-17856ac15c73/inputs.json
-Put inputs at /tmp/84a09907-07d1-4583-9509-17856ac15c73/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/404308ea-29ad-4c35-8856-509d3820fa64.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=R72LXfBYDihIcd7GXxvLlHQLprQ%3D&Expires=1540099784
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/84a09907-07d1-4583-9509-17856ac15c73/runner.R /tmp/84a09907-07d1-4583-9509-17856ac15c73/script.Rmd /tmp/84a09907-07d1-4583-9509-17856ac15c73/inputs.json /tmp/404308ea-29ad-4c35-8856-509d3820fa64
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpky5uwii2/x.py -> /tmp/84a09907-07d1-4583-9509-17856ac15c73/x.py
-Put code at /tmp/84a09907-07d1-4583-9509-17856ac15c73/x.py
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpky5uwii2/wrapper.sh -> /tmp/84a09907-07d1-4583-9509-17856ac15c73/wrapper.sh
-Put code at /tmp/84a09907-07d1-4583-9509-17856ac15c73/wrapper.sh
-[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4890/append_log/; screen -d -m python x.py; sleep 1
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-predfeed6c("arm", "sex", "W_mage", "W_fage", "meducyrs", "feducyrs", "hhwealth_quart", "hfoodsec", "W_mhtcm", "W_mwtkg", "W_mbmi", "W_fhtcm", "vagbrth", "hdlvry", "W_gagebrth", "W_birthwt", "W_birthlen", "single", "W_nrooms", "W_nhh", "W_nchldlt5", "month", "brthmon", "W_parity", "trth2o", "cleanck", "impfloor", "impsan", "safeh20")ever_wastedidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..................                                               |  28%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  38%
-label: data_summary
-  |                                                                         |..........................                                       |  41%
-  ordinary text without R code
-
-  |                                                                         |............................                                     |  44%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..............................                                   |  47%
-  ordinary text without R code
-
-  |                                                                         |................................                                 |  50%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |...................................                              |  53%
-  ordinary text without R code
-
-  |                                                                         |.....................................                            |  56%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-tmle for:	agecat: 0-24 months (no birth wast), studyid: ki0047075b-MAL-ED, country: BANGLADESH
-tmle for:	agecat: 0-24 months (no birth wast), studyid: ki1000109-EE, country: PAKISTAN
-tmle for:	agecat: 0-24 months (no birth wast), studyid: ki1113344-GMS-Nepal, country: NEPAL
-tmle for:	agecat: 0-24 months (no birth wast), studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	agecat: 0-24 months (no birth wast), studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 2.21799e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 9.75208e-17
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 2.03483e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 9.86788e-17
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 8.80874e-17
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 9.80422e-17
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 9.72633e-17
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.95194e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 8.40581e-17
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 9.21058e-17
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 8.91073e-17
-
-tmle for:	agecat: 0-24 months (no birth wast), studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-tmle for:	agecat: 0-6 months (no birth wast), studyid: ki0047075b-MAL-ED, country: BANGLADESH
-tmle for:	agecat: 0-6 months (no birth wast), studyid: ki1000109-EE, country: PAKISTAN
-tmle for:	agecat: 0-6 months (no birth wast), studyid: ki1113344-GMS-Nepal, country: NEPAL
-tmle for:	agecat: 0-6 months (no birth wast), studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.6596e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.0754e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.70919e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.5222e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.52805e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.38389e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.11966e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.60271e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.73298e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.6506e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.33904e-16
-
-tmle for:	agecat: 0-6 months (no birth wast), studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.8909e-16
-
-tmle for:	agecat: 6-24 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
-tmle for:	agecat: 6-24 months, studyid: ki1000109-EE, country: PAKISTAN
-tmle for:	agecat: 6-24 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
-tmle for:	agecat: 6-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
-tmle for:	agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.5244e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.38685e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.49901e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.54436e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.33132e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.54634e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.32955e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.23014e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.44567e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.53043e-16
-
-speedglm::speedglm.wfit failed, falling back on stats:glm.fit; Error in solve.default(XTX, XTz, tol = tol.solve) : 
-  system is computationally singular: reciprocal condition number = 1.00208e-16
-
-tmle for:	agecat: 6-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
-  |                                                                         |.......................................                          |  59%
-  ordinary text without R code
-
-  |                                                                         |.........................................                        |  62%
-label: save_results
-  |                                                                         |...........................................                      |  66%
-  ordinary text without R code
-
-  |                                                                         |.............................................                    |  69%
-label: plot_tsm (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...............................................                  |  72%
-  ordinary text without R code
-
-  |                                                                         |.................................................                |  75%
-label: plot_rr (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...................................................              |  78%
-  ordinary text without R code
-
-  |                                                                         |.....................................................            |  81%
-label: plot_ate (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |.......................................................          |  84%
-  ordinary text without R code
-
-  |                                                                         |.........................................................        |  88%
-label: plot_paf (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-  |                                                                         |...........................................................      |  91%
-  ordinary text without R code
-
-  |                                                                         |.............................................................    |  94%
-label: plot_par (with options) 
-{"status": "success"}

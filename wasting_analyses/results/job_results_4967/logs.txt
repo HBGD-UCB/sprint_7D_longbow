@@ -1,78 +1,0 @@
-[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/593e8b4d-2d4c-44c1-ac38-4c2a7cf6d96e
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpi71fpzcq/script.Rmd -> /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/script.Rmd
-Put code at /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/script.Rmd
-[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/runner.R
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpi71fpzcq/inputs.json -> /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/inputs.json
-Put inputs at /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/593e8b4d-2d4c-44c1-ac38-4c2a7cf6d96e.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=tp95sljSe3DbTP1nkZfveFk%2BACI%3D&Expires=1540103734
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/runner.R /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/script.Rmd /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/inputs.json /tmp/593e8b4d-2d4c-44c1-ac38-4c2a7cf6d96e
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpi71fpzcq/x.py -> /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/x.py
-Put code at /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/x.py
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpi71fpzcq/wrapper.sh -> /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/wrapper.sh
-Put code at /tmp/f1d4e842-fd4f-46ca-8ef2-d92df31c7237/wrapper.sh
-[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4967/append_log/; screen -d -m python x.py; sleep 1
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-Quitting from lines 83-127 (REPORT.Rmd) 
-Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
-  Some items of .SDcols are not column names (or are NA)
-Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
-
-Execution halted
-593e8b4d-2d4c-44c1-ac38-4c2a7cf6d96e/
-593e8b4d-2d4c-44c1-ac38-4c2a7cf6d96e/REPORT.Rmd
-593e8b4d-2d4c-44c1-ac38-4c2a7cf6d96e/inputs.json
-{"status": "success"}

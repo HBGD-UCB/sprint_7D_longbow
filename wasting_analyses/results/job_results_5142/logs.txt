@@ -1,75 +1,0 @@
-[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/944ac861-143d-4e0a-9055-5c3bd0123c3b
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpmqs0zh3n/script.Rmd -> /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/script.Rmd
-Put code at /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/script.Rmd
-[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/runner.R
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpmqs0zh3n/inputs.json -> /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/inputs.json
-Put inputs at /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/944ac861-143d-4e0a-9055-5c3bd0123c3b.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=oo0DPKEtizbaZYlp8vlWPbyzrYE%3D&Expires=1540094982
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/runner.R /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/script.Rmd /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/inputs.json /tmp/944ac861-143d-4e0a-9055-5c3bd0123c3b
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpmqs0zh3n/x.py -> /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/x.py
-Put code at /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/x.py
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpmqs0zh3n/wrapper.sh -> /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/wrapper.sh
-Put code at /tmp/4d5f26eb-6b1a-448c-bf52-cffcb1f88222/wrapper.sh
-[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5142/append_log/; screen -d -m python x.py; sleep 1
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-gagebrthlist()pers_wastidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-Quitting from lines 83-127 (REPORT.Rmd) 
-Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
-  Some items of .SDcols are not column names (or are NA)
-Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
-
-Execution halted
-944ac861-143d-4e0a-9055-5c3bd0123c3b/
-944ac861-143d-4e0a-9055-5c3bd0123c3b/REPORT.Rmd
-944ac861-143d-4e0a-9055-5c3bd0123c3b/inputs.json
-{"status": "success"}

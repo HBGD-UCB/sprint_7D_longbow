@@ -1,104 +1,0 @@
-[jeremy.coyle@54.242.11.1] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/9544e20a-7b93-4369-8d49-a20579083aa6
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.11.1] run: mkdir -p /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpe2i7j4j8/script.Rmd -> /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/script.Rmd
-Put code at /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/script.Rmd
-[jeremy.coyle@54.242.11.1] put: /app/runner.R -> /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/runner.R
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpe2i7j4j8/inputs.json -> /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/inputs.json
-Put inputs at /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/9544e20a-7b93-4369-8d49-a20579083aa6.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=bTPnS7mRtsfmM1UNd9Aa7G%2Bp9DY%3D&Expires=1540094304
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/runner.R /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/script.Rmd /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/inputs.json /tmp/9544e20a-7b93-4369-8d49-a20579083aa6
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpe2i7j4j8/x.py -> /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/x.py
-Put code at /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/x.py
-[jeremy.coyle@54.242.11.1] put: /tmp/tmpe2i7j4j8/wrapper.sh -> /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/wrapper.sh
-Put code at /tmp/925b0d85-8f3b-45f7-96f8-905ae8874c02/wrapper.sh
-[jeremy.coyle@54.242.11.1] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5046/append_log/; screen -d -m python x.py; sleep 1
-Making sure longbowtools package is available for runner
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-trth2olist()swastedidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-Output created: /tmp/9544e20a-7b93-4369-8d49-a20579083aa6/REPORT.html
-[1] "/tmp/9544e20a-7b93-4369-8d49-a20579083aa6/REPORT.html"
-9544e20a-7b93-4369-8d49-a20579083aa6/
-9544e20a-7b93-4369-8d49-a20579083aa6/REPORT.Rmd
-9544e20a-7b93-4369-8d49-a20579083aa6/inputs.json
-9544e20a-7b93-4369-8d49-a20579083aa6/obs_counts.rdata
-9544e20a-7b93-4369-8d49-a20579083aa6/REPORT.html
-9544e20a-7b93-4369-8d49-a20579083aa6/REPORT.md
-{"status": "success"}
