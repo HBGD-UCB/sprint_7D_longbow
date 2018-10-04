@@ -1,0 +1,224 @@
+---
+title: "Variable Importance for Stunting"
+author: "Jade Benjamin-Chung, Andrew N. Mertens, Esther Chung, Jeremy Coyle, Oleg Sofrygin, Nima Hejazi, Ivana Malenica, Alan E. Hubbard, Mark J. van der Laan, John M. Colford, Jr., Benjamin F. Arnold"
+date: "2018-06-14"
+output:
+  html_document:
+    keep_md: yes
+    self_contained: yes
+    toc: true
+  pdf_document:
+    toc: true
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+library(data.table)
+library(metafor)
+library(ggplot2)
+knitr::opts_chunk$set(echo = FALSE)
+
+# load data
+load("../opttx_vim_results.rdata")
+results <- setDT(results)
+
+# drop ki study numbers
+results[,studyid:=gsub("ki[^-]*-","",results$studyid)]
+studycountries <- unique(results[,list(studyid,country)])
+studycountries[,ncountries:=.N,by=list(studyid)]
+studycountries[,study_country:=sprintf("%s-%s",studyid,country)]
+studycountries[ncountries==1,study_country:=studyid]
+studycountries[,region:="Latin America"]
+studycountries[country%in%c("BANGLADESH","INDIA","NEPAL","PAKISTAN","PHILIPPINES"),
+               region:="Asia"]
+studycountries[country%in%c("BURKINA FASO","GUINEA-BISSAU","MALAWI",
+                            "SOUTH AFRICA","TANZANIA, UNITED REPUBLIC OF","ZIMBABWE",
+                            "GAMBIA"),
+               region:="Africa"]
+studycountries[country%in%c("BELARUS"), region:="Europe"]
+
+results <- merge(studycountries[,list(studyid,country,region,study_country)],
+                 results,
+                 by=c("studyid","country"))
+
+variable_meta <- fread("ki_riskfactor_metadata.csv")
+intervention_meta <- variable_meta[,list(intervention_variable=variablename,
+                                         intervention_label=variablelabel, 
+                                         intervention_category=category,
+                                         intervention_units=units)]
+
+outcome_meta <- variable_meta[,list(outcome_variable=variablename,
+                                         outcome_label=variablelabel, 
+                                         outcome_category=category,
+                                         outcome_units=units)]
+
+results <- merge(results, intervention_meta, by="intervention_variable")
+results <- merge(results, outcome_meta, by="outcome_variable")
+results[is.na(agecat),agecat:=""]
+
+agecat_levels <- c("Birth", "3 months", "6 months", 
+                   "9 months", "12 months", "18 months", 
+                   "24 months","0-24 months","0-6 months",
+                   "6-24 months","")
+
+agecat_levels_reduced <- c("Birth", "6 months", 
+                           "12 months", "24 months",
+                           "0-24 months","0-6 months",
+                           "6-24 months","")
+
+results <- results[agecat%in%agecat_levels_reduced]
+results[,agecat:=factor(agecat, levels=agecat_levels_reduced)]
+
+```
+
+# Relative risk pooled across cohorts
+
+```{r do_pooling, warning=FALSE}
+
+# extract RR results
+rr_results <- results[type=="RR"]
+
+one_result <- rr_results[agecat=="0-24 months"&intervention_variable=="mage"]
+pool_rr <- function(one_result){
+  # get pooled estimate
+  pooled <- try({rma(yi=one_result$untransformed_estimate, 
+                sei=one_result$untransformed_se, 
+                method="ML")},silent=TRUE)
+  
+  # make new pooled result row
+  pooled_result <- one_result[1,]
+  pooled_result[,study_country:="Pooled"]
+  pooled_result[,strata_label:=NULL]
+
+  if(!inherits(pooled,"try-error")){
+    pooled_result[,untransformed_estimate:=pooled$beta]
+    pooled_result[,untransformed_se:=pooled$se]
+    pooled_result[,estimate:=exp(pooled$beta)]
+    pooled_result[,ci_lower:=exp(pooled$ci.lb)]
+    pooled_result[,ci_upper:=exp(pooled$ci.ub)]
+  } else {
+    pooled_result[,untransformed_estimate:=NA_real_]
+    pooled_result[,untransformed_se:=NA_real_]
+    pooled_result[,estimate:=NA_real_]
+    pooled_result[,ci_lower:=NA_real_]
+    pooled_result[,ci_upper:=NA_real_]
+  }
+  
+  pooled_result[,ncohorts:=nrow(one_result)]
+  pooled_result[,regions:=paste(unique(one_result$region),collapse=", ")]
+
+
+  return(pooled_result)
+}
+
+one_result <- rr_results[agecat==agecat[1]&intervention_variable==intervention_variable[1]]
+pooled_rrs <- rr_results[,pool_rr(.SD), 
+                          by=list(agecat,outcome_variable, intervention_category, 
+                                  intervention_variable, intervention_level)]
+
+pooled_rrs[,sig:=1<ci_lower|ci_upper<1]
+pooled_rrs[,sig_alpha:=0.3+0.7*sig]
+
+sig_pooled_rrs <- pooled_rrs[sig==1]
+sig_ay <- unique(sig_pooled_rrs[,list(outcome_variable,intervention_variable)])
+# pooled_rrs <- pooled_rrs[sig_ay, on=list(outcome_variable,intervention_variable)]
+
+# set plot bounds so plots are comparable
+# todo: bounds in data are currently silly so these are set manually
+ymin <- 0.5#min(pooled_rrs$ci_lower, na.rm=T)
+ymax <- 1.2#max(pooled_rrs$ci_lower, na.rm=T)
+
+rr_bins <- c(0.5,0.75,0.875,1,1.2)
+```
+
+```{r output_helper}
+
+# print output and stratify by level
+hierarchical_plot_output <- function(data, strata_vars, plot_fun, section_level=1){
+  strata_var_name <- strata_vars[[1]]
+  remaining_strata_vars <- strata_vars[-1]
+  strata_values <- data[,strata_var_name,with=FALSE]
+  strata_levels <- sort(unique(unlist(strata_values)))
+  strata_level <- strata_levels[[1]]
+  for(strata_level in strata_levels){
+    subset <- data[which(strata_values==strata_level)]
+    
+    if(length(remaining_strata_vars)==0){
+      plot_fun(subset, strata_level)
+      cat("\n\n")
+    } else {
+      header_markup <- paste0(rep("#",section_level),collapse="")  
+      cat("  \n", header_markup, " ", strata_level, "  \n", sep="")
+
+      hierarchical_plot_output(subset, remaining_strata_vars, plot_fun, section_level+1)
+    }
+    
+    cat("  \n")
+  }
+  
+}
+
+
+```
+
+```{r plot_pooled,results="asis", warning=FALSE, fig.height=5, fig.width=10}
+
+rr_pooled_plot <- function(data, strata_level){
+  title <- sprintf("%s\nEstimates from %s cohorts in %s",
+                   strata_level,
+                   data$ncohorts[1],
+                   data$regions[1])
+  dodge=position_dodge(width=0.7)
+  data <- data[order(data$estimate)]
+  data$intervention_label <- factor(data$intervention_label, 
+                                    levels=rev(data$intervention_label))
+  rrplot <- ggplot(data, 
+                   aes(x=estimate,xmin=ci_lower,xmax=ci_upper,
+                       y=intervention_label))+
+    geom_point(aes(alpha=sig_alpha), size=2,position=dodge)+
+    geom_errorbarh(aes(alpha=sig_alpha*0.7),height=0,size=2,position=dodge)+
+    geom_vline(aes(xintercept=1),linetype="dashed")+theme_bw()+ylab("")+
+    xlab("Relative Risk")+
+    scale_alpha_continuous(guide=FALSE,limits=c(0,1))+
+    scale_x_log10(limits=c(ymin,ymax),breaks=rr_bins)+
+    ggtitle(title)
+    print(rrplot)
+        
+}
+
+data <- pooled_rrs[outcome_variable=="ever_stunted"&agecat=="0-24 months"]
+
+strata_vars <- c("outcome_label","agecat")
+hierarchical_plot_output(pooled_rrs, strata_vars, rr_pooled_plot, 2)
+```
+
+# Appendix 1 - Relative risk stratified by cohort
+```{r rr_forest, results="asis", fig.height=9,fig.width=7, warning=FALSE}
+
+rr_with_pooled <- rbind(rr_results, pooled_rrs, fill=TRUE)
+sc_levels <- c("Pooled",sort(unique(rr_results$study_country)))
+rr_with_pooled[ ,study_country:=factor(study_country, levels=sc_levels)]
+rr_with_pooled[,sig:=1<ci_lower|ci_upper<1]
+rr_with_pooled[,sig_alpha:=0.3+0.7*sig]
+rr_with_pooled[,color:=study_country=="Pooled"]
+
+rr_forest_plot <- function(data, strata_level){
+  title <- sprintf("%s\nreference level:%s",strata_level, data$baseline_level[1])
+  rr_forest <- ggplot(data,aes(x=study_country,y=estimate,ymin=ci_lower,ymax=ci_upper))+
+      scale_y_log10(limits=c(ymin,ymax),breaks=rr_bins)+
+      geom_point(aes(alpha=sig_alpha, color=color), size=2)+
+      geom_errorbar(aes(alpha=sig_alpha*0.7, color=color),width=0,size=2)+
+      geom_hline(aes(yintercept=1), linetype="dashed")+
+      coord_flip()+facet_grid(agecat~intervention_level,scales="free_y")+theme_bw()+
+      scale_alpha_continuous(guide=FALSE,limits=c(0,1))+ylab("Relative Risk")+xlab("Strata")+
+      scale_color_manual(values=c("black","red"),guide=FALSE)+
+      theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
+      ggtitle(title)
+  print(rr_forest)
+}
+
+
+strata_vars <- c("outcome_label","intervention_category","intervention_label")
+hierarchical_plot_output(rr_with_pooled, strata_vars, rr_forest_plot, 2)
+```
