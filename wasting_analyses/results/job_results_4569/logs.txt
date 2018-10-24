@@ -1,0 +1,30 @@
+[Sonali.Dayal@35.172.116.215] Executing task 'upload_to_ghap'
+[Sonali.Dayal@35.172.116.215] run: mkdir -p /tmp/5413f377-38f9-4d88-bf0d-d0e36f40782c
+Not going to clone git repo since it already exists
+[Sonali.Dayal@35.172.116.215] run: mkdir -p /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f
+[Sonali.Dayal@35.172.116.215] put: /tmp/tmp1xa9qa93/script.Rmd -> /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/script.Rmd
+Put code at /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/script.Rmd
+[Sonali.Dayal@35.172.116.215] put: /app/runner.R -> /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/runner.R
+[Sonali.Dayal@35.172.116.215] put: /tmp/tmp1xa9qa93/inputs.json -> /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/inputs.json
+Put inputs at /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/5413f377-38f9-4d88-bf0d-d0e36f40782c.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=IC7GuYupWWDpMSiLJYWJ2UWJqn8%3D&Expires=1539908029
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/runner.R /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/script.Rmd /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/inputs.json /tmp/5413f377-38f9-4d88-bf0d-d0e36f40782c
+[Sonali.Dayal@35.172.116.215] put: /tmp/tmp1xa9qa93/x.py -> /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/x.py
+Put code at /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/x.py
+[Sonali.Dayal@35.172.116.215] put: /tmp/tmp1xa9qa93/wrapper.sh -> /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/wrapper.sh
+Put code at /tmp/9ed30a88-26ee-4224-b779-4e19b67d457f/wrapper.sh
+[Sonali.Dayal@35.172.116.215] run: export TLAPP_TOKEN=7IbWH34CLG; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4569/append_log/; screen -d -m python x.py; sleep 1
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+Running provision script
+Starting analysis
+Error in library(longbowtools) : 
+  there is no package called ‘longbowtools’
+Execution halted
+5413f377-38f9-4d88-bf0d-d0e36f40782c/
+{"status": "success"}

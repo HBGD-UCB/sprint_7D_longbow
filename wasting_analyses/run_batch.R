@@ -1,8 +1,8 @@
 library(longbowtools)
 library(progress)
 library(longbowRiskFactors)
-# setwd("~/Desktop/sprint_7D_longbow/wasting_analyses/")
-setwd("~/Dropbox/gates/sprint_7D_longbow/wasting_analyses/")
+setwd("~/Desktop/sprint_7D_longbow/wasting_analyses/")
+#setwd("~/Dropbox/gates/sprint_7D_longbow/wasting_analyses/")
 configure_cluster("~/cluster_credentials.json")
 
 
@@ -11,7 +11,7 @@ rmd_filename <- system.file("templates/longbow_RiskFactors.Rmd", package="longbo
 inputs <- "inputs/wasting_adjusted_binary_analysis_001.json"
 
 #run test/provisioning job
-run_on_longbow(rmd_filename, inputs, provision = FALSE)
+run_on_longbow(rmd_filename, inputs, provision = TRUE)
 
 # send the batch to longbow (with provisioning disabled)
 job_ids <- submit_batch(rmd_filename, inputs_folder="inputs", results_folder="results", provision = FALSE)
