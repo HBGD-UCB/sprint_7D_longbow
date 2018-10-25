@@ -1,0 +1,62 @@
+[Sonali.Dayal@34.239.143.30] Executing task 'upload_to_ghap'
+[Sonali.Dayal@34.239.143.30] run: mkdir -p /tmp/0b0959ea-7e7c-4d59-aefa-9d06b380c1de
+Not going to clone git repo since it already exists
+[Sonali.Dayal@34.239.143.30] run: mkdir -p /tmp/d642d2be-be7c-4380-9046-49c70afd988b
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmp3p9b4ktx/script.Rmd -> /tmp/d642d2be-be7c-4380-9046-49c70afd988b/script.Rmd
+Put code at /tmp/d642d2be-be7c-4380-9046-49c70afd988b/script.Rmd
+[Sonali.Dayal@34.239.143.30] put: /app/runner.R -> /tmp/d642d2be-be7c-4380-9046-49c70afd988b/runner.R
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmp3p9b4ktx/inputs.json -> /tmp/d642d2be-be7c-4380-9046-49c70afd988b/inputs.json
+Put inputs at /tmp/d642d2be-be7c-4380-9046-49c70afd988b/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/0b0959ea-7e7c-4d59-aefa-9d06b380c1de.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=FafhE0bNazUbWdzbs3IgaVqOZ%2Fo%3D&Expires=1541717946
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/d642d2be-be7c-4380-9046-49c70afd988b/runner.R /tmp/d642d2be-be7c-4380-9046-49c70afd988b/script.Rmd /tmp/d642d2be-be7c-4380-9046-49c70afd988b/inputs.json /tmp/0b0959ea-7e7c-4d59-aefa-9d06b380c1de
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmp3p9b4ktx/x.py -> /tmp/d642d2be-be7c-4380-9046-49c70afd988b/x.py
+Put code at /tmp/d642d2be-be7c-4380-9046-49c70afd988b/x.py
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmp3p9b4ktx/wrapper.sh -> /tmp/d642d2be-be7c-4380-9046-49c70afd988b/wrapper.sh
+Put code at /tmp/d642d2be-be7c-4380-9046-49c70afd988b/wrapper.sh
+[Sonali.Dayal@34.239.143.30] run: pip install requests --user; export TLAPP_TOKEN=7IbWH34CLG; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5849/append_log/; screen -d -m python x.py; sleep 1
+[Sonali.Dayal@34.239.143.30] out: Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+[Sonali.Dayal@34.239.143.30] out: [33mYou are using pip version 9.0.1, however version 18.1 is available.
+[Sonali.Dayal@34.239.143.30] out: You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+[Sonali.Dayal@34.239.143.30] out: 
+
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Running provision script
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+{"status": "success"}

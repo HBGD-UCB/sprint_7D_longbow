@@ -1,0 +1,74 @@
+[Sonali.Dayal@34.239.143.30] Executing task 'upload_to_ghap'
+[Sonali.Dayal@34.239.143.30] run: mkdir -p /tmp/53450ba2-653b-4574-bcda-5a73df1827fe
+Not going to clone git repo since it already exists
+[Sonali.Dayal@34.239.143.30] run: mkdir -p /tmp/46391380-766d-4b26-9004-42775ebe8ca6
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmp_b_whbvj/script.Rmd -> /tmp/46391380-766d-4b26-9004-42775ebe8ca6/script.Rmd
+Put code at /tmp/46391380-766d-4b26-9004-42775ebe8ca6/script.Rmd
+[Sonali.Dayal@34.239.143.30] put: /app/runner.R -> /tmp/46391380-766d-4b26-9004-42775ebe8ca6/runner.R
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmp_b_whbvj/inputs.json -> /tmp/46391380-766d-4b26-9004-42775ebe8ca6/inputs.json
+Put inputs at /tmp/46391380-766d-4b26-9004-42775ebe8ca6/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/53450ba2-653b-4574-bcda-5a73df1827fe.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=IMYZck2n%2Bp52fNxuMoap3ef6VeY%3D&Expires=1541717848
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/46391380-766d-4b26-9004-42775ebe8ca6/runner.R /tmp/46391380-766d-4b26-9004-42775ebe8ca6/script.Rmd /tmp/46391380-766d-4b26-9004-42775ebe8ca6/inputs.json /tmp/53450ba2-653b-4574-bcda-5a73df1827fe
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmp_b_whbvj/x.py -> /tmp/46391380-766d-4b26-9004-42775ebe8ca6/x.py
+Put code at /tmp/46391380-766d-4b26-9004-42775ebe8ca6/x.py
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmp_b_whbvj/wrapper.sh -> /tmp/46391380-766d-4b26-9004-42775ebe8ca6/wrapper.sh
+Put code at /tmp/46391380-766d-4b26-9004-42775ebe8ca6/wrapper.sh
+[Sonali.Dayal@34.239.143.30] run: pip install requests --user; export TLAPP_TOKEN=7IbWH34CLG; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5725/append_log/; screen -d -m python x.py; sleep 1
+[Sonali.Dayal@34.239.143.30] out: Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+[Sonali.Dayal@34.239.143.30] out: [33mYou are using pip version 9.0.1, however version 18.1 is available.
+[Sonali.Dayal@34.239.143.30] out: You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+[Sonali.Dayal@34.239.143.30] out: 
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Running provision script
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Quitting from lines 55-80 (REPORT.Rmd) 
+Error in library(longbowRiskFactors) : 
+  there is no package called 'longbowRiskFactors'
+Calls: run_internal ... withCallingHandlers -> withVisible -> eval -> eval -> library
+
+Execution halted
+53450ba2-653b-4574-bcda-5a73df1827fe/
+53450ba2-653b-4574-bcda-5a73df1827fe/REPORT.Rmd
+53450ba2-653b-4574-bcda-5a73df1827fe/inputs.json
+{"status": "success"}
