@@ -1,0 +1,211 @@
+[jeremy.coyle@54.147.202.60] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.147.202.60] run: mkdir -p /tmp/5f28d37b-6629-447b-9d7b-a002e530a6d7
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.147.202.60] run: mkdir -p /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559
+[jeremy.coyle@54.147.202.60] put: /tmp/tmpsx35sxq2/script.Rmd -> /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/script.Rmd
+Put code at /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/script.Rmd
+[jeremy.coyle@54.147.202.60] put: /app/runner.R -> /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/runner.R
+[jeremy.coyle@54.147.202.60] put: /tmp/tmpsx35sxq2/inputs.json -> /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/inputs.json
+Put inputs at /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/inputs.json
+[jeremy.coyle@54.147.202.60] put: /tmp/tmpsx35sxq2/provision.sh -> /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/provision.sh
+Put provision script at /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/provision.sh
+Output PUT URL
+https://tlapp.s3.amazonaws.com/5f28d37b-6629-447b-9d7b-a002e530a6d7.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=QkZ%2FKUTfGlT9z%2BpGIyKehv37G2s%3D&Expires=1542936845
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/runner.R /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/script.Rmd /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/inputs.json /tmp/5f28d37b-6629-447b-9d7b-a002e530a6d7
+[jeremy.coyle@54.147.202.60] put: /tmp/tmpsx35sxq2/x.py -> /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/x.py
+Put code at /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/x.py
+[jeremy.coyle@54.147.202.60] put: /tmp/tmpsx35sxq2/wrapper.sh -> /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/wrapper.sh
+Put code at /tmp/114b4caf-1508-4cce-9987-a7a0f62d4559/wrapper.sh
+[jeremy.coyle@54.147.202.60] run: pip install requests --user; export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/8309/append_log/; screen -d -m python x.py; sleep 1
+[jeremy.coyle@54.147.202.60] out: Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+[jeremy.coyle@54.147.202.60] out: [33mYou are using pip version 9.0.1, however version 18.1 is available.
+[jeremy.coyle@54.147.202.60] out: You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+[jeremy.coyle@54.147.202.60] out: 
+
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Running provision script
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('HBGD-UCB/longbowRiskFactors')
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('jeremyrcoyle/skimr@vector_types')
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('tlverse/delayed')
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+perdiar6list()swastedidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/5f28d37b-6629-447b-9d7b-a002e530a6d7/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/rlibs/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplyBCu0/rmarkdown-str18a21b05745a.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: /tmp/5f28d37b-6629-447b-9d7b-a002e530a6d7/REPORT.html
+[1] "/tmp/5f28d37b-6629-447b-9d7b-a002e530a6d7/REPORT.html"
+Running analysis succeeded
+5f28d37b-6629-447b-9d7b-a002e530a6d7/
+5f28d37b-6629-447b-9d7b-a002e530a6d7/REPORT.Rmd
+5f28d37b-6629-447b-9d7b-a002e530a6d7/inputs.json
+5f28d37b-6629-447b-9d7b-a002e530a6d7/obs_counts.rdata
+5f28d37b-6629-447b-9d7b-a002e530a6d7/REPORT.html
+5f28d37b-6629-447b-9d7b-a002e530a6d7/REPORT.md
+{"status": "executed"}

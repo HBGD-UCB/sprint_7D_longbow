@@ -9,19 +9,20 @@ configure_cluster("~/cluster_credentials.json")
 rmd_filename <- system.file("templates/longbow_RiskFactors.Rmd", package="longbowRiskFactors")
 
 # inputs <- "inputs_template.json"
-inputs <- "inputs/unadjusted_binary_analysis_001.json"
+inputs <- "single_analysis.json"
 
 #run test/provisioning job
 run_on_longbow(rmd_filename, inputs, provision = TRUE)
 
 # send the batch to longbow (with provisioning disabled)
-job_ids <- submit_batch(rmd_filename, inputs_folder="inputs", results_folder="results", provision = FALSE)
+batch_inputs <- "all_analyses.json"
+batch_id <- run_on_longbow(rmd_filename, batch_inputs, provision = FALSE)
 
-# wait for the job to finish and track progress
-wait_for_batch(job_ids)
+# wait for the batch to finish and track progress
+wait_for_batch(batch_id)
 
 # download the longbow outputs
-get_batch_results(job_ids, results_folder="results")
+get_batch_results(batch_id, results_folder="results")
 length(dir("results"))
 
 # load and concatenate the rdata from the jobs

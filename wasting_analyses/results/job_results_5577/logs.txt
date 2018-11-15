@@ -1,116 +1,0 @@
-[jeremy.coyle@34.201.141.145] Executing task 'upload_to_ghap'
-[jeremy.coyle@34.201.141.145] run: mkdir -p /tmp/91c20d14-b700-45e8-9e62-f548f45c3060
-Not going to clone git repo since it already exists
-[jeremy.coyle@34.201.141.145] run: mkdir -p /tmp/de53228b-8598-4822-9c63-e71577cce6eb
-[jeremy.coyle@34.201.141.145] put: /tmp/tmpbigs4dw7/script.Rmd -> /tmp/de53228b-8598-4822-9c63-e71577cce6eb/script.Rmd
-Put code at /tmp/de53228b-8598-4822-9c63-e71577cce6eb/script.Rmd
-[jeremy.coyle@34.201.141.145] put: /app/runner.R -> /tmp/de53228b-8598-4822-9c63-e71577cce6eb/runner.R
-[jeremy.coyle@34.201.141.145] put: /tmp/tmpbigs4dw7/inputs.json -> /tmp/de53228b-8598-4822-9c63-e71577cce6eb/inputs.json
-Put inputs at /tmp/de53228b-8598-4822-9c63-e71577cce6eb/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/91c20d14-b700-45e8-9e62-f548f45c3060.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=4jWHQdkAC8axSmqaxyyytjPJow8%3D&Expires=1541030560
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/de53228b-8598-4822-9c63-e71577cce6eb/runner.R /tmp/de53228b-8598-4822-9c63-e71577cce6eb/script.Rmd /tmp/de53228b-8598-4822-9c63-e71577cce6eb/inputs.json /tmp/91c20d14-b700-45e8-9e62-f548f45c3060
-[jeremy.coyle@34.201.141.145] put: /tmp/tmpbigs4dw7/x.py -> /tmp/de53228b-8598-4822-9c63-e71577cce6eb/x.py
-Put code at /tmp/de53228b-8598-4822-9c63-e71577cce6eb/x.py
-[jeremy.coyle@34.201.141.145] put: /tmp/tmpbigs4dw7/wrapper.sh -> /tmp/de53228b-8598-4822-9c63-e71577cce6eb/wrapper.sh
-Put code at /tmp/de53228b-8598-4822-9c63-e71577cce6eb/wrapper.sh
-[jeremy.coyle@34.201.141.145] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5577/append_log/; screen -d -m python x.py; sleep 1
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-safeh20list()pers_wastidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-  |                                                                         |..............                                                   |  22%
-   inline R code fragments
-
-  |                                                                         |................                                                 |  25%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..................                                               |  28%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  38%
-label: data_summary
-  |                                                                         |..........................                                       |  41%
-  ordinary text without R code
-
-  |                                                                         |............................                                     |  44%
-label: print_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-{"status": "success"}

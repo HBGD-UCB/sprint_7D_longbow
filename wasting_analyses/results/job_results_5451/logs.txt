@@ -1,81 +1,0 @@
-[jeremy.coyle@34.201.141.145] Executing task 'upload_to_ghap'
-[jeremy.coyle@34.201.141.145] run: mkdir -p /tmp/5c4ef807-465f-43b3-82dc-ccb698f5f7bd
-Not going to clone git repo since it already exists
-[jeremy.coyle@34.201.141.145] run: mkdir -p /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27
-[jeremy.coyle@34.201.141.145] put: /tmp/tmpig8ddjhs/script.Rmd -> /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/script.Rmd
-Put code at /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/script.Rmd
-[jeremy.coyle@34.201.141.145] put: /app/runner.R -> /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/runner.R
-[jeremy.coyle@34.201.141.145] put: /tmp/tmpig8ddjhs/inputs.json -> /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/inputs.json
-Put inputs at /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/inputs.json
-Output PUT URL
-https://tlapp.s3.amazonaws.com/5c4ef807-465f-43b3-82dc-ccb698f5f7bd.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=nhs1vrW2snWm3%2F%2B90q1Zq9yURbY%3D&Expires=1541033218
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/runner.R /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/script.Rmd /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/inputs.json /tmp/5c4ef807-465f-43b3-82dc-ccb698f5f7bd
-[jeremy.coyle@34.201.141.145] put: /tmp/tmpig8ddjhs/x.py -> /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/x.py
-Put code at /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/x.py
-[jeremy.coyle@34.201.141.145] put: /tmp/tmpig8ddjhs/wrapper.sh -> /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/wrapper.sh
-Put code at /tmp/2d23182b-6a87-4401-a4b8-3e66367a5b27/wrapper.sh
-[jeremy.coyle@34.201.141.145] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5451/append_log/; screen -d -m python x.py; sleep 1
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-pers_wastlist()swastedidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-{"status": "success"}

@@ -1,0 +1,163 @@
+Command to run:
+Rscript --default-packages=methods,stats,utils runner.R script.Rmd inputs.json /tmp/170d9724-22c4-484f-9b91-19bf8b545d1a/0529bc4b-9649-456c-a77c-5079f4c7b31f
+cd /tmp;tar xvzf tmpeggsu73_.tar.gz --strip 1;cd /tmp/170d9724-22c4-484f-9b91-19bf8b545d1a;pip install requests --user;export TLAPP_TOKEN=*RBvH3ehiwubq?;export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/12073/append_log/;screen -d -m python x.py;sleep 1
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a/x.py: time stamp 2018-11-15 02:03:23 is 0.062823019 s in the future
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a/inputs.json: time stamp 2018-11-15 02:03:23 is 0.061959456 s in the future
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a/runner.R: time stamp 2018-11-15 02:03:23 is 0.061873184 s in the future
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a/ensure_git_dataset.sh: time stamp 2018-11-15 02:03:23 is 0.061799655 s in the future
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a/wrapper.sh: time stamp 2018-11-15 02:03:23 is 0.061737602 s in the future
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a/script.Rmd: time stamp 2018-11-15 02:03:23 is 0.06164783 s in the future
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a/provision.sh: time stamp 2018-11-15 02:03:23 is 0.061577269 s in the future
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a/0529bc4b-9649-456c-a77c-5079f4c7b31f: time stamp 2018-11-15 02:03:23 is 0.061408158 s in the future
+tar: 170d9724-22c4-484f-9b91-19bf8b545d1a: time stamp 2018-11-15 02:03:23 is 0.061344179 s in the future
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/x.py
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/inputs.json
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/runner.R
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/ensure_git_dataset.sh
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/wrapper.sh
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/script.Rmd
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/provision.sh
+tmpeggsu73_/170d9724-22c4-484f-9b91-19bf8b545d1a/0529bc4b-9649-456c-a77c-5079f4c7b31f/
+Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+{"job": {"status": "running", "created_at": "2018-11-15T02:01:15.580Z", "results_url": "/jobs/12073/", "jobs": []}}Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Installing pandoc
+pandoc-2.3.1/
+pandoc-2.3.1/bin/
+pandoc-2.3.1/bin/pandoc
+pandoc-2.3.1/bin/pandoc-citeproc
+pandoc-2.3.1/share/
+pandoc-2.3.1/share/man/
+pandoc-2.3.1/share/man/man1/
+pandoc-2.3.1/share/man/man1/pandoc.1.gz
+pandoc-2.3.1/share/man/man1/pandoc-citeproc.1.gz
+Running provision script
+skipping provisioning
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+hhwealth_quarts03rec24idc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/170d9724-22c4-484f-9b91-19bf8b545d1a/0529bc4b-9649-456c-a77c-5079f4c7b31f/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/rlibs/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpkOTv8J/rmarkdown-strb3446a9817da.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: 0529bc4b-9649-456c-a77c-5079f4c7b31f/REPORT.html
+[1] "/tmp/170d9724-22c4-484f-9b91-19bf8b545d1a/0529bc4b-9649-456c-a77c-5079f4c7b31f/REPORT.html"
+Running analysis succeeded
+0529bc4b-9649-456c-a77c-5079f4c7b31f/
+0529bc4b-9649-456c-a77c-5079f4c7b31f/REPORT.Rmd
+0529bc4b-9649-456c-a77c-5079f4c7b31f/inputs.json
+0529bc4b-9649-456c-a77c-5079f4c7b31f/obs_counts.rdata
+0529bc4b-9649-456c-a77c-5079f4c7b31f/REPORT.html
+0529bc4b-9649-456c-a77c-5079f4c7b31f/REPORT.md
+{"status": "executed"}
