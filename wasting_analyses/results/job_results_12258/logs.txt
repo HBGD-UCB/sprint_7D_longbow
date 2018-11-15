@@ -1,0 +1,246 @@
+Command to run:
+Rscript --default-packages=methods,stats,utils runner.R script.Rmd inputs.json /tmp/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/8dbbab8b-dacd-4373-a791-421d7e761f10
+cd /tmp;tar xvzf tmp90y_xae2.tar.gz --strip 1;cd /tmp/85ecc25e-0e6d-4628-9602-0a75f7db7cb5;pip install requests --user;export TLAPP_TOKEN=*RBvH3ehiwubq?;export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/12258/append_log/;screen -d -m python x.py;sleep 1
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/script.Rmd
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5/script.Rmd: time stamp 2018-11-15 02:51:30 is 0.16352733 s in the future
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/ensure_git_dataset.sh
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/wrapper.sh
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/inputs.json
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/8dbbab8b-dacd-4373-a791-421d7e761f10/
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/provision.sh
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/runner.R
+tmp90y_xae2/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/x.py
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5/ensure_git_dataset.sh: time stamp 2018-11-15 02:51:30 is 0.163199673 s in the future
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5/wrapper.sh: time stamp 2018-11-15 02:51:30 is 0.163094726 s in the future
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5/inputs.json: time stamp 2018-11-15 02:51:30 is 0.162986484 s in the future
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5/8dbbab8b-dacd-4373-a791-421d7e761f10: time stamp 2018-11-15 02:51:30 is 0.162813129 s in the future
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5/provision.sh: time stamp 2018-11-15 02:51:30 is 0.162717819 s in the future
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5/runner.R: time stamp 2018-11-15 02:51:30 is 0.162545805 s in the future
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5/x.py: time stamp 2018-11-15 02:51:30 is 0.162426919 s in the future
+tar: 85ecc25e-0e6d-4628-9602-0a75f7db7cb5: time stamp 2018-11-15 02:51:30 is 0.162307952 s in the future
+Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+{"job": {"status": "running", "created_at": "2018-11-15T02:48:58.682Z", "results_url": "/jobs/12258/", "jobs": []}}Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Installing pandoc
+Running provision script
+skipping provisioning
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+list()predfeed6list()ever_wastedidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: 0-24 months (no birth wast), studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	agecat: 0-24 months (no birth wast), studyid: ki1000109-EE, country: PAKISTAN
+tmle for:	agecat: 0-24 months (no birth wast), studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 0-24 months (no birth wast), studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	agecat: 0-24 months (no birth wast), studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	agecat: 0-24 months (no birth wast), studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	agecat: 0-6 months (no birth wast), studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	agecat: 0-6 months (no birth wast), studyid: ki1000109-EE, country: PAKISTAN
+tmle for:	agecat: 0-6 months (no birth wast), studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 0-6 months (no birth wast), studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	agecat: 0-6 months (no birth wast), studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	agecat: 6-24 months, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	agecat: 6-24 months, studyid: ki1000109-EE, country: PAKISTAN
+tmle for:	agecat: 6-24 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 6-24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	agecat: 6-24 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	agecat: 6-24 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+  |                                                                         |.......................................                          |  59%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  62%
+label: save_results
+  |                                                                         |...........................................                      |  66%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: plot_tsm (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: plot_rr (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: plot_ate (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |.......................................................          |  84%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: plot_paf (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: plot_par (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+  |                                                                         |...............................................................  |  97%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: results_tables (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/rlibs/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/Rtmpkebmio/rmarkdown-str13891796b50bc.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: 8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT.html
+[1] "/tmp/85ecc25e-0e6d-4628-9602-0a75f7db7cb5/8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT.html"
+Warning message:
+Removed 17 rows containing missing values (geom_errorbar). 
+Running analysis succeeded
+8dbbab8b-dacd-4373-a791-421d7e761f10/
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT.Rmd
+8dbbab8b-dacd-4373-a791-421d7e761f10/inputs.json
+8dbbab8b-dacd-4373-a791-421d7e761f10/obs_counts.rdata
+8dbbab8b-dacd-4373-a791-421d7e761f10/results.rdata
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT_files/
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT_files/figure-html/
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT_files/figure-html/plot_tsm-1.png
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT_files/figure-html/plot_rr-1.png
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT_files/figure-html/plot_paf-1.png
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT_files/figure-html/plot_par-1.png
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT.html
+8dbbab8b-dacd-4373-a791-421d7e761f10/REPORT.md
+{"status": "executed"}
