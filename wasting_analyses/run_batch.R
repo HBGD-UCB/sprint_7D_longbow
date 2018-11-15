@@ -1,8 +1,8 @@
 library(longbowtools)
 library(progress)
 library(longbowRiskFactors)
-# setwd("~/Desktop/sprint_7D_longbow/wasting_analyses/")
-setwd("~/Dropbox/gates/sprint_7D_longbow/wasting_analyses/")
+setwd("~/Desktop/sprint_7D_longbow/wasting_analyses/")
+#setwd("~/Dropbox/gates/sprint_7D_longbow/wasting_analyses/")
 configure_cluster("~/cluster_credentials.json")
 
 

@@ -1,0 +1,68 @@
+[Sonali.Dayal@34.239.143.30] Executing task 'upload_to_ghap'
+[Sonali.Dayal@34.239.143.30] run: mkdir -p /tmp/9db2ac0a-fc61-473f-85e5-3900a3d2a098
+Not going to clone git repo since it already exists
+[Sonali.Dayal@34.239.143.30] run: mkdir -p /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmpgauy1i6s/script.Rmd -> /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/script.Rmd
+Put code at /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/script.Rmd
+[Sonali.Dayal@34.239.143.30] put: /app/runner.R -> /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/runner.R
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmpgauy1i6s/inputs.json -> /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/inputs.json
+Put inputs at /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/9db2ac0a-fc61-473f-85e5-3900a3d2a098.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=tB0LDSG6ahHM7PnLwJCy%2FsuYEzM%3D&Expires=1541717983
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/runner.R /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/script.Rmd /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/inputs.json /tmp/9db2ac0a-fc61-473f-85e5-3900a3d2a098
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmpgauy1i6s/x.py -> /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/x.py
+Put code at /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/x.py
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmpgauy1i6s/wrapper.sh -> /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/wrapper.sh
+Put code at /tmp/9d13786d-e249-4acb-9c7f-28bd6f70256c/wrapper.sh
+[Sonali.Dayal@34.239.143.30] run: pip install requests --user; export TLAPP_TOKEN=7IbWH34CLG; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5798/append_log/; screen -d -m python x.py; sleep 1
+[Sonali.Dayal@34.239.143.30] out: Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+[Sonali.Dayal@34.239.143.30] out: [33mYou are using pip version 9.0.1, however version 18.1 is available.
+[Sonali.Dayal@34.239.143.30] out: You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+[Sonali.Dayal@34.239.143.30] out: 
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Running provision script
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Quitting from lines 55-80 (REPORT.Rmd) 
+Error in library(longbowRiskFactors) : 
+  there is no package called 'longbowRiskFactors'
+Calls: run_internal ... withCallingHandlers -> withVisible -> eval -> eval -> library
+
+Execution halted
+9db2ac0a-fc61-473f-85e5-3900a3d2a098/
+9db2ac0a-fc61-473f-85e5-3900a3d2a098/REPORT.Rmd
+9db2ac0a-fc61-473f-85e5-3900a3d2a098/inputs.json
+{"status": "success"}

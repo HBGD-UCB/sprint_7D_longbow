@@ -1,7 +1,8 @@
 library(longbowtools)
 library(progress)
 library(longbowRiskFactors)
-setwd("~/Dropbox/gates/sprint_7D_longbow/adjusted_binary/")
+setwd('~/Desktop/sprint_7D_longbow/adjusted_binary/')
+# setwd("~/Dropbox/gates/sprint_7D_longbow/adjusted_binary/")
 
 configure_cluster("~/cluster_credentials.json")
 

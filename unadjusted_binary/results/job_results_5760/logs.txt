@@ -1,0 +1,75 @@
+[Sonali.Dayal@34.239.143.30] Executing task 'upload_to_ghap'
+[Sonali.Dayal@34.239.143.30] run: mkdir -p /tmp/e70f8af9-ebde-4d6a-b748-ca72ca0b8135
+Not going to clone git repo since it already exists
+[Sonali.Dayal@34.239.143.30] run: mkdir -p /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmpatufkq90/script.Rmd -> /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/script.Rmd
+Put code at /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/script.Rmd
+[Sonali.Dayal@34.239.143.30] put: /app/runner.R -> /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/runner.R
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmpatufkq90/inputs.json -> /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/inputs.json
+Put inputs at /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/e70f8af9-ebde-4d6a-b748-ca72ca0b8135.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=JjkEDS5ywgfXg39hCxKaZEGbO5M%3D&Expires=1541717856
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/runner.R /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/script.Rmd /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/inputs.json /tmp/e70f8af9-ebde-4d6a-b748-ca72ca0b8135
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmpatufkq90/x.py -> /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/x.py
+Put code at /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/x.py
+[Sonali.Dayal@34.239.143.30] put: /tmp/tmpatufkq90/wrapper.sh -> /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/wrapper.sh
+Put code at /tmp/0b78096f-ba11-439d-bb77-6536f58adbbc/wrapper.sh
+[Sonali.Dayal@34.239.143.30] run: pip install requests --user; export TLAPP_TOKEN=7IbWH34CLG; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/5760/append_log/; screen -d -m python x.py; sleep 1
+[Sonali.Dayal@34.239.143.30] out: Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+[Sonali.Dayal@34.239.143.30] out: [33mYou are using pip version 9.0.1, however version 18.1 is available.
+[Sonali.Dayal@34.239.143.30] out: You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+[Sonali.Dayal@34.239.143.30] out: 
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Running provision script
+Making sure longbowtools package is available for runner
+
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Quitting from lines 55-80 (REPORT.Rmd) 
+Error in library(longbowRiskFactors) : 
+  there is no package called 'longbowRiskFactors'
+Calls: run_internal ... withCallingHandlers -> withVisible -> eval -> eval -> library
+
+Execution halted
+e70f8af9-ebde-4d6a-b748-ca72ca0b8135/
+e70f8af9-ebde-4d6a-b748-ca72ca0b8135/REPORT.Rmd
+e70f8af9-ebde-4d6a-b748-ca72ca0b8135/inputs.json
+{"status": "success"}

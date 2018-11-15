@@ -1,0 +1,33 @@
+[Sonali.Dayal@35.172.116.215] Executing task 'upload_to_ghap'
+[Sonali.Dayal@35.172.116.215] run: mkdir -p /tmp/6364edc6-e785-46d9-843e-f1853efdb085
+Not going to clone git repo since it already exists
+[Sonali.Dayal@35.172.116.215] run: mkdir -p /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e
+[Sonali.Dayal@35.172.116.215] put: /tmp/tmpwplj28h2/script.Rmd -> /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/script.Rmd
+Put code at /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/script.Rmd
+[Sonali.Dayal@35.172.116.215] put: /app/runner.R -> /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/runner.R
+[Sonali.Dayal@35.172.116.215] put: /tmp/tmpwplj28h2/inputs.json -> /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/inputs.json
+Put inputs at /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/inputs.json
+Output PUT URL
+https://tlapp.s3.amazonaws.com/6364edc6-e785-46d9-843e-f1853efdb085.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=Qzdcb3EGEYyxfaPntOOxNq27paU%3D&Expires=1539908038
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/runner.R /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/script.Rmd /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/inputs.json /tmp/6364edc6-e785-46d9-843e-f1853efdb085
+[Sonali.Dayal@35.172.116.215] put: /tmp/tmpwplj28h2/x.py -> /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/x.py
+Put code at /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/x.py
+[Sonali.Dayal@35.172.116.215] put: /tmp/tmpwplj28h2/wrapper.sh -> /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/wrapper.sh
+Put code at /tmp/3411f6aa-864a-491d-af0a-03abb9e8f32e/wrapper.sh
+[Sonali.Dayal@35.172.116.215] run: export TLAPP_TOKEN=7IbWH34CLG; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/4617/append_log/; screen -d -m python x.py; sleep 1
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+Running provision script
+Starting analysis
+Error in library(longbowtools) : 
+  there is no package called ‘longbowtools’
+Execution halted
+6364edc6-e785-46d9-843e-f1853efdb085/
+{"status": "success"}

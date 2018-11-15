@@ -1,0 +1,230 @@
+[Sonali.Dayal@34.207.198.210] Executing task 'upload_to_ghap'
+[Sonali.Dayal@34.207.198.210] run: mkdir -p /tmp/ca1198ca-dbf9-4acd-b28a-6f0e6d58f135
+Not going to clone git repo since it already exists
+[Sonali.Dayal@34.207.198.210] run: mkdir -p /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8
+[Sonali.Dayal@34.207.198.210] put: /tmp/tmpbkp7czis/script.Rmd -> /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/script.Rmd
+Put code at /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/script.Rmd
+[Sonali.Dayal@34.207.198.210] put: /app/runner.R -> /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/runner.R
+[Sonali.Dayal@34.207.198.210] put: /tmp/tmpbkp7czis/inputs.json -> /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/inputs.json
+Put inputs at /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/inputs.json
+[Sonali.Dayal@34.207.198.210] put: /tmp/tmpbkp7czis/provision.sh -> /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/provision.sh
+Put provision script at /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/provision.sh
+Output PUT URL
+https://tlapp.s3.amazonaws.com/ca1198ca-dbf9-4acd-b28a-6f0e6d58f135.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=f0jBHtmEB2mA%2BXjKcY0Dq%2BlcrgA%3D&Expires=1542994673
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/runner.R /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/script.Rmd /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/inputs.json /tmp/ca1198ca-dbf9-4acd-b28a-6f0e6d58f135
+[Sonali.Dayal@34.207.198.210] put: /tmp/tmpbkp7czis/x.py -> /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/x.py
+Put code at /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/x.py
+[Sonali.Dayal@34.207.198.210] put: /tmp/tmpbkp7czis/wrapper.sh -> /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/wrapper.sh
+Put code at /tmp/5ff0d681-8ef9-4ed3-bf3d-b1e0369779d8/wrapper.sh
+[Sonali.Dayal@34.207.198.210] run: pip install requests --user; export TLAPP_TOKEN=7IbWH34CLG; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/9189/append_log/; screen -d -m python x.py; sleep 1
+[Sonali.Dayal@34.207.198.210] out: Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+[Sonali.Dayal@34.207.198.210] out: [33mYou are using pip version 9.0.1, however version 18.1 is available.
+[Sonali.Dayal@34.207.198.210] out: You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+[Sonali.Dayal@34.207.198.210] out: 
+
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Running provision script
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('HBGD-UCB/longbowRiskFactors')
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('jeremyrcoyle/skimr@vector_types')
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('tlverse/delayed')
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+monthlist()wast_rec90dsubjidc("agecat", "studyid", "country")
+TRUETRUEFALSENULL
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: preprocessing
+  |                                                                         |..............                                                   |  22%
+   inline R code fragments
+
+  |                                                                         |................                                                 |  25%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  38%
+label: data_summary
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: 0-24 months, studyid: ki1000108-CMC-V-BCS-2002, country: INDIA
+tmle for:	agecat: 0-24 months, studyid: ki1000108-IRC, country: INDIA
+tmle for:	agecat: 0-24 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/rlibs/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpGtI9ZO/rmarkdown-str10b612f63c0e3.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: /tmp/ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT.html
+[1] "/tmp/ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT.html"
+Warning message:
+Removed 13 rows containing missing values (geom_errorbar). 
+Running analysis succeeded
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT.Rmd
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/inputs.json
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/obs_counts.rdata
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/results.rdata
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT_files/
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT_files/figure-html/
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT_files/figure-html/plot_tsm-1.png
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT_files/figure-html/plot_rr-1.png
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT_files/figure-html/plot_paf-1.png
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT_files/figure-html/plot_par-1.png
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT.html
+ca1198ca-dbf9-4acd-b28a-6f0e6d58f135/REPORT.md
+{"status": "executed"}
