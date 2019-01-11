@@ -1,0 +1,136 @@
+Command to run:
+Rscript --default-packages=methods,stats,utils runner.R script.Rmd inputs.json /tmp/14996bec-9058-4fe9-b799-ea0495b22322/930e64d4-29ee-43ec-807a-0ed10a59d3bf
+cd /tmp;tar xvzf tmpp98ulld2.tar.gz --strip 1;cd /tmp/14996bec-9058-4fe9-b799-ea0495b22322;pip install requests --user;export TLAPP_TOKEN=7IbWH34CLG;export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/15166/append_log/;screen -d -m python x.py;sleep 1
+tmpp98ulld2/14996bec-9058-4fe9-b799-ea0495b22322/
+tmpp98ulld2/14996bec-9058-4fe9-b799-ea0495b22322/script.Rmd
+tmpp98ulld2/14996bec-9058-4fe9-b799-ea0495b22322/930e64d4-29ee-43ec-807a-0ed10a59d3bf/
+tmpp98ulld2/14996bec-9058-4fe9-b799-ea0495b22322/wrapper.sh
+tmpp98ulld2/14996bec-9058-4fe9-b799-ea0495b22322/provision.sh
+tmpp98ulld2/14996bec-9058-4fe9-b799-ea0495b22322/runner.R
+tmpp98ulld2/14996bec-9058-4fe9-b799-ea0495b22322/inputs.json
+tmpp98ulld2/14996bec-9058-4fe9-b799-ea0495b22322/x.py
+Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+{"job": {"status": "running", "created_at": "2019-01-10T23:12:51.339", "results_url": "/jobs/15166/", "jobs": [{"status": "queued", "created_at": "2019-01-10T23:12:53.168", "results_url": "/jobs/15197/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:53.091", "results_url": "/jobs/15196/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:53.041", "results_url": "/jobs/15195/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.992", "results_url": "/jobs/15194/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.941", "results_url": "/jobs/15193/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.891", "results_url": "/jobs/15192/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.831", "results_url": "/jobs/15191/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.762", "results_url": "/jobs/15190/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.707", "results_url": "/jobs/15189/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.659", "results_url": "/jobs/15188/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.584", "results_url": "/jobs/15187/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.489", "results_url": "/jobs/15186/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.417", "results_url": "/jobs/15185/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.369", "results_url": "/jobs/15184/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.323", "results_url": "/jobs/15183/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.274", "results_url": "/jobs/15182/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.219", "results_url": "/jobs/15181/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.179", "results_url": "/jobs/15180/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.138", "results_url": "/jobs/15179/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:52.048", "results_url": "/jobs/15178/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.986", "results_url": "/jobs/15177/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.920", "results_url": "/jobs/15176/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.877", "results_url": "/jobs/15175/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.803", "results_url": "/jobs/15174/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.737", "results_url": "/jobs/15173/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.691", "results_url": "/jobs/15172/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.657", "results_url": "/jobs/15171/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.620", "results_url": "/jobs/15170/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.582", "results_url": "/jobs/15169/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.538", "results_url": "/jobs/15168/", "jobs": []}, {"status": "queued", "created_at": "2019-01-10T23:12:51.493", "results_url": "/jobs/15167/", "jobs": []}]}}Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Installing pandoc
+pandoc-2.3.1/
+pandoc-2.3.1/bin/
+pandoc-2.3.1/bin/pandoc
+pandoc-2.3.1/bin/pandoc-citeproc
+pandoc-2.3.1/share/
+pandoc-2.3.1/share/man/
+pandoc-2.3.1/share/man/man1/
+pandoc-2.3.1/share/man/man1/pandoc.1.gz
+pandoc-2.3.1/share/man/man1/pandoc-citeproc.1.gz
+Running provision script
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('HBGD-UCB/longbowRiskFactors')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('jeremyrcoyle/skimr@vector_types')
+> 
+> 
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('tlverse/delayed')
+> 
+> 
+Making sure longbowtools package is available for runner
+
+R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+
