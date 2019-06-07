@@ -22,7 +22,7 @@ batch_id <- run_on_longbow(rmd_filename, batch_inputs, provision = FALSE)
 wait_for_batch(batch_id)
 
 # download the longbow outputs
-get_batch_results(job_ids, results_folder="results")
+get_batch_results(batch_id, results_folder="results")
 length(dir("results"))
 
 # load and concatenate the rdata from the jobs

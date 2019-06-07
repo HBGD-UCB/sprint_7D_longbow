@@ -1,110 +1,0 @@
-Command to run:
-Rscript --default-packages=methods,stats,utils runner.R script.Rmd inputs.json /tmp/4d72157a-e21b-439e-bfda-f52914504552/fcdcafaa-cd02-4d9d-a430-bd984e9ba04f
-cd /tmp;tar xvzf tmpqrz54uj1.tar.gz --strip 1;cd /tmp/4d72157a-e21b-439e-bfda-f52914504552;pip install requests --user;export TLAPP_TOKEN=*RBvH3ehiwubq?;export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/12290/append_log/;screen -d -m python x.py;sleep 1
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/x.py
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/inputs.json
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/runner.R
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/ensure_git_dataset.sh
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/wrapper.sh
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/script.Rmd
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/provision.sh
-tmpqrz54uj1/4d72157a-e21b-439e-bfda-f52914504552/fcdcafaa-cd02-4d9d-a430-bd984e9ba04f/
-tar: 4d72157a-e21b-439e-bfda-f52914504552/x.py: time stamp 2018-11-15 02:53:51 is 0.065534669 s in the future
-tar: 4d72157a-e21b-439e-bfda-f52914504552/inputs.json: time stamp 2018-11-15 02:53:51 is 0.0652935 s in the future
-tar: 4d72157a-e21b-439e-bfda-f52914504552/runner.R: time stamp 2018-11-15 02:53:51 is 0.065228484 s in the future
-tar: 4d72157a-e21b-439e-bfda-f52914504552/ensure_git_dataset.sh: time stamp 2018-11-15 02:53:51 is 0.065168752 s in the future
-tar: 4d72157a-e21b-439e-bfda-f52914504552/wrapper.sh: time stamp 2018-11-15 02:53:51 is 0.065110416 s in the future
-tar: 4d72157a-e21b-439e-bfda-f52914504552/script.Rmd: time stamp 2018-11-15 02:53:51 is 0.065040896 s in the future
-tar: 4d72157a-e21b-439e-bfda-f52914504552/provision.sh: time stamp 2018-11-15 02:53:51 is 0.064975455 s in the future
-tar: 4d72157a-e21b-439e-bfda-f52914504552/fcdcafaa-cd02-4d9d-a430-bd984e9ba04f: time stamp 2018-11-15 02:53:51 is 0.064855265 s in the future
-tar: 4d72157a-e21b-439e-bfda-f52914504552: time stamp 2018-11-15 02:53:51 is 0.064836 s in the future
-Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
-You are using pip version 9.0.1, however version 18.1 is available.
-You should consider upgrading via the 'pip install --upgrade pip' command.
-{"job": {"status": "running", "created_at": "2018-11-15T02:49:00.142Z", "results_url": "/jobs/12290/", "jobs": []}}Making sure longbowtools package is available for runner
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-Installing pandoc
-Running provision script
-skipping provisioning
-Making sure longbowtools package is available for runner
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-list()pers_wastlist()wast_rec90dsubjidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-Quitting from lines 83-127 (REPORT.Rmd) 
-Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
-  Some items of .SDcols are not column names (or are NA)
-Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
-
-Execution halted
-Running analysis failed
-{"status": "error"}

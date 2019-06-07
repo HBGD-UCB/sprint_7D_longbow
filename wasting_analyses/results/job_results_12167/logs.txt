@@ -1,114 +1,0 @@
-Command to run:
-Rscript --default-packages=methods,stats,utils runner.R script.Rmd inputs.json /tmp/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/175fb7d1-945d-4771-82ce-7eacb48df9a7
-cd /tmp;tar xvzf tmpvig9zc_q.tar.gz --strip 1;cd /tmp/e55ca5e5-6fab-4e24-82ee-8db80f83ad19;pip install requests --user;export TLAPP_TOKEN=*RBvH3ehiwubq?;export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/12167/append_log/;screen -d -m python x.py;sleep 1
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19/script.Rmd: time stamp 2018-11-15 02:51:52 is 0.311152182 s in the future
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19/ensure_git_dataset.sh: time stamp 2018-11-15 02:51:52 is 0.310865402 s in the future
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19/wrapper.sh: time stamp 2018-11-15 02:51:52 is 0.310770034 s in the future
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19/inputs.json: time stamp 2018-11-15 02:51:52 is 0.310663503 s in the future
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19/provision.sh: time stamp 2018-11-15 02:51:52 is 0.310559652 s in the future
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19/175fb7d1-945d-4771-82ce-7eacb48df9a7: time stamp 2018-11-15 02:51:52 is 0.310446373 s in the future
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19/runner.R: time stamp 2018-11-15 02:51:52 is 0.310285185 s in the future
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19/x.py: time stamp 2018-11-15 02:51:52 is 0.310178222 s in the future
-tar: e55ca5e5-6fab-4e24-82ee-8db80f83ad19: time stamp 2018-11-15 02:51:52 is 0.310092169 s in the future
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/script.Rmd
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/ensure_git_dataset.sh
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/wrapper.sh
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/inputs.json
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/provision.sh
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/175fb7d1-945d-4771-82ce-7eacb48df9a7/
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/runner.R
-tmpvig9zc_q/e55ca5e5-6fab-4e24-82ee-8db80f83ad19/x.py
-Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
-You are using pip version 9.0.1, however version 18.1 is available.
-You should consider upgrading via the 'pip install --upgrade pip' command.
-{"job": {"status": "running", "created_at": "2018-11-15T02:48:54.432Z", "results_url": "/jobs/12167/", "jobs": []}}Making sure longbowtools package is available for runner
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-Installing pandoc
-pandoc-2.3.1/
-pandoc-2.3.1/bin/
-pandoc-2.3.1/bin/pandoc
-pandoc-2.3.1/bin/pandoc-citeproc
-Running provision script
-skipping provisioning
-Making sure longbowtools package is available for runner
-
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   6%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |   9%
-  ordinary text without R code
-
-  |                                                                         |........                                                         |  12%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-list()enwastlist()wastedidc("agecat", "studyid", "country")
-TRUETRUEFALSENULL
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  19%
-label: preprocessing
-Quitting from lines 83-127 (REPORT.Rmd) 
-Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
-  Some items of .SDcols are not column names (or are NA)
-Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
-
-Execution halted
-Running analysis failed
-{"status": "error"}
