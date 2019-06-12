@@ -13,7 +13,7 @@ analyses_1 <- analyses
 load('../Manuscript analysis/adjusted_continuous_sub.rdata')
 analyses$count_Y <- FALSE
 analyses_2 <- analyses
-analyses <- rbindlist(list(analyses_1, analyses_2), fill=TRUE)
+analyses <- rbindlist(list(analyses_2, analyses_1), fill=TRUE)
 analyses$file <- sprintf("Manuscript analysis data/%s",analyses$file)
 
 
