@@ -1,0 +1,178 @@
+Command to run:
+Rscript --default-packages=methods,stats,utils runner.R script.Rmd inputs.json /tmp/191313cd-6884-472a-8d02-d168de31fd4f/cd6d8162-027e-4a97-8f34-644c4502afb7
+cd /tmp;tar xvzf tmpu7y885ri.tar.gz --strip 1;cd /tmp/191313cd-6884-472a-8d02-d168de31fd4f;pip install requests --user;export TLAPP_TOKEN=r06YhrkTl8;export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/46092/append_log/;screen -d -m python x.py;sleep 1
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/script.Rmd
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/ensure_git_dataset.sh
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/cd6d8162-027e-4a97-8f34-644c4502afb7/
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/x.py
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/runner.R
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/wrapper.sh
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/inputs.json
+tmpu7y885ri/191313cd-6884-472a-8d02-d168de31fd4f/provision.sh
+Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 19.1.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+{"job": {"status": "running", "created_at": "2019-06-07T14:17:45.968", "results_url": "/jobs/46092/", "jobs": []}}Making sure longbowtools package is available for runner
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Installing pandoc
+pandoc-2.3.1/
+pandoc-2.3.1/bin/
+pandoc-2.3.1/bin/pandoc
+pandoc-2.3.1/bin/pandoc-citeproc
+pandoc-2.3.1/share/
+pandoc-2.3.1/share/man/
+pandoc-2.3.1/share/man/man1/
+pandoc-2.3.1/share/man/man1/pandoc.1.gz
+pandoc-2.3.1/share/man/man1/pandoc-citeproc.1.gz
+Running provision script
+skipping provisioning because this is a child job
+Making sure longbowtools package is available for runner
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('longbowtools')) devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   4%
+  ordinary text without R code
+
+  |                                                                         |.....                                                            |   8%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |........                                                         |  12%
+  ordinary text without R code
+
+  |                                                                         |..........                                                       |  15%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+enstuntc("arm", "sex", "W_mage", "W_fage", "meducyrs", "feducyrs", "hhwealth_quart", "hfoodsec", "vagbrth", "hdlvry", "single", "W_nrooms", "W_nhh", "W_nchldlt5", "brthmon", "W_parity", "trth2o", "cleanck", "impfloor", "impsan", "safeh20")hazidc("agecat", "studyid", "country")
+TRUEFALSETRUEFALSENULL
+  |                                                                         |............                                                     |  19%
+  ordinary text without R code
+
+  |                                                                         |...............                                                  |  23%
+label: preprocessing
+  |                                                                         |..................                                               |  27%
+   inline R code fragments
+
+  |                                                                         |....................                                             |  31%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................                                           |  35%
+  ordinary text without R code
+
+  |                                                                         |.........................                                        |  38%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |............................                                     |  42%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  46%
+label: data_summary
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  54%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |......................................                           |  58%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  62%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..........................................                       |  65%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: Birth, studyid: ki0047075b-MAL-ED, country: BANGLADESH
+tmle for:	agecat: Birth, studyid: ki0047075b-MAL-ED, country: BRAZIL
+tmle for:	agecat: Birth, studyid: ki0047075b-MAL-ED, country: INDIA
+tmle for:	agecat: Birth, studyid: ki0047075b-MAL-ED, country: NEPAL
+tmle for:	agecat: Birth, studyid: ki0047075b-MAL-ED, country: PERU
+tmle for:	agecat: Birth, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+tmle for:	agecat: Birth, studyid: ki0047075b-MAL-ED, country: TANZANIA, UNITED REPUBLIC OF
+tmle for:	agecat: Birth, studyid: ki1000108-CMC-V-BCS-2002, country: INDIA
+tmle for:	agecat: Birth, studyid: ki1000108-IRC, country: INDIA
+tmle for:	agecat: Birth, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	agecat: Birth, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: Birth, studyid: ki1101329-Keneba, country: GAMBIA
+tmle for:	agecat: Birth, studyid: ki1114097-CMIN, country: BANGLADESH
+Error in combiners[[result_name]](results[[result_name]]) : 
+  Class attribute on column 1 of item 4 does not match with column 1 of item 1.
+Failed on predict
+Error in self$compute_step() : 
+  Error in combiners[[result_name]](results[[result_name]]) : 
+  Class attribute on column 1 of item 4 does not match with column 1 of item 1.
+
+Failed on chain
+Quitting from lines 238-246 (REPORT.Rmd) 
+Error in self$compute_step() : Error in self$compute_step() : 
+  Error in combiners[[result_name]](results[[result_name]]) : 
+  Class attribute on column 1 of item 4 does not match with column 1 of item 1.
+
+Calls: run_internal ... <Anonymous> -> <Anonymous> -> <Anonymous> -> <Anonymous>
+
+Execution halted
+Running analysis failed
+{"status": "error"}
