@@ -1,0 +1,16 @@
+Command to run:
+Rscript --default-packages=methods,stats,utils runner.R script.Rmd inputs.json /tmp/9478f956-1a37-4488-ac36-2801152a38cb/983ede49-707f-44b1-9708-98f4c54018c0
+cd /tmp;tar xvzf tmp_qz5vb1z.tar.gz --strip 1;cd /tmp/9478f956-1a37-4488-ac36-2801152a38cb;pip install requests --user;export TLAPP_TOKEN=r06YhrkTl8;export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/46618/append_log/;screen -d -m python x.py;sleep 1
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/script.Rmd
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/inputs.json
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/x.py
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/983ede49-707f-44b1-9708-98f4c54018c0/
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/wrapper.sh
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/runner.R
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/provision.sh
+tmp_qz5vb1z/9478f956-1a37-4488-ac36-2801152a38cb/ensure_git_dataset.sh
+Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 19.1.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+

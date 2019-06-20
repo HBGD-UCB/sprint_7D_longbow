@@ -18,7 +18,7 @@ run_on_longbow(rmd_filename, inputs, provision = TRUE)
 bin_batch_inputs <- "all_bin_analyses.json"
 bin_batch_id <- run_on_longbow(rmd_filename, bin_batch_inputs, provision = FALSE)
 #46614
-
+bin_batch_id <- 46614
 
 # wait for the batch to finish and track progress
 wait_for_batch(bin_batch_id)
@@ -33,3 +33,27 @@ obs_counts <- load_batch_results("obs_counts.rdata")
 
 # save concatenated results
 save(results, file="subset_wast_results.rdata")
+save(obs_counts, file="subset_wast_obs_counts.rdata")
+
+
+# get_batch_results2 <- function (batch_id, results_folder = "results"){
+#   if (dir.exists(results_folder)) {
+#     unlink(results_folder, recursive = TRUE)
+#   }
+#   dir.create(results_folder)
+#   cat(sprintf("Downloading results...\n"))
+#   job_statuses <- get_job_status(batch_id)
+#   job_ids <- names(job_statuses)
+#   finished_statuses <- c("success", "error")
+#   viewable_job_ids <- job_ids[which(job_statuses %in% finished_statuses)]
+#   pb <- progress_bar$new(format = "[:bar] :percent", total = length(viewable_job_ids), 
+#                          clear = TRUE)
+#   pb$tick(0)
+#   for (job_id in viewable_job_ids) {
+#     try(get_job_output(job_id, results_folder))
+#     pb$tick()
+#   }
+# }
+# 
+# get_batch_results2(bin_batch_id, results_folder="results_bin")
+# length(dir("results_bin"))

@@ -1,0 +1,50 @@
+Command to run:
+Rscript --default-packages=methods,stats,utils runner.R script.Rmd inputs.json /tmp/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/eb2cf6d8-0c1c-4097-8cc2-8556dd149a6f
+cd /tmp;tar xvzf tmpu2lacrfu.tar.gz --strip 1;cd /tmp/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e;pip install requests --user;export TLAPP_TOKEN=r06YhrkTl8;export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/46653/append_log/;screen -d -m python x.py;sleep 1
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/inputs.json
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/ensure_git_dataset.sh
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/wrapper.sh
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/x.py
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/eb2cf6d8-0c1c-4097-8cc2-8556dd149a6f/
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/runner.R
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/script.Rmd
+tmpu2lacrfu/24a33aa3-a554-4cb8-bc80-3c33a34f8f1e/provision.sh
+Requirement already satisfied: requests in /opt/anaconda2/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 19.1.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+{"job": {"status": "running", "created_at": "2019-06-20T01:47:41.305", "results_url": "/jobs/46653/", "jobs": []}}Making sure longbowtools package is available for runner
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+Installing pandoc
+pandoc-2.3.1/
+pandoc-2.3.1/bin/
+pandoc-2.3.1/bin/pandoc
+pandoc-2.3.1/bin/pandoc-citeproc
+pandoc-2.3.1/share/
+pandoc-2.3.1/share/man/
+pandoc-2.3.1/share/man/man1/
+pandoc-2.3.1/share/man/man1/pandoc.1.gz
+pandoc-2.3.1/share/man/man1/pandoc-citeproc.1.gz
+Running provision script
+
