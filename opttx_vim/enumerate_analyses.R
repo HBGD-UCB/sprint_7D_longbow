@@ -1,19 +1,23 @@
 library(data.table)
 library(longbowtools)
 library(jsonlite)
-setwd("~/Desktop/sprint_7D_longbow/opttx_vim/")
+#setwd("~/Desktop/sprint_7D_longbow/opttx_vim/")
+setwd("C:/Users/andre/Documents/HBGDki/sprint_7D_longbow/opttx_vim/")
+
 
 inputs <- "inputs_template.json"
 default_params <- fromJSON(inputs)
 
 # # Binary
-load('../Manuscript analysis/adjusted_binary_analyses_sub.rdata')
-analyses$count_Y <- TRUE
-analyses_1 <- analyses
-load('../Manuscript analysis/adjusted_continuous_sub.rdata')
+# load('../Manuscript analysis/adjusted_binary_analyses_sub.rdata')
+# analyses$count_Y <- TRUE
+# analyses_1 <- analyses
+
+# # Continious
+load('../Manuscript analysis/adjusted_continuous.rdata')
 analyses$count_Y <- FALSE
-analyses_2 <- analyses
-analyses <- rbindlist(list(analyses_2, analyses_1), fill=TRUE)
+#analyses_2 <- analyses
+#analyses <- rbindlist(list(analyses_2, analyses_1), fill=TRUE)
 analyses$file <- sprintf("Manuscript analysis data/%s",analyses$file)
 
 
@@ -32,5 +36,5 @@ enumerated_analyses <- lapply(seq_len(nrow(analyses)),function(i){
   return(analysis_params)
 })
 
-writeLines(toJSON(enumerated_analyses[[1]]),"single_analysis.json")
-writeLines(toJSON(enumerated_analyses),"all_analyses.json")
+writeLines(toJSON(enumerated_analyses[[1]]),"single_vim_analysis.json")
+writeLines(toJSON(enumerated_analyses),"all_vim_analyses.json")

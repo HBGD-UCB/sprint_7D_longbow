@@ -1,21 +1,23 @@
 library(longbowtools)
 library(progress)
 library(longbowRiskFactors)
-setwd("~/Dropbox/gates/sprint_7D_longbow/opttx_vim/")
-setwd("~/Desktop/sprint_7D_longbow/opttx_vim/")
+# setwd("~/Dropbox/gates/sprint_7D_longbow/opttx_vim/")
+# setwd("~/Desktop/sprint_7D_longbow/opttx_vim/")
+setwd("C:/Users/andre/Documents/HBGDki/sprint_7D_longbow/opttx_vim/")
 
-configure_cluster("~/cluster_credentials.json")
+
+configure_cluster("C:/Users/andre/Documents/HBGDki/sprint_7D_longbow/wasting_analyses/cluster_credentials.json")
 
 
 rmd_filename <- system.file("templates/longbow_OptTX.Rmd", package="longbowOptTX")
 
-inputs <- "single_analysis.json"
+inputs <- "single_vim_analysis.json"
 
 #run test/provisioning job
 run_on_longbow(rmd_filename, inputs, provision = TRUE)
 
 # send the batch to longbow (with provisioning disabled)
-batch_inputs <- "all_analyses.json"
+batch_inputs <- "all_vim_analyses.json"
 batch_id <- run_on_longbow(rmd_filename, batch_inputs, provision = FALSE)
 
 # wait for the batch to finish and track progress

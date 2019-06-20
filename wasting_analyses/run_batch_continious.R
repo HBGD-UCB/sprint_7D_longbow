@@ -15,14 +15,17 @@ configure_cluster("C:/Users/andre/Documents/HBGDki/sprint_7D_longbow/wasting_ana
 
 rmd_filename <- system.file("templates/longbow_RiskFactors.Rmd", package="longbowRiskFactors")
 # inputs <- "inputs_template.json"
-inputs <- "single_analysis.json"
+inputs <- "single_cont_analysis.json"
 
 #run test/provisioning job
 run_on_longbow(rmd_filename, inputs, provision = TRUE)
 
 # send the batch to longbow (with provisioning disabled)
-batch_inputs <- "all_analyses.json"
+batch_inputs <- "all_cont_analyses.json"
 batch_id <- run_on_longbow(rmd_filename, batch_inputs, provision = FALSE)
+#46570
+# (new) 46861
+
 
 # wait for the batch to finish and track progress
 wait_for_batch(batch_id)
