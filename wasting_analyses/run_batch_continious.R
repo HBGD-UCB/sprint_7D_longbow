@@ -1,3 +1,9 @@
+
+#Note: if package error:
+#the magic trick is to ssh in, run `export R_LIBS_USER=$HOME/rlibs` then start R and install
+
+
+
 library(longbowtools)
 library(progress)
 library(longbowRiskFactors)
@@ -30,4 +36,4 @@ results <- load_batch_results("results.rdata")
 obs_counts <- load_batch_results("obs_counts.rdata")
 
 # save concatenated results
-save(results, file="subset_wast_results.rdata")
+save(results, file="subset_wlz_results.rdata")

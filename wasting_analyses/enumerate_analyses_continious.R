@@ -8,7 +8,10 @@ setwd("C:/Users/andre/Documents/HBGDki/sprint_7D_longbow/wasting_analyses/")
 inputs <- "inputs_template.json"
 default_params <- fromJSON(inputs)
 
-load("adjusted_binary_analyses.rdata")
+#Set to continious
+default_params$script_params$count_Y <- FALSE
+
+load("adjusted_continuous.rdata")
 analyses <- analyses
 # load("wasting_unadjusted_binary_analyses.rdata")
 # analyses_2 <- analyses
@@ -29,3 +32,5 @@ enumerated_analyses <- lapply(seq_len(nrow(analyses)),function(i){
 
 writeLines(toJSON(enumerated_analyses[[10]]),"single_analysis.json")
 writeLines(toJSON(enumerated_analyses),"all_analyses.json")
+
+
