@@ -16,6 +16,8 @@ default_params <- fromJSON(inputs)
 # # Continious
 load('../Manuscript analysis/adjusted_continuous.rdata')
 analyses$count_Y <- FALSE
+analyses$maximize <- TRUE
+
 #analyses_2 <- analyses
 #analyses <- rbindlist(list(analyses_2, analyses_1), fill=TRUE)
 analyses$file <- sprintf("Manuscript analysis data/%s",analyses$file)
@@ -36,5 +38,5 @@ enumerated_analyses <- lapply(seq_len(nrow(analyses)),function(i){
   return(analysis_params)
 })
 
-writeLines(toJSON(enumerated_analyses[[1]]),"single_vim_analysis.json")
-writeLines(toJSON(enumerated_analyses),"all_vim_analyses.json")
+writeLines(toJSON(enumerated_analyses[[10]]),"single_analysis.json")
+writeLines(toJSON(enumerated_analyses),"all_analyses.json")
