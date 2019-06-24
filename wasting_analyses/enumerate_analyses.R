@@ -27,5 +27,7 @@ enumerated_analyses <- lapply(seq_len(nrow(analyses)),function(i){
   return(analysis_params)
 })
 
-writeLines(toJSON(enumerated_analyses[[10]]),"single_bin_analysis.json")
+writeLines(toJSON(enumerated_analyses[[1]]),"single_bin_analysis.json")
 writeLines(toJSON(enumerated_analyses),"all_bin_analyses.json")
+
+
