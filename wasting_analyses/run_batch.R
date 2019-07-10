@@ -18,22 +18,22 @@ run_on_longbow(rmd_filename, inputs, provision = TRUE)
 bin_batch_inputs <- "all_bin_analyses.json"
 bin_batch_id <-  run_on_longbow(rmd_filename, bin_batch_inputs, provision = FALSE)
 #47068
-bin_batch_id <-47425
+#bin_batch_id <-47425
 
 # wait for the batch to finish and track progress
 wait_for_batch(bin_batch_id)
 
 # download the longbow outputs
-get_batch_results(bin_batch_id, results_folder="results_bin_sub")
-length(dir("results_bin_sub"))
+get_batch_results(bin_batch_id, results_folder="results_bin_birthlen")
+length(dir("results_bin_birthlen"))
 
 # load and concatenate the rdata from the jobs
-results <- load_batch_results("results.rdata", results_folder = "results_bin_sub")
-obs_counts <- load_batch_results("obs_counts.rdata", results_folder = "results_bin_sub")
+results <- load_batch_results("results.rdata", results_folder = "results_bin_birthlen")
+obs_counts <- load_batch_results("obs_counts.rdata", results_folder = "results_bin_birthlen")
 
 # save concatenated results
-save(results, file="subset_stunt_results.rdata")
-save(obs_counts, file="subset_stunt_obs_counts.rdata")
+save(results, file="subset_wast_birthlen.rdata")
+save(obs_counts, file="subset_wast_birthlen_obs_counts.rdata")
 
 
 # get_batch_results2 <- function (batch_id, results_folder = "results"){
